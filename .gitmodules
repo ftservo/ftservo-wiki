@@ -1,0 +1,12 @@
+[submodule "sdk/FTServo_Arduino"]
+	path = sdk/FTServo_Arduino
+	url = https://github.com/ftservo/FTServo_Arduino.git
+[submodule "sdk/FTServo_Python"]
+	path = sdk/FTServo_Python
+	url = https://github.com/ftservo/FTServo_Python.git
+[submodule "sdk/FTServo_Linux"]
+	path = sdk/FTServo_Linux
+	url = https://github.com/ftservo/FTServo_Linux.git
+[submodule "sdk/FTServo_stm32HAL"]
+	path = sdk/FTServo_stm32HAL
+	url = https://github.com/ftservo/FTServo_stm32HAL.git
