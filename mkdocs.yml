@@ -1,0 +1,123 @@
+site_name: FEETECH Wiki
+site_description: FEETECH servo selection, setup, software and SDK documentation.
+site_url: https://ftservo.github.io/ftservo-wiki/
+repo_name: ftservo/ftservo-wiki
+repo_url: https://github.com/ftservo/ftservo-wiki
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+plugins:
+  - search:
+      lang: [zh, en]
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          name: 简体中文
+          default: true
+          build: true
+          nav:
+            - 首页: index.md
+            - 产品选型:
+                - products/index.md
+                - 系列与接口: products/series.md
+            - 快速开始:
+                - getting-started/index.md
+                - 供电与接线: getting-started/wiring.md
+                - 第一次运动: getting-started/first-motion.md
+            - FD 调试软件: tools/fd.md
+            - SDK:
+                - sdk/index.md
+                - Python: sdk/python.md
+                - Arduino / ESP32: sdk/arduino.md
+                - Linux / STM32 HAL: sdk/linux-stm32.md
+            - 协议与内存表: reference/protocol.md
+            - 常见问题: troubleshooting.md
+            - 下载中心: downloads.md
+            - 用 AI 开发: ai-development.md
+            - Wiki 维护教程: contributing.md
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: index.md
+            - Product Selection:
+                - products/index.md
+                - Series and Interfaces: products/series.md
+            - Get Started:
+                - getting-started/index.md
+                - Power and Wiring: getting-started/wiring.md
+                - First Motion: getting-started/first-motion.md
+            - FD Utility: tools/fd.md
+            - SDKs:
+                - sdk/index.md
+                - Python: sdk/python.md
+                - Arduino / ESP32: sdk/arduino.md
+                - Linux / STM32 HAL: sdk/linux-stm32.md
+            - Protocol and Memory Tables: reference/protocol.md
+            - Troubleshooting: troubleshooting.md
+            - Downloads: downloads.md
+            - Develop with AI: ai-development.md
+            - Wiki Maintenance: contributing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/language-redirect.js
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ftservo
+    - icon: material/web
+      link: https://www.feetechrc.com/
+copyright: Copyright &copy; FEETECH
+
