@@ -1,19 +1,17 @@
-# FEETECH servo datasheets
+# FEETECH servo specifications
 
-This directory lists all 185 PDFs currently under `FTServos/规格书`, grouped by source folder. Folder names are an inventory convention; they do not prove interface type or current sales status.
+Browse FEETECH servos by product series. Product cards show input voltage, stall torque and control interface; open a model for power, control and usage guidance.
 
-Use the [selection guide](../index.md), then verify the cover model, revision, voltage, dimensions and interface in the exact PDF. Product engineering should approve the active revision before a model page is published.
+If you have not selected a series, start with the [product selector](../index.md).
 
-| Source group | PDFs | Directory |
-| --- | ---: | --- |
-| HL series | 16 | [Open](hl.md) |
-| PWM series | 109 | [Open](pwm.md) |
-| SC series | 17 | [Open](sc.md) |
-| SM series | 23 | [Open](sm.md) |
-| ST series | 20 | [Open](st.md) |
+| Product series | Models | Series characteristics | Suitable applications | Catalog |
+| --- | ---: | --- | --- | --- |
+| HD | 1 | Compact TTL serial-bus servo with a coreless motor, metal gears, and dual-shaft structure | Microduck and Open Duck-style bipeds, lightweight joints, and embodied-AI prototypes | [View products](./hd.md) |
+| HL | 16 | HLS application layer and half-duplex TTL bus with position, speed, current, and other status feedback | Robot joints, coordinated axes, and automated mechanisms that need operating feedback | [View products](./hl.md) |
+| PWM | 69 | Standard PWM control without bus IDs, offered across a broad range of sizes and torque levels | RC models, gimbals, mechanisms, and single-axis position control | [View products](./pwm.md) |
+| SC | 17 | SCS/SCSCL application layer and half-duplex TTL bus with ID addressing and status reads | Education robots, compact arms, and small multi-servo systems | [View products](./sc.md) |
+| SM | 20 | SMS application layer and differential RS485 bus for longer cables and demanding electrical environments | Industrial automation, distributed joints, and longer-distance multi-servo links | [View products](./sm.md) |
+| ST | 19 | STS application layer and half-duplex TTL bus; many models use magnetic encoders or support high-resolution control | Robot joints, wheeled mechanisms, and projects that need detailed motion feedback | [View products](./st.md) |
 
-## Model list and document IDs
-
-`FTServos/型号.xlsx` is a model list, while PDF filenames are often document identifiers. Some entries do not match one to one. Do not derive voltage, availability or SDK compatibility from filenames. Build an engineering-approved model-to-datasheet mapping before publishing a filterable specifications table.
-
-[Model list](https://github.com/ftservo/ftservo-wiki/blob/main/FTServos/%E5%9E%8B%E5%8F%B7.xlsx) · [Downloads](../../downloads.md) · [Contribution guide](../../contributing.md)
+!!! info "Selection note"
+    Models in the same series may use different input voltages, torque ratings, travel and dimensions. Use the individual model page and allow design margin for the real load and duty cycle.

@@ -11,7 +11,7 @@ cd ftservo-wiki
 
 Open the entire folder in the AI tool. It should read `AGENTS.md`, relevant documentation, matching SDK examples and the exact model's memory table.
 
-Provide the full servo model/series, datasheet location, TTL or RS485, adapter, port, supply, ID, baud rate, target platform/toolchain, desired behavior, motion limits, timeout/safe-stop behavior, passed FD tests and exact errors.
+Provide the full servo model and series, product specification page, TTL or RS485 interface, adapter, port, supply, ID, baud rate, target platform and toolchain, desired behavior, motion limits, timeout and safe-stop behavior, completed FD tests and exact errors.
 
 ## Prompt template
 
@@ -42,4 +42,3 @@ Confirm the correct `SCSCL`, `SMS_STS` or `HLSCL` layer; audit every address, wi
 ## Future Rust SDK
 
 Treat Rust as a separate project: freeze a support matrix and packet test vectors, design serial abstraction, typed memory tables and error/timeouts, add cross-platform CI, then validate every supported series on real hardware. This release intentionally includes no misleading stub SDK.
-

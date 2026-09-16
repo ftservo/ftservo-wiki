@@ -5,6 +5,12 @@ repo_name: ftservo/ftservo-wiki
 repo_url: https://github.com/ftservo/ftservo-wiki
 edit_uri: edit/main/docs/
 
+# Model pages are reached from the series catalogs. Keeping them out of the
+# global sidebar avoids a 141-item navigation tree while retaining search.
+not_in_nav: |
+  products/models/*.md
+  en/products/models/*.md
+
 theme:
   name: material
   language: zh
@@ -21,14 +27,14 @@ theme:
     - content.tabs.link
   palette:
     - scheme: default
-      primary: blue
-      accent: orange
+      primary: deep orange
+      accent: amber
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
     - scheme: slate
-      primary: blue
-      accent: orange
+      primary: deep orange
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: 切换到浅色模式
@@ -48,31 +54,33 @@ plugins:
             - 产品选型:
                 - products/index.md
                 - 系列与接口: products/series.md
-                - 规格书目录:
+                - 产品规格:
                     - products/datasheets/index.md
+                    - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
                     - PWM: products/datasheets/pwm.md
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
-            - 工程资源:
-                - resources/index.md
-                - 型号页模板: resources/model-template.md
             - 快速开始:
                 - getting-started/index.md
                 - 供电与接线: getting-started/wiring.md
                 - 第一次运动: getting-started/first-motion.md
-            - FD 调试软件: tools/fd.md
+            - 通信与调试:
+                - 通信协议: reference/protocol.md
+                - SCSCL 内存表: reference/memory-scscl.md
+                - SMS / STS 内存表: reference/memory-sms-sts.md
+                - HLS 内存表: reference/memory-hls.md
+                - 调试板与转换器: tools/adapters.md
+                - FD 调试软件: tools/fd.md
             - SDK:
                 - sdk/index.md
                 - Python: sdk/python.md
                 - Arduino / ESP32: sdk/arduino.md
                 - Linux / STM32 HAL: sdk/linux-stm32.md
-            - 协议与内存表: reference/protocol.md
             - 常见问题: troubleshooting.md
             - 下载中心: downloads.md
             - 用 AI 开发: ai-development.md
-            - Wiki 维护教程: contributing.md
         - locale: en
           name: English
           build: true
@@ -81,31 +89,33 @@ plugins:
             - Product Selection:
                 - products/index.md
                 - Series and Interfaces: products/series.md
-                - Datasheets:
+                - Product Specifications:
                     - products/datasheets/index.md
+                    - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
                     - PWM: products/datasheets/pwm.md
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
-            - Engineering Resources:
-                - resources/index.md
-                - Model Page Template: resources/model-template.md
             - Get Started:
                 - getting-started/index.md
                 - Power and Wiring: getting-started/wiring.md
                 - First Motion: getting-started/first-motion.md
-            - FD Utility: tools/fd.md
+            - Communication and Setup:
+                - Bus Protocol: reference/protocol.md
+                - SCSCL Memory Table: reference/memory-scscl.md
+                - SMS / STS Memory Table: reference/memory-sms-sts.md
+                - HLS Memory Table: reference/memory-hls.md
+                - Debug Boards and Adapters: tools/adapters.md
+                - FD Servo Utility: tools/fd.md
             - SDKs:
                 - sdk/index.md
                 - Python: sdk/python.md
                 - Arduino / ESP32: sdk/arduino.md
                 - Linux / STM32 HAL: sdk/linux-stm32.md
-            - Protocol and Memory Tables: reference/protocol.md
             - Troubleshooting: troubleshooting.md
             - Downloads: downloads.md
             - Develop with AI: ai-development.md
-            - Wiki Maintenance: contributing.md
 
 markdown_extensions:
   - admonition
@@ -122,6 +132,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 validation:
   omitted_files: warn
@@ -133,6 +146,8 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/language-redirect.js
+  - javascripts/servo-selector-data.js
+  - javascripts/servo-selector.js
 extra:
   social:
     - icon: fontawesome/brands/github

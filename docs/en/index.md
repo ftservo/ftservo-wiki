@@ -10,7 +10,7 @@ One path from servo selection, power and FD setup to Python, Arduino, Linux and 
 </div>
 
 !!! warning "Identify the exact model first"
-    Models in one series may still use different voltages, interfaces, travel or memory tables. Before applying power or writing a register, verify the label, exact-model datasheet and memory table.
+    Models in one series may use different voltages, interfaces, travel or memory tables. Before applying power or writing a register, check the product label, model specifications and matching memory table.
 
 <div class="grid cards" markdown>
 
@@ -20,11 +20,11 @@ One path from servo selection, power and FD setup to Python, Arduino, Linux and 
 
     [Open the guide](products/index.md)
 
--   :material-file-document-multiple: **Servo datasheets**
+-   :material-file-document-multiple: **Product specifications**
 
-    Browse the 185 PDFs in the HL, PWM, SC, SM and ST source folders; verify each cover model and revision.
+    Browse product cards and detailed specifications by HD, HL, PWM, SC, SM and ST series.
 
-    [Browse datasheets](products/datasheets/index.md)
+    [Browse product specifications](products/datasheets/index.md)
 
 -   :material-power-plug: **Five-step startup**
 
@@ -48,17 +48,28 @@ One path from servo selection, power and FD setup to Python, Arduino, Linux and 
 
 ## Recommended path
 
-```text
-Confirm model and electrical specifications
-       ↓
-One unloaded servo + adapter + independent power supply
-       ↓
-Discover in FD, assign a unique ID, test at low speed
-       ↓
-Start from the matching SDK example
-       ↓
-Add mechanical load, multiple servos and safety limits
-```
+<div class="ft-route">
+  <a class="ft-route-step" href="products/">
+    <span class="ft-route-number">01</span>
+    <span class="ft-route-copy"><strong>Confirm the model and ratings</strong><small>Verify interface, input voltage, torque, dimensions and model specifications</small></span>
+  </a>
+  <a class="ft-route-step" href="getting-started/wiring/">
+    <span class="ft-route-number">02</span>
+    <span class="ft-route-copy"><strong>Build a safe test setup</strong><small>Use one servo, the correct adapter, independent power and a shared ground</small></span>
+  </a>
+  <a class="ft-route-step" href="getting-started/first-motion/">
+    <span class="ft-route-number">03</span>
+    <span class="ft-route-copy"><strong>Run the first motion</strong><small>Discover in FD, assign a unique ID and test unloaded at low speed</small></span>
+  </a>
+  <a class="ft-route-step" href="sdk/">
+    <span class="ft-route-number">04</span>
+    <span class="ft-route-copy"><strong>Use the matching SDK</strong><small>Choose by family and platform; read status before commanding motion</small></span>
+  </a>
+  <a class="ft-route-step" href="troubleshooting/">
+    <span class="ft-route-number">05</span>
+    <span class="ft-route-copy"><strong>Integrate the real mechanism</strong><small>Add load, multiple servos, limits and fault protection progressively</small></span>
+  </a>
+</div>
 
 ## Official resources
 
@@ -66,4 +77,3 @@ Add mechanical load, multiple servos and safety limits
 - [FEETECH on GitHub](https://github.com/ftservo)
 - [Legacy online documentation](http://doc.feetech.cn/#/f?q=2506a8cb7928)
 - [Downloads](downloads.md)
-- [Engineering resources and publication backlog](resources/index.md)

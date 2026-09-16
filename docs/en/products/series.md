@@ -4,6 +4,7 @@
 
 | Series | Physical layer | SDK layer | Typical positioning |
 | --- | --- | --- | --- |
+| HD | Half-duplex TTL | Use the model-specific integration resources | Compact coreless, metal-gear, dual-shaft servos for Microduck and Open Duck-style lightweight bipeds |
 | SCS / SCSCL | Half-duplex TTL | `SCSCL` | Common position bus servos; verify model resolution |
 | STS | Half-duplex TTL | `SMS_STS` | Many magnetic-encoder, high-resolution or continuous models |
 | SMS | RS485 | `SMS_STS` | Differential communication for more demanding wiring |
@@ -23,4 +24,3 @@ PWM servos normally receive position pulses without a bus ID. Allowed pulse widt
 - Keep controller, adapter, servo and power grounds referenced as specified; design RS485 topology and termination for the actual link.
 
 Before support or AI development, record the full model, label, rated voltage, interface, firmware/memory-table version, ID, baud rate, adapter and host platform.
-

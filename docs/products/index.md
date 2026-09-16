@@ -2,6 +2,30 @@
 
 不要只按“公斤扭矩”选舵机。一个可落地的选型至少要同时满足接口、电压、持续负载、速度、尺寸、行程、反馈和环境条件。
 
+## 舵机选型器
+
+<div id="ft-servo-selector" class="ft-selector" data-locale="zh">
+  <div class="ft-selector-head">
+    <div><strong>快速找到合适的飞特舵机</strong><span>当前提供 142 款产品，可按接口、电压和扭矩快速筛选。</span></div>
+    <button type="button" class="ft-selector-reset" data-action="reset">重置条件</button>
+  </div>
+  <div class="ft-selector-controls">
+    <label class="ft-selector-field ft-selector-search"><span>搜索型号</span><input type="search" data-filter="query" placeholder="例如 ST-3215 或 SMS" autocomplete="off"></label>
+    <label class="ft-selector-field"><span>控制接口</span><select data-filter="interface"><option value="">全部接口</option></select></label>
+    <label class="ft-selector-field"><span>产品系列</span><select data-filter="family"><option value="">全部系列</option></select></label>
+    <label class="ft-selector-field"><span>输入电压</span><select data-filter="voltage"><option value="">全部电压</option></select></label>
+    <label class="ft-selector-field"><span>最低堵转扭矩 kg·cm</span><input type="number" data-filter="torque" min="0" step="0.1" placeholder="不限"></label>
+    <label class="ft-selector-field"><span>排序</span><select data-filter="sort"><option value="model">型号名称</option><option value="torque-desc">扭矩从高到低</option><option value="torque-asc">扭矩从低到高</option><option value="voltage">电压从低到高</option></select></label>
+  </div>
+  <div class="ft-selector-status" role="status" aria-live="polite">正在载入型号资料…</div>
+  <div class="ft-selector-results"></div>
+  <button type="button" class="ft-selector-more" data-action="more" hidden>显示更多</button>
+  <noscript>此选型器需要浏览器启用 JavaScript。你仍可使用下方的产品规格目录。</noscript>
+</div>
+
+!!! info "选型提示"
+    筛选结果用于快速比较产品。请进入型号页查看完整规格，并结合负载、工作周期、温升和机构条件保留设计余量。
+
 ## 六步筛选
 
 1. **控制方式**：只需传统脉宽控制选 PWM；需要多机串联、读回位置/温度/负载或改参数，选总线舵机。
@@ -34,7 +58,7 @@
 | 最大尺寸和重量 | mm / g | |
 | 控制平台 | PC / Arduino / ESP32 / Linux / STM32 | |
 
-填写后在[飞特产品中心](https://www.feetechrc.com/products.html)查找候选型号，再到[规格书目录](datasheets/index.md)打开对应 PDF 核验。文件编号与销售型号可能不同，先确认封面型号和版次。
+填写后可在[飞特产品中心](https://www.feetechrc.com/products.html)了解应用信息，再到[产品规格目录](datasheets/index.md)比较候选型号。
 
 ## 常见路线
 

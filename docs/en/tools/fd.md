@@ -1,31 +1,40 @@
 # FD Servo Utility
 
-FD is FEETECH's Windows utility for discovering servos, reading status, changing ID/baud rate, editing model-supported settings and running basic motion tests.
+FD is FEETECH's Windows utility for discovering servos, reading status, changing ID and baud rate, configuring model-supported settings, and running basic motion tests.
 
-[Official software downloads](https://www.feetechrc.com/service/software.html){ .md-button .md-button--primary }
+[Official software page](https://www.feetechrc.com/service/software.html){ .md-button .md-button--primary }
+[Choose an adapter](adapters.md){ .md-button }
 
-!!! note
-    Versions, download methods and archive passwords may change. Use the official page; this repository does not redistribute binaries of uncertain origin or version.
+The official page currently lists FD 1.9.8.2 Offline and FD 1.9.8.3, together with software for FE-URT and FE-SCPC hardware. Choose software that matches the adapter and servo family. Versions, download methods, and archive passwords are maintained on the official page.
 
 ## Connect
 
-1. Choose a TTL or RS485 adapter to match the servo.
-2. Install its USB serial driver and connect it to the PC.
-3. With servo power off, connect the bus and external supply and verify polarity.
-4. In FD, choose the COM port shown by Windows Device Manager.
-5. Select the current baud rate, open the port and start discovery.
-6. Stop discovery after the device appears, then select the target.
+1. Choose TTL, RS485, CAN, or PWM setup hardware to match the servo.
+2. Install its driver and connect the adapter to the PC.
+3. With servo power off, connect signal, ground, and the external supply; verify polarity and pinout.
+4. Open FD and select the COM port shown by Windows Device Manager.
+5. Select the servo's current baud rate and open the port.
+6. Start discovery. Stop it after the device appears, then select the target.
 
-## Change an ID
+## Change an ID or baud rate
 
 ```text
-one servo only → discover → record original settings → change ID → save
-→ power cycle → discover again → verify the new ID
+one servo only → discover → record original settings → edit and save
+→ power cycle → discover with the new settings → verify
 ```
 
-After changing baud rate, change FD to the new rate as well. Every device on the final bus needs a unique ID and the same baud rate.
+Devices on one bus need unique IDs and a common baud rate. After changing baud rate, switch FD to the new value before discovering the servo again.
 
-Before writing settings, save original values, distinguish RAM from persistent storage, use the exact-series memory table, follow restart requirements, and keep the first motion slow and unloaded.
+## Change settings
 
-If discovery fails, check the COM port, driver, port ownership, baud rate, external power, TTL/RS485 type, pinout, common ground, cable and duplicate IDs. Cross-check one servo with known-good power, cable and adapter.
+FD fields depend on the servo model and memory table. Before writing:
 
+- Save the original values or take a screenshot.
+- Distinguish runtime fields from persistent settings.
+- Open the matching memory table from [Bus Protocol](../reference/protocol.md); do not reuse addresses across families.
+- Follow model-specific save and restart instructions after changing mode, limits, calibration, or protection.
+- Keep the first movement slow, small, unloaded, and clear of people.
+
+## Device not found
+
+Check the COM port, driver, port ownership, baud rate, external power, interface type, pinout, common ground, cable, and duplicate IDs. If the problem remains, connect only one servo and cross-check with known-good adapter hardware, cable, and power.

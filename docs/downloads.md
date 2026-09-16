@@ -16,12 +16,10 @@ git submodule update --init --recursive
 
 [打开 Wiki GitHub 仓库](https://github.com/ftservo/ftservo-wiki){ .md-button .md-button--primary }
 
-## 舵机规格书与型号表
+## 舵机产品资料
 
-- [按 HL、PWM、SC、SM、ST 浏览 185 份规格书](products/datasheets/index.md)
+- [按 HD、HL、PWM、SC、SM、ST 系列浏览产品规格](products/datasheets/index.md)
 - [查看原始型号表](https://github.com/ftservo/ftservo-wiki/blob/main/FTServos/%E5%9E%8B%E5%8F%B7.xlsx)
-
-规格书链接指向本仓库的 `FTServos` 原始资料。首次发布这些入口时，维护者须确认 `FTServos` 已提交到远端仓库；型号表与 PDF 编号的映射尚需工程审核。
 
 ## 官方 SDK
 

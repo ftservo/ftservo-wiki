@@ -10,7 +10,7 @@
 </div>
 
 !!! warning "先确认具体型号"
-    同系列的不同型号也可能使用不同电压、接口、行程或内存表。上电和写寄存器前，必须以产品标签、该型号数据表及内存表为准。
+    同系列的不同型号也可能使用不同电压、接口、行程或内存表。上电和写寄存器前，请核对产品标签、型号规格页及对应内存表。
 
 <div class="grid cards" markdown>
 
@@ -20,11 +20,11 @@
 
     [打开选型指南](products/index.md)
 
--   :material-file-document-multiple: **舵机规格书**
+-   :material-file-document-multiple: **产品规格**
 
-    按 HL、PWM、SC、SM、ST 文件夹查阅现有 185 份 PDF，核对封面型号与版次。
+    按 HD、HL、PWM、SC、SM、ST 系列浏览产品卡片和详细参数。
 
-    [浏览规格书](products/datasheets/index.md)
+    [浏览产品规格](products/datasheets/index.md)
 
 -   :material-power-plug: **五步快速开始**
 
@@ -48,17 +48,28 @@
 
 ## 推荐路线
 
-```text
-确认型号与电气规格
-       ↓
-单舵机 + 调试板 + 独立电源
-       ↓
-FD 搜索、分配唯一 ID、低速测试
-       ↓
-选择与系列匹配的 SDK 示例
-       ↓
-加入机械负载、多舵机与安全限制
-```
+<div class="ft-route">
+  <a class="ft-route-step" href="products/">
+    <span class="ft-route-number">01</span>
+    <span class="ft-route-copy"><strong>确认型号与电气规格</strong><small>核对接口、输入电压、扭矩、尺寸和型号规格</small></span>
+  </a>
+  <a class="ft-route-step" href="getting-started/wiring/">
+    <span class="ft-route-number">02</span>
+    <span class="ft-route-copy"><strong>搭建安全测试环境</strong><small>单舵机、匹配的调试板、独立电源并可靠共地</small></span>
+  </a>
+  <a class="ft-route-step" href="getting-started/first-motion/">
+    <span class="ft-route-number">03</span>
+    <span class="ft-route-copy"><strong>完成第一次运动</strong><small>FD 搜索设备、设置唯一 ID，并进行低速空载测试</small></span>
+  </a>
+  <a class="ft-route-step" href="sdk/">
+    <span class="ft-route-number">04</span>
+    <span class="ft-route-copy"><strong>接入匹配的 SDK</strong><small>按系列和控制平台选择示例，先读状态再写入动作</small></span>
+  </a>
+  <a class="ft-route-step" href="troubleshooting/">
+    <span class="ft-route-number">05</span>
+    <span class="ft-route-copy"><strong>扩展到真实机构</strong><small>逐步加入机械负载、多舵机、限位和故障保护</small></span>
+  </a>
+</div>
 
 ## 官方入口
 
@@ -66,4 +77,3 @@ FD 搜索、分配唯一 ID、低速测试
 - [飞特 GitHub](https://github.com/ftservo)
 - [原在线文档](http://doc.feetech.cn/#/f?q=2506a8cb7928)
 - [下载中心](downloads.md)
-- [工程资源与待补充资料](resources/index.md)
