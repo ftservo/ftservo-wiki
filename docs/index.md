@@ -20,6 +20,12 @@
 
     [打开选型指南](products/index.md)
 
+-   :material-file-document-multiple: **舵机规格书**
+
+    按 HL、PWM、SC、SM、ST 文件夹查阅现有 185 份 PDF，核对封面型号与版次。
+
+    [浏览规格书](products/datasheets/index.md)
+
 -   :material-power-plug: **五步快速开始**
 
     正确供电、连接调试板、搜索设备、低速测试、再接入 SDK。
@@ -60,4 +66,4 @@ FD 搜索、分配唯一 ID、低速测试
 - [飞特 GitHub](https://github.com/ftservo)
 - [原在线文档](http://doc.feetech.cn/#/f?q=2506a8cb7928)
 - [下载中心](downloads.md)
-
+- [工程资源与待补充资料](resources/index.md)

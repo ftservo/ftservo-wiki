@@ -48,6 +48,16 @@ plugins:
             - 产品选型:
                 - products/index.md
                 - 系列与接口: products/series.md
+                - 规格书目录:
+                    - products/datasheets/index.md
+                    - HL: products/datasheets/hl.md
+                    - PWM: products/datasheets/pwm.md
+                    - SC: products/datasheets/sc.md
+                    - SM: products/datasheets/sm.md
+                    - ST: products/datasheets/st.md
+            - 工程资源:
+                - resources/index.md
+                - 型号页模板: resources/model-template.md
             - 快速开始:
                 - getting-started/index.md
                 - 供电与接线: getting-started/wiring.md
@@ -71,6 +81,16 @@ plugins:
             - Product Selection:
                 - products/index.md
                 - Series and Interfaces: products/series.md
+                - Datasheets:
+                    - products/datasheets/index.md
+                    - HL: products/datasheets/hl.md
+                    - PWM: products/datasheets/pwm.md
+                    - SC: products/datasheets/sc.md
+                    - SM: products/datasheets/sm.md
+                    - ST: products/datasheets/st.md
+            - Engineering Resources:
+                - resources/index.md
+                - Model Page Template: resources/model-template.md
             - Get Started:
                 - getting-started/index.md
                 - Power and Wiring: getting-started/wiring.md
@@ -120,4 +140,3 @@ extra:
     - icon: material/web
       link: https://www.feetechrc.com/
 copyright: Copyright &copy; FEETECH
-

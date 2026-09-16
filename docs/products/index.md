@@ -34,7 +34,7 @@
 | 最大尺寸和重量 | mm / g | |
 | 控制平台 | PC / Arduino / ESP32 / Linux / STM32 | |
 
-填写后在[飞特产品中心](https://www.feetechrc.com/products.html)查找候选型号，并逐一下载对应数据表核验。
+填写后在[飞特产品中心](https://www.feetechrc.com/products.html)查找候选型号，再到[规格书目录](datasheets/index.md)打开对应 PDF 核验。文件编号与销售型号可能不同，先确认封面型号和版次。
 
 ## 常见路线
 
@@ -48,4 +48,3 @@
 
 !!! note "系列名称不是完整规格"
     官方产品仍在更新，本 Wiki 不复制一张很快过期的全量价格/参数表。最终选型以官网当前产品页、销售确认和随产品发布的数据表为准。
-

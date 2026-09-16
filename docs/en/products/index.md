@@ -32,7 +32,7 @@ A 1 kg load at 10 cm is 10 kg·cm statically. Real mechanisms need allowance for
 | Maximum size and mass | mm / g | |
 | Platform | PC / Arduino / ESP32 / Linux / STM32 | |
 
-Use the [official product catalog](https://www.feetechrc.com/products.html) to shortlist models, then verify each exact datasheet.
+Use the [official product catalog](https://www.feetechrc.com/products.html) to shortlist models, then open the [datasheet directory](datasheets/index.md) and verify the exact PDF cover model and revision. A document filename may differ from the sales model.
 
 | Need | Start with | Note |
 | --- | --- | --- |
@@ -44,4 +44,3 @@ Use the [official product catalog](https://www.feetechrc.com/products.html) to s
 
 !!! note
     The catalog changes over time. Final selection must use the current product page, sales confirmation and approved exact-model datasheet.
-

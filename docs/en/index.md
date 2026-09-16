@@ -20,6 +20,12 @@ One path from servo selection, power and FD setup to Python, Arduino, Linux and 
 
     [Open the guide](products/index.md)
 
+-   :material-file-document-multiple: **Servo datasheets**
+
+    Browse the 185 PDFs in the HL, PWM, SC, SM and ST source folders; verify each cover model and revision.
+
+    [Browse datasheets](products/datasheets/index.md)
+
 -   :material-power-plug: **Five-step startup**
 
     Power safely, connect an adapter, discover one device, test slowly, then use an SDK.
@@ -60,4 +66,4 @@ Add mechanical load, multiple servos and safety limits
 - [FEETECH on GitHub](https://github.com/ftservo)
 - [Legacy online documentation](http://doc.feetech.cn/#/f?q=2506a8cb7928)
 - [Downloads](downloads.md)
-
+- [Engineering resources and publication backlog](resources/index.md)

@@ -16,6 +16,13 @@ git submodule update --init --recursive
 
 [打开 Wiki GitHub 仓库](https://github.com/ftservo/ftservo-wiki){ .md-button .md-button--primary }
 
+## 舵机规格书与型号表
+
+- [按 HL、PWM、SC、SM、ST 浏览 185 份规格书](products/datasheets/index.md)
+- [查看原始型号表](https://github.com/ftservo/ftservo-wiki/blob/main/FTServos/%E5%9E%8B%E5%8F%B7.xlsx)
+
+规格书链接指向本仓库的 `FTServos` 原始资料。首次发布这些入口时，维护者须确认 `FTServos` 已提交到远端仓库；型号表与 PDF 编号的映射尚需工程审核。
+
 ## 官方 SDK
 
 | SDK | 在线仓库 |
@@ -33,4 +40,3 @@ git submodule update --init --recursive
 
 !!! tip "为什么不用 GitHub 的 Download ZIP？"
     普通 ZIP 通常不包含 Git 子模块中的 SDK 内容。希望把完整项目交给 AI 或离线开发时，请使用上面的 `--recurse-submodules` 命令；或者分别下载四个 SDK。
-

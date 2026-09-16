@@ -34,6 +34,17 @@ Add Chinese and English together and add both navigation entries. Use lowercase 
 6. Keep numbers, units and warnings identical across languages.
 7. Obtain product-engineering and maintainer review.
 
+## Add exact-model resources
+
+1. Confirm the full sales model, document identifier and approved revision in `FTServos/型号.xlsx` and the PDF. Do not match filenames automatically; obtain product-engineering approval.
+2. Create `docs/products/models/<lowercase-model>.md` and the matching English page under `docs/en/products/models/`. Record source, revision, rated conditions, interface, mounting, matching SDK and safety notes. Source each value from the exact-model PDF.
+3. Add both pages to `mkdocs.yml`, link them from the [datasheet directory](products/datasheets/index.md), and cross-link drawings, curves and examples.
+4. For performance curves, retain raw CSV data, test method and equipment details, then export a readable SVG/PNG. Identify voltage, ambient temperature, sample count, loading method, units and continuous-operation conditions. Distinguish measured points from fits and rated boundaries. Stall torque is not a continuous torque rating.
+5. For CAD, publish STEP and a PDF mounting drawing with units, axes, zero position, holes, spline/horn, cable exit, revision and license. Mechanical engineering should compare dimensions with hardware and the datasheet.
+6. Check matching values and warnings in both languages, run `mkdocs build --strict`, and request product, electrical/mechanical and Wiki-maintainer review.
+
+See the [engineering resources page](resources/index.md) for the publication backlog and acceptance criteria.
+
 ## Submit and publish
 
 ```bash
@@ -59,4 +70,3 @@ git submodule update --remote sdk/FTServo_Python
 git add sdk/FTServo_Python
 git commit -m "chore: update Python SDK"
 ```
-
