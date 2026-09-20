@@ -12,7 +12,7 @@ The HD series targets Microduck and Open Duck-style lightweight bipeds and compa
 <div class="servo-catalog-grid">
 <article class="ft-selector-card servo-catalog-card">
   <div class="ft-selector-card-top">
-    <h3><a href="../../models/hd-1910-c001/">HD-1910-C001</a></h3>
+    <h3><a href="../../models/hd-1910-c001/main/">HD-1910-C001</a></h3>
     <div class="ft-selector-badges"><span>HD</span><span>TTL</span></div>
   </div>
   <p class="ft-selector-identity">HD-1910-C001 · Public information dated 2026-09-07</p>
@@ -21,6 +21,6 @@ The HD series targets Microduck and Open Duck-style lightweight bipeds and compa
     <div><dt>Stall torque</dt><dd>10 kg·cm@6V</dd></div>
   </dl>
   <p class="ft-selector-description">HD series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/hd-1910-c001/">View specifications</a></div>
+  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/hd-1910-c001/main/">View specifications</a></div>
 </article>
 </div>

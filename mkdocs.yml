@@ -8,8 +8,8 @@ edit_uri: edit/main/docs/
 # Model pages are reached from the series catalogs. Keeping them out of the
 # global sidebar avoids a 141-item navigation tree while retaining search.
 not_in_nav: |
-  products/models/*.md
-  en/products/models/*.md
+  products/models/**/*.md
+  en/products/models/**/*.md
 
 theme:
   name: material
@@ -148,6 +148,7 @@ extra_javascript:
   - javascripts/language-redirect.js
   - javascripts/servo-selector-data.js
   - javascripts/servo-selector.js
+  - javascripts/servo-characteristic-chart.js
 extra:
   social:
     - icon: fontawesome/brands/github

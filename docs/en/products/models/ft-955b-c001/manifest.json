@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "model_id": "ft-955b-c001",
+  "model_name": "FT955BL-C001",
+  "family": "FT",
+  "interface": "PWM",
+  "document_revision": "A/0",
+  "sources": [
+    {
+      "type": "existing_catalog",
+      "path": "docs/javascripts/servo-selector-data.js",
+      "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "not_applicable",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

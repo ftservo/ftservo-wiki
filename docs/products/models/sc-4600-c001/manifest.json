@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "model_id": "sc-4600-c001",
+  "model_name": "SCS46",
+  "family": "SCS",
+  "interface": "TTL",
+  "document_revision": "A/0",
+  "sources": [
+    {
+      "type": "existing_catalog",
+      "path": "docs/javascripts/servo-selector-data.js",
+      "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

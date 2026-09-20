@@ -179,6 +179,47 @@
 .md-typeset .ft-selector-more { display: block; margin: 1rem auto 0; }
 .md-typeset .ft-selector-more[hidden] { display: none; }
 .md-typeset .ft-selector-empty { grid-column: 1 / -1; margin: 0; padding: 2.5rem 1rem; text-align: center; color: #765746; border: 1px dashed #ddc3b1; border-radius: 0.8rem; }
+.md-typeset .servo-product-assets { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin: -0.5rem 0 1.4rem; color: #765746; font-size: 0.7rem; }
+.md-typeset .servo-product-assets span:first-child { color: #9a3412; font-weight: 800; }
+.md-typeset .servo-product-assets code { color: #9a3412; border-radius: 0.35rem; background: #ffedd5; padding: 0.15rem 0.35rem; }
+.md-typeset .servo-characteristic-chart { position: relative; min-width: 0; margin: 1rem 0 1.35rem; padding: 1rem; border: 1px solid #dce2d9; border-radius: 0.9rem; color: #202820; background: #fff; box-shadow: 0 6px 18px rgba(42, 54, 43, 0.05); }
+.md-typeset .servo-chart-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.8rem; }
+.md-typeset .servo-chart-title { color: #202820; font-size: 0.9rem; font-weight: 800; }
+.md-typeset .servo-chart-subtitle { margin: 0.25rem 0 0; color: #707970; font-size: 0.65rem; }
+.md-typeset .servo-chart-toggle { flex-shrink: 0; padding: 0.4rem 0.65rem; border: 1px solid #d8ded6; border-radius: 0.45rem; color: #344037; background: #fafbf8; font: inherit; font-size: 0.65rem; cursor: pointer; }
+.md-typeset .servo-chart-toggle[aria-pressed="true"] { border-color: #dfc65e; color: #7a6000; background: #fff8d7; }
+.md-typeset .servo-chart-toggle:disabled { opacity: 0.5; cursor: default; }
+.md-typeset .servo-chart-toggle:focus-visible, .md-typeset .servo-chart-viewport svg:focus-visible { outline: 2px solid #098cd1; outline-offset: 2px; }
+.md-typeset .servo-chart-metrics { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.45rem; margin-bottom: 0.75rem; }
+.md-typeset .servo-chart-card { padding: 0.55rem; border: 1px solid #e2e7de; border-top: 3px solid var(--servo-chart-color); border-radius: 0.5rem; background: #fcfdfb; }
+.md-typeset .servo-chart-card-label { display: block; color: #687168; font-size: 0.65rem; }
+.md-typeset .servo-chart-card-label::before { content: ""; display: inline-block; width: 0.3rem; height: 0.3rem; margin-right: 0.3rem; border-radius: 50%; background: var(--servo-chart-color); }
+.md-typeset .servo-chart-card-reading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem; margin-top: 0.15rem; }
+.md-typeset .servo-chart-card-reading strong { color: #202820; font-size: 1.15rem; font-variant-numeric: tabular-nums; line-height: 1.4; }
+.md-typeset .servo-chart-card-reading span { color: var(--servo-chart-color); font-size: 0.55rem; font-weight: 800; }
+.md-typeset .servo-chart-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; padding: 0.45rem 0.6rem; border: 1px solid #e5e9e1; border-radius: 0.45rem; background: #fafbf8; }
+.md-typeset .servo-chart-legend span { color: var(--servo-chart-color); font-size: 0.65rem; font-weight: 700; }
+.md-typeset .servo-chart-legend span::before { content: ""; display: inline-block; width: 0.7rem; height: 3px; margin-right: 0.3rem; vertical-align: middle; border-radius: 3px; background: currentColor; }
+.md-typeset .servo-chart-viewport { width: 100%; overflow-x: auto; margin-top: 0.4rem; overscroll-behavior-x: contain; }
+.md-typeset .servo-chart-viewport svg { display: block; width: 100%; min-width: 620px; height: auto; touch-action: pan-x pan-y; background: #fff; }
+.md-typeset .servo-chart-tick { font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.md-typeset .servo-chart-axis { font-size: 15px; font-weight: 800; }
+.md-typeset .servo-chart-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.3rem 0.75rem; margin-top: 0.65rem; color: #707970; font-size: 0.6rem; }
+.md-typeset .servo-chart-readout { color: #344037; font-variant-numeric: tabular-nums; }
+.md-typeset .servo-chart-warning { margin: 0.5rem 0 0; color: #a16026; font-size: 0.6rem; }
+.md-typeset .servo-chart-loading, .md-typeset .servo-chart-error { margin: 1rem; color: #707970; font-size: 0.75rem; }
+.md-typeset .servo-chart-error { color: #b45309; }
+.md-typeset .servo-chart-tooltip { position: absolute; z-index: 2; min-width: 10rem; max-width: calc(100% - 16px); padding: 0.6rem 0.7rem; color: #202820; font-size: 0.65rem; border: 1px solid #d8ded6; border-radius: 0.55rem; background: rgba(255, 255, 255, 0.98); box-shadow: 0 8px 24px rgba(42, 54, 43, 0.16); pointer-events: none; }
+.md-typeset .servo-chart-tooltip strong { display: block; margin-bottom: 0.35rem; font-size: 0.7rem; }
+.md-typeset .servo-chart-tooltip-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.2rem; }
+.md-typeset .servo-chart-tooltip-row span { color: #687168; }
+.md-typeset .servo-chart-tooltip-row span::before { content: ""; display: inline-block; width: 0.35rem; height: 0.35rem; margin-right: 0.3rem; border-radius: 50%; background: var(--servo-chart-color); }
+.md-typeset .servo-chart-tooltip b { color: #202820; font-variant-numeric: tabular-nums; }
+.md-typeset .servo-characteristic-chart [hidden] { display: none; }
+@media screen and (max-width: 40em) {
+  .md-typeset .servo-characteristic-chart { padding: 0.65rem; }
+  .md-typeset .servo-chart-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .md-typeset table:not([class]) { border-radius: 0.65rem; overflow: hidden; }
 .md-typeset table:not([class]) th { background: var(--ft-soft); }
 [data-md-color-scheme="slate"] {

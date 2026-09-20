@@ -1,0 +1,1193 @@
+{
+  "schema_version": 1,
+  "serial_number": "SN12212",
+  "model": "HLS3950M",
+  "status": "completed",
+  "started_at": "2026-08-18T19:50:11+08:00",
+  "run_id": "52de9cb91dcd4ab8bda3fb9a95fb0c96",
+  "finished_at": "2026-08-18T19:51:10+08:00",
+  "finish": {
+    "type": "event",
+    "event": "test_finished",
+    "reason": "stall",
+    "peak_torque_kg_cm": 26.4563,
+    "peak_brake_current_command": 109,
+    "final_speed_rpm": 0
+  },
+  "units": {
+    "torque_nm": "N·m",
+    "speed_rpm": "RPM",
+    "current_a": "A",
+    "efficiency_pct": "%",
+    "power_w": "W"
+  },
+  "range_profile": {
+    "display_name": "HLS3950M",
+    "description": "量程依据舵机型号",
+    "axes": {
+      "torque_nm": {
+        "label": "扭矩",
+        "unit": "N·m",
+        "min": 0,
+        "max": 3.0,
+        "step": 0.25,
+        "decimals": 2
+      },
+      "speed_rpm": {
+        "label": "转速",
+        "unit": "RPM",
+        "min": 40,
+        "max": 85,
+        "step": 5,
+        "decimals": 0
+      },
+      "current_a": {
+        "label": "电流",
+        "unit": "A",
+        "min": 0,
+        "max": 2.8,
+        "step": 0.25,
+        "decimals": 2
+      },
+      "efficiency_pct": {
+        "label": "效率",
+        "unit": "%",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "decimals": 0
+      },
+      "power_w": {
+        "label": "功率",
+        "unit": "W",
+        "min": 0,
+        "max": 15,
+        "step": 1.5,
+        "decimals": 1
+      }
+    },
+    "measurement_reference": {
+      "runs_reviewed": 3,
+      "point_counts": [
+        55,
+        55,
+        62
+      ],
+      "observed_max": {
+        "torque_nm": 2.644033,
+        "speed_rpm": 78.55,
+        "current_a": 0.027,
+        "efficiency_pct": 0,
+        "power_w": 12.443
+      },
+      "note": "供电要用2+2接口"
+    }
+  },
+  "chart_file": null,
+  "server_upload": {
+    "status": "disabled",
+    "message": "服务器上传未启用",
+    "attempt": 0,
+    "record_id": null,
+    "database": null,
+    "uploaded_at": null,
+    "server": null,
+    "test_type": null,
+    "fixture_id": null,
+    "client_upload_id": null
+  },
+  "measurements": [
+    {
+      "torque_nm": 0.0369,
+      "speed_rpm": 77.8033,
+      "current_a": 0.106,
+      "efficiency_pct": 22.967,
+      "power_w": 0.2957,
+      "received_at": "2026-08-18T19:50:15+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 0,
+        "torque_kg_cm": 0.376277,
+        "speed_rpm": 77.80334,
+        "speed_pct_of_no_load": 100,
+        "speed_fluctuation_pct": 2.171017,
+        "power_w": 0.295667,
+        "voltage_v": 12.32285,
+        "current_ma": 106,
+        "efficiency_pct": 22.967
+      },
+      "sample_index": 0
+    },
+    {
+      "torque_nm": 0.036367,
+      "speed_rpm": 77.8367,
+      "current_a": 0.106,
+      "efficiency_pct": 21.4382,
+      "power_w": 0.2923,
+      "received_at": "2026-08-18T19:50:16+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 10,
+        "torque_kg_cm": 0.370838,
+        "speed_rpm": 77.83668,
+        "speed_pct_of_no_load": 100.0429,
+        "speed_fluctuation_pct": 1.941265,
+        "power_w": 0.292333,
+        "voltage_v": 12.32148,
+        "current_ma": 106,
+        "efficiency_pct": 21.43824
+      },
+      "sample_index": 1
+    },
+    {
+      "torque_nm": 0.0458,
+      "speed_rpm": 77.3833,
+      "current_a": 0.116,
+      "efficiency_pct": 24.4958,
+      "power_w": 0.3657,
+      "received_at": "2026-08-18T19:50:17+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 20,
+        "torque_kg_cm": 0.467032,
+        "speed_rpm": 77.38333,
+        "speed_pct_of_no_load": 99.46017,
+        "speed_fluctuation_pct": 2.317815,
+        "power_w": 0.365667,
+        "voltage_v": 12.31738,
+        "current_ma": 116,
+        "efficiency_pct": 24.4958
+      },
+      "sample_index": 2
+    },
+    {
+      "torque_nm": 0.101833,
+      "speed_rpm": 78.51,
+      "current_a": 0.135,
+      "efficiency_pct": 48.7248,
+      "power_w": 0.83,
+      "received_at": "2026-08-18T19:50:18+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 30,
+        "torque_kg_cm": 1.038415,
+        "speed_rpm": 78.51001,
+        "speed_pct_of_no_load": 100.9083,
+        "speed_fluctuation_pct": 1.992041,
+        "power_w": 0.83,
+        "voltage_v": 12.31406,
+        "current_ma": 135,
+        "efficiency_pct": 48.72478
+      },
+      "sample_index": 3
+    },
+    {
+      "torque_nm": 0.231767,
+      "speed_rpm": 76.6467,
+      "current_a": 0.25,
+      "efficiency_pct": 57.2567,
+      "power_w": 1.8577,
+      "received_at": "2026-08-18T19:50:22+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 39,
+        "torque_kg_cm": 2.363371,
+        "speed_rpm": 76.64666,
+        "speed_pct_of_no_load": 98.51334,
+        "speed_fluctuation_pct": 4.445961,
+        "power_w": 1.857667,
+        "voltage_v": 12.29551,
+        "current_ma": 250,
+        "efficiency_pct": 57.25669
+      },
+      "sample_index": 4
+    },
+    {
+      "torque_nm": 0.3243,
+      "speed_rpm": 76.8,
+      "current_a": 0.349,
+      "efficiency_pct": 58.765,
+      "power_w": 2.6043,
+      "received_at": "2026-08-18T19:50:23+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 44,
+        "torque_kg_cm": 3.306953,
+        "speed_rpm": 76.8,
+        "speed_pct_of_no_load": 98.71041,
+        "speed_fluctuation_pct": 2.927556,
+        "power_w": 2.604333,
+        "voltage_v": 12.2873,
+        "current_ma": 349,
+        "efficiency_pct": 58.76496
+      },
+      "sample_index": 5
+    },
+    {
+      "torque_nm": 0.401733,
+      "speed_rpm": 72.7666,
+      "current_a": 0.432,
+      "efficiency_pct": 59.5826,
+      "power_w": 3.053,
+      "received_at": "2026-08-18T19:50:24+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 47,
+        "torque_kg_cm": 4.096556,
+        "speed_rpm": 72.76665,
+        "speed_pct_of_no_load": 93.52639,
+        "speed_fluctuation_pct": 1.898006,
+        "power_w": 3.053,
+        "voltage_v": 12.27676,
+        "current_ma": 432,
+        "efficiency_pct": 59.58262
+      },
+      "sample_index": 6
+    },
+    {
+      "torque_nm": 0.451667,
+      "speed_rpm": 73.23,
+      "current_a": 0.471,
+      "efficiency_pct": 58.1467,
+      "power_w": 3.455,
+      "received_at": "2026-08-18T19:50:25+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 49,
+        "torque_kg_cm": 4.605735,
+        "speed_rpm": 73.23,
+        "speed_pct_of_no_load": 94.12193,
+        "speed_fluctuation_pct": 2.766204,
+        "power_w": 3.455,
+        "voltage_v": 12.26855,
+        "current_ma": 471,
+        "efficiency_pct": 58.14669
+      },
+      "sample_index": 7
+    },
+    {
+      "torque_nm": 0.5143,
+      "speed_rpm": 72.8167,
+      "current_a": 0.518,
+      "efficiency_pct": 62.8071,
+      "power_w": 3.9223,
+      "received_at": "2026-08-18T19:50:26+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 51,
+        "torque_kg_cm": 5.244421,
+        "speed_rpm": 72.81666,
+        "speed_pct_of_no_load": 93.59067,
+        "speed_fluctuation_pct": 2.317241,
+        "power_w": 3.922334,
+        "voltage_v": 12.26406,
+        "current_ma": 518,
+        "efficiency_pct": 62.8071
+      },
+      "sample_index": 8
+    },
+    {
+      "torque_nm": 0.565533,
+      "speed_rpm": 71.8167,
+      "current_a": 0.579,
+      "efficiency_pct": 60.4506,
+      "power_w": 4.2493,
+      "received_at": "2026-08-18T19:50:27+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 53,
+        "torque_kg_cm": 5.766857,
+        "speed_rpm": 71.81666,
+        "speed_pct_of_no_load": 92.30537,
+        "speed_fluctuation_pct": 2.556012,
+        "power_w": 4.249333,
+        "voltage_v": 12.25684,
+        "current_ma": 579,
+        "efficiency_pct": 60.45057
+      },
+      "sample_index": 9
+    },
+    {
+      "torque_nm": 0.626167,
+      "speed_rpm": 71.8033,
+      "current_a": 0.62,
+      "efficiency_pct": 61.481,
+      "power_w": 4.703,
+      "received_at": "2026-08-18T19:50:28+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 55,
+        "torque_kg_cm": 6.385146,
+        "speed_rpm": 71.80333,
+        "speed_pct_of_no_load": 92.28824,
+        "speed_fluctuation_pct": 2.643253,
+        "power_w": 4.703001,
+        "voltage_v": 12.25137,
+        "current_ma": 620,
+        "efficiency_pct": 61.48096
+      },
+      "sample_index": 10
+    },
+    {
+      "torque_nm": 0.6822,
+      "speed_rpm": 71.3233,
+      "current_a": 0.689,
+      "efficiency_pct": 61.4059,
+      "power_w": 5.0887,
+      "received_at": "2026-08-18T19:50:29+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 57,
+        "torque_kg_cm": 6.956531,
+        "speed_rpm": 71.32333,
+        "speed_pct_of_no_load": 91.6713,
+        "speed_fluctuation_pct": 1.678523,
+        "power_w": 5.088666,
+        "voltage_v": 12.24336,
+        "current_ma": 689,
+        "efficiency_pct": 61.40588
+      },
+      "sample_index": 11
+    },
+    {
+      "torque_nm": 0.746233,
+      "speed_rpm": 69.34,
+      "current_a": 0.744,
+      "efficiency_pct": 60.311,
+      "power_w": 5.411,
+      "received_at": "2026-08-18T19:50:30+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 59,
+        "torque_kg_cm": 7.609489,
+        "speed_rpm": 69.34,
+        "speed_pct_of_no_load": 89.12213,
+        "speed_fluctuation_pct": 1.861777,
+        "power_w": 5.411001,
+        "voltage_v": 12.23496,
+        "current_ma": 744,
+        "efficiency_pct": 60.31104
+      },
+      "sample_index": 12
+    },
+    {
+      "torque_nm": 0.820567,
+      "speed_rpm": 68.4133,
+      "current_a": 0.801,
+      "efficiency_pct": 57.7963,
+      "power_w": 5.876,
+      "received_at": "2026-08-18T19:50:31+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 61,
+        "torque_kg_cm": 8.367481,
+        "speed_rpm": 68.41334,
+        "speed_pct_of_no_load": 87.93111,
+        "speed_fluctuation_pct": 1.727331,
+        "power_w": 5.876001,
+        "voltage_v": 12.22598,
+        "current_ma": 801,
+        "efficiency_pct": 57.79634
+      },
+      "sample_index": 13
+    },
+    {
+      "torque_nm": 0.858967,
+      "speed_rpm": 69.17,
+      "current_a": 0.817,
+      "efficiency_pct": 61.8793,
+      "power_w": 6.2173,
+      "received_at": "2026-08-18T19:50:32+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 62,
+        "torque_kg_cm": 8.759054,
+        "speed_rpm": 69.17,
+        "speed_pct_of_no_load": 88.90364,
+        "speed_fluctuation_pct": 1.586485,
+        "power_w": 6.217333,
+        "voltage_v": 12.22422,
+        "current_ma": 817,
+        "efficiency_pct": 61.87929
+      },
+      "sample_index": 14
+    },
+    {
+      "torque_nm": 0.8921,
+      "speed_rpm": 68.2167,
+      "current_a": 0.861,
+      "efficiency_pct": 62.1702,
+      "power_w": 6.3703,
+      "received_at": "2026-08-18T19:50:33+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 63,
+        "torque_kg_cm": 9.096921,
+        "speed_rpm": 68.21667,
+        "speed_pct_of_no_load": 87.67833,
+        "speed_fluctuation_pct": 1.707298,
+        "power_w": 6.370333,
+        "voltage_v": 12.21777,
+        "current_ma": 861,
+        "efficiency_pct": 62.17024
+      },
+      "sample_index": 15
+    },
+    {
+      "torque_nm": 0.955767,
+      "speed_rpm": 67.7667,
+      "current_a": 0.91,
+      "efficiency_pct": 59.2051,
+      "power_w": 6.78,
+      "received_at": "2026-08-18T19:50:34+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 65,
+        "torque_kg_cm": 9.746143,
+        "speed_rpm": 67.76667,
+        "speed_pct_of_no_load": 87.09995,
+        "speed_fluctuation_pct": 1.898361,
+        "power_w": 6.779999,
+        "voltage_v": 12.21309,
+        "current_ma": 910,
+        "efficiency_pct": 59.2051
+      },
+      "sample_index": 16
+    },
+    {
+      "torque_nm": 1.0317,
+      "speed_rpm": 67.0133,
+      "current_a": 0.98,
+      "efficiency_pct": 62.0589,
+      "power_w": 7.2293,
+      "received_at": "2026-08-18T19:50:35+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 67,
+        "torque_kg_cm": 10.52045,
+        "speed_rpm": 67.01334,
+        "speed_pct_of_no_load": 86.1317,
+        "speed_fluctuation_pct": 2.053091,
+        "power_w": 7.229333,
+        "voltage_v": 12.20039,
+        "current_ma": 980,
+        "efficiency_pct": 62.0589
+      },
+      "sample_index": 17
+    },
+    {
+      "torque_nm": 1.071133,
+      "speed_rpm": 67.0733,
+      "current_a": 1.054,
+      "efficiency_pct": 59.1234,
+      "power_w": 7.513,
+      "received_at": "2026-08-18T19:50:36+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 68,
+        "torque_kg_cm": 10.92256,
+        "speed_rpm": 67.07333,
+        "speed_pct_of_no_load": 86.20882,
+        "speed_fluctuation_pct": 2.302562,
+        "power_w": 7.513,
+        "voltage_v": 12.1959,
+        "current_ma": 1054,
+        "efficiency_pct": 59.12337
+      },
+      "sample_index": 18
+    },
+    {
+      "torque_nm": 1.114633,
+      "speed_rpm": 66.1733,
+      "current_a": 1.035,
+      "efficiency_pct": 60.3807,
+      "power_w": 7.7153,
+      "received_at": "2026-08-18T19:50:37+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 69,
+        "torque_kg_cm": 11.36614,
+        "speed_rpm": 66.17332,
+        "speed_pct_of_no_load": 85.05204,
+        "speed_fluctuation_pct": 2.240203,
+        "power_w": 7.715332,
+        "voltage_v": 12.19316,
+        "current_ma": 1035,
+        "efficiency_pct": 60.38071
+      },
+      "sample_index": 19
+    },
+    {
+      "torque_nm": 1.149233,
+      "speed_rpm": 66.3733,
+      "current_a": 1.164,
+      "efficiency_pct": 54.8735,
+      "power_w": 7.985,
+      "received_at": "2026-08-18T19:50:38+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 70,
+        "torque_kg_cm": 11.71896,
+        "speed_rpm": 66.37332,
+        "speed_pct_of_no_load": 85.30909,
+        "speed_fluctuation_pct": 2.256588,
+        "power_w": 7.985001,
+        "voltage_v": 12.18047,
+        "current_ma": 1164,
+        "efficiency_pct": 54.8735
+      },
+      "sample_index": 20
+    },
+    {
+      "torque_nm": 1.1606,
+      "speed_rpm": 65.6067,
+      "current_a": 1.086,
+      "efficiency_pct": 59.4855,
+      "power_w": 7.96,
+      "received_at": "2026-08-18T19:50:39+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 71,
+        "torque_kg_cm": 11.83487,
+        "speed_rpm": 65.60667,
+        "speed_pct_of_no_load": 84.32372,
+        "speed_fluctuation_pct": 2.392628,
+        "power_w": 7.959999,
+        "voltage_v": 12.18242,
+        "current_ma": 1086,
+        "efficiency_pct": 59.48552
+      },
+      "sample_index": 21
+    },
+    {
+      "torque_nm": 1.260667,
+      "speed_rpm": 64.42,
+      "current_a": 1.238,
+      "efficiency_pct": 55.7292,
+      "power_w": 8.495,
+      "received_at": "2026-08-18T19:50:40+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 73,
+        "torque_kg_cm": 12.85527,
+        "speed_rpm": 64.42001,
+        "speed_pct_of_no_load": 82.79851,
+        "speed_fluctuation_pct": 2.016724,
+        "power_w": 8.495,
+        "voltage_v": 12.1752,
+        "current_ma": 1238,
+        "efficiency_pct": 55.72918
+      },
+      "sample_index": 22
+    },
+    {
+      "torque_nm": 1.299,
+      "speed_rpm": 63.7467,
+      "current_a": 1.209,
+      "efficiency_pct": 59.0522,
+      "power_w": 8.667,
+      "received_at": "2026-08-18T19:50:41+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 74,
+        "torque_kg_cm": 13.24616,
+        "speed_rpm": 63.74667,
+        "speed_pct_of_no_load": 81.93307,
+        "speed_fluctuation_pct": 1.38485,
+        "power_w": 8.667001,
+        "voltage_v": 12.17188,
+        "current_ma": 1209,
+        "efficiency_pct": 59.05219
+      },
+      "sample_index": 23
+    },
+    {
+      "torque_nm": 1.321333,
+      "speed_rpm": 63.38,
+      "current_a": 1.247,
+      "efficiency_pct": 56.7979,
+      "power_w": 8.766,
+      "received_at": "2026-08-18T19:50:42+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 75,
+        "torque_kg_cm": 13.4739,
+        "speed_rpm": 63.37999,
+        "speed_pct_of_no_load": 81.46179,
+        "speed_fluctuation_pct": 1.778337,
+        "power_w": 8.766,
+        "voltage_v": 12.17051,
+        "current_ma": 1247,
+        "efficiency_pct": 56.79788
+      },
+      "sample_index": 24
+    },
+    {
+      "torque_nm": 1.392633,
+      "speed_rpm": 62.67,
+      "current_a": 1.383,
+      "efficiency_pct": 56.491,
+      "power_w": 9.134,
+      "received_at": "2026-08-18T19:50:43+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 77,
+        "torque_kg_cm": 14.20096,
+        "speed_rpm": 62.67001,
+        "speed_pct_of_no_load": 80.54925,
+        "speed_fluctuation_pct": 1.583468,
+        "power_w": 9.134001,
+        "voltage_v": 12.14688,
+        "current_ma": 1383,
+        "efficiency_pct": 56.49102
+      },
+      "sample_index": 25
+    },
+    {
+      "torque_nm": 1.421533,
+      "speed_rpm": 62.6967,
+      "current_a": 1.393,
+      "efficiency_pct": 55.4927,
+      "power_w": 9.3207,
+      "received_at": "2026-08-18T19:50:44+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 78,
+        "torque_kg_cm": 14.49566,
+        "speed_rpm": 62.69667,
+        "speed_pct_of_no_load": 80.58353,
+        "speed_fluctuation_pct": 1.567735,
+        "power_w": 9.320666,
+        "voltage_v": 12.14727,
+        "current_ma": 1393,
+        "efficiency_pct": 55.49272
+      },
+      "sample_index": 26
+    },
+    {
+      "torque_nm": 1.478067,
+      "speed_rpm": 61.1667,
+      "current_a": 1.427,
+      "efficiency_pct": 54.9888,
+      "power_w": 9.465,
+      "received_at": "2026-08-18T19:50:45+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 80,
+        "torque_kg_cm": 15.07214,
+        "speed_rpm": 61.16667,
+        "speed_pct_of_no_load": 78.61703,
+        "speed_fluctuation_pct": 1.431715,
+        "power_w": 9.465,
+        "voltage_v": 12.14492,
+        "current_ma": 1427,
+        "efficiency_pct": 54.98879
+      },
+      "sample_index": 27
+    },
+    {
+      "torque_nm": 1.525734,
+      "speed_rpm": 61.2833,
+      "current_a": 1.477,
+      "efficiency_pct": 54.6198,
+      "power_w": 9.7713,
+      "received_at": "2026-08-18T19:50:46+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 82,
+        "torque_kg_cm": 15.55821,
+        "speed_rpm": 61.28334,
+        "speed_pct_of_no_load": 78.76698,
+        "speed_fluctuation_pct": 1.904467,
+        "power_w": 9.771334,
+        "voltage_v": 12.13535,
+        "current_ma": 1477,
+        "efficiency_pct": 54.61977
+      },
+      "sample_index": 28
+    },
+    {
+      "torque_nm": 1.581933,
+      "speed_rpm": 60.23,
+      "current_a": 1.527,
+      "efficiency_pct": 55.2333,
+      "power_w": 9.9733,
+      "received_at": "2026-08-18T19:50:47+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 84,
+        "torque_kg_cm": 16.13129,
+        "speed_rpm": 60.23,
+        "speed_pct_of_no_load": 77.41312,
+        "speed_fluctuation_pct": 1.84278,
+        "power_w": 9.973334,
+        "voltage_v": 12.1293,
+        "current_ma": 1527,
+        "efficiency_pct": 55.23329
+      },
+      "sample_index": 29
+    },
+    {
+      "torque_nm": 1.655066,
+      "speed_rpm": 60.1933,
+      "current_a": 1.566,
+      "efficiency_pct": 54.4105,
+      "power_w": 10.417,
+      "received_at": "2026-08-18T19:50:48+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 86,
+        "torque_kg_cm": 16.87704,
+        "speed_rpm": 60.19333,
+        "speed_pct_of_no_load": 77.366,
+        "speed_fluctuation_pct": 1.910346,
+        "power_w": 10.417,
+        "voltage_v": 12.12344,
+        "current_ma": 1566,
+        "efficiency_pct": 54.41051
+      },
+      "sample_index": 30
+    },
+    {
+      "torque_nm": 1.688466,
+      "speed_rpm": 59.33,
+      "current_a": 1.622,
+      "efficiency_pct": 51.4422,
+      "power_w": 10.4827,
+      "received_at": "2026-08-18T19:50:49+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 87,
+        "torque_kg_cm": 17.21763,
+        "speed_rpm": 59.33,
+        "speed_pct_of_no_load": 76.25637,
+        "speed_fluctuation_pct": 2.280084,
+        "power_w": 10.48267,
+        "voltage_v": 12.1166,
+        "current_ma": 1622,
+        "efficiency_pct": 51.44218
+      },
+      "sample_index": 31
+    },
+    {
+      "torque_nm": 1.731333,
+      "speed_rpm": 58.42,
+      "current_a": 1.711,
+      "efficiency_pct": 49.9772,
+      "power_w": 10.5813,
+      "received_at": "2026-08-18T19:50:50+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 88,
+        "torque_kg_cm": 17.65475,
+        "speed_rpm": 58.42001,
+        "speed_pct_of_no_load": 75.08677,
+        "speed_fluctuation_pct": 1.871405,
+        "power_w": 10.58133,
+        "voltage_v": 12.10371,
+        "current_ma": 1711,
+        "efficiency_pct": 49.97718
+      },
+      "sample_index": 32
+    },
+    {
+      "torque_nm": 1.774533,
+      "speed_rpm": 57.76,
+      "current_a": 1.741,
+      "efficiency_pct": 50.029,
+      "power_w": 10.7203,
+      "received_at": "2026-08-18T19:50:51+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 89,
+        "torque_kg_cm": 18.09527,
+        "speed_rpm": 57.76,
+        "speed_pct_of_no_load": 74.23846,
+        "speed_fluctuation_pct": 1.991281,
+        "power_w": 10.72034,
+        "voltage_v": 12.10098,
+        "current_ma": 1741,
+        "efficiency_pct": 50.02895
+      },
+      "sample_index": 33
+    },
+    {
+      "torque_nm": 1.810933,
+      "speed_rpm": 57.6433,
+      "current_a": 1.754,
+      "efficiency_pct": 50.3787,
+      "power_w": 10.928,
+      "received_at": "2026-08-18T19:50:52+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 90,
+        "torque_kg_cm": 18.46645,
+        "speed_rpm": 57.64334,
+        "speed_pct_of_no_load": 74.08852,
+        "speed_fluctuation_pct": 1.655854,
+        "power_w": 10.928,
+        "voltage_v": 12.09766,
+        "current_ma": 1754,
+        "efficiency_pct": 50.37869
+      },
+      "sample_index": 34
+    },
+    {
+      "torque_nm": 1.8642,
+      "speed_rpm": 56.7333,
+      "current_a": 1.819,
+      "efficiency_pct": 51.7996,
+      "power_w": 11.0757,
+      "received_at": "2026-08-18T19:50:53+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 91,
+        "torque_kg_cm": 19.00962,
+        "speed_rpm": 56.73334,
+        "speed_pct_of_no_load": 72.9189,
+        "speed_fluctuation_pct": 1.746255,
+        "power_w": 11.07567,
+        "voltage_v": 12.08828,
+        "current_ma": 1819,
+        "efficiency_pct": 51.79961
+      },
+      "sample_index": 35
+    },
+    {
+      "torque_nm": 1.893867,
+      "speed_rpm": 55.85,
+      "current_a": 1.866,
+      "efficiency_pct": 50.7346,
+      "power_w": 11.0717,
+      "received_at": "2026-08-18T19:50:54+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 92,
+        "torque_kg_cm": 19.31214,
+        "speed_rpm": 55.85,
+        "speed_pct_of_no_load": 71.78355,
+        "speed_fluctuation_pct": 1.45057,
+        "power_w": 11.07166,
+        "voltage_v": 12.08398,
+        "current_ma": 1866,
+        "efficiency_pct": 50.7346
+      },
+      "sample_index": 36
+    },
+    {
+      "torque_nm": 1.995733,
+      "speed_rpm": 54.6133,
+      "current_a": 1.935,
+      "efficiency_pct": 48.7067,
+      "power_w": 11.4017,
+      "received_at": "2026-08-18T19:50:55+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 94,
+        "torque_kg_cm": 20.35089,
+        "speed_rpm": 54.61334,
+        "speed_pct_of_no_load": 70.19408,
+        "speed_fluctuation_pct": 1.520072,
+        "power_w": 11.40167,
+        "voltage_v": 12.07461,
+        "current_ma": 1935,
+        "efficiency_pct": 48.70665
+      },
+      "sample_index": 37
+    },
+    {
+      "torque_nm": 2.040567,
+      "speed_rpm": 53.9133,
+      "current_a": 2.018,
+      "efficiency_pct": 46.7411,
+      "power_w": 11.4977,
+      "received_at": "2026-08-18T19:50:56+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 95,
+        "torque_kg_cm": 20.80807,
+        "speed_rpm": 53.91333,
+        "speed_pct_of_no_load": 69.29436,
+        "speed_fluctuation_pct": 1.565879,
+        "power_w": 11.49766,
+        "voltage_v": 12.06484,
+        "current_ma": 2018,
+        "efficiency_pct": 46.74115
+      },
+      "sample_index": 38
+    },
+    {
+      "torque_nm": 2.078167,
+      "speed_rpm": 53.4433,
+      "current_a": 2.029,
+      "efficiency_pct": 47.3648,
+      "power_w": 11.64,
+      "received_at": "2026-08-18T19:50:57+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 96,
+        "torque_kg_cm": 21.19148,
+        "speed_rpm": 53.44334,
+        "speed_pct_of_no_load": 68.69029,
+        "speed_fluctuation_pct": 1.70983,
+        "power_w": 11.64,
+        "voltage_v": 12.05996,
+        "current_ma": 2029,
+        "efficiency_pct": 47.36477
+      },
+      "sample_index": 39
+    },
+    {
+      "torque_nm": 2.115067,
+      "speed_rpm": 52.66,
+      "current_a": 2.072,
+      "efficiency_pct": 46.313,
+      "power_w": 11.6663,
+      "received_at": "2026-08-18T19:50:58+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 97,
+        "torque_kg_cm": 21.56776,
+        "speed_rpm": 52.65999,
+        "speed_pct_of_no_load": 67.68346,
+        "speed_fluctuation_pct": 1.489408,
+        "power_w": 11.66633,
+        "voltage_v": 12.05703,
+        "current_ma": 2072,
+        "efficiency_pct": 46.31303
+      },
+      "sample_index": 40
+    },
+    {
+      "torque_nm": 2.150233,
+      "speed_rpm": 52.2767,
+      "current_a": 2.119,
+      "efficiency_pct": 47.1798,
+      "power_w": 11.761,
+      "received_at": "2026-08-18T19:50:59+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 98,
+        "torque_kg_cm": 21.92636,
+        "speed_rpm": 52.27666,
+        "speed_pct_of_no_load": 67.19077,
+        "speed_fluctuation_pct": 1.372207,
+        "power_w": 11.761,
+        "voltage_v": 12.05313,
+        "current_ma": 2119,
+        "efficiency_pct": 47.17983
+      },
+      "sample_index": 41
+    },
+    {
+      "torque_nm": 2.1744,
+      "speed_rpm": 51.5867,
+      "current_a": 2.175,
+      "efficiency_pct": 46.3129,
+      "power_w": 11.7427,
+      "received_at": "2026-08-18T19:51:00+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 99,
+        "torque_kg_cm": 22.17279,
+        "speed_rpm": 51.58667,
+        "speed_pct_of_no_load": 66.30393,
+        "speed_fluctuation_pct": 1.16572,
+        "power_w": 11.74267,
+        "voltage_v": 12.05195,
+        "current_ma": 2175,
+        "efficiency_pct": 46.3129
+      },
+      "sample_index": 42
+    },
+    {
+      "torque_nm": 2.225667,
+      "speed_rpm": 51.0433,
+      "current_a": 2.223,
+      "efficiency_pct": 45.4076,
+      "power_w": 11.8943,
+      "received_at": "2026-08-18T19:51:01+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 101,
+        "torque_kg_cm": 22.69557,
+        "speed_rpm": 51.04333,
+        "speed_pct_of_no_load": 65.60558,
+        "speed_fluctuation_pct": 1.084998,
+        "power_w": 11.89433,
+        "voltage_v": 12.03672,
+        "current_ma": 2223,
+        "efficiency_pct": 45.40762
+      },
+      "sample_index": 43
+    },
+    {
+      "torque_nm": 2.323266,
+      "speed_rpm": 49.3767,
+      "current_a": 2.361,
+      "efficiency_pct": 42.8279,
+      "power_w": 11.9983,
+      "received_at": "2026-08-18T19:51:02+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 103,
+        "torque_kg_cm": 23.69081,
+        "speed_rpm": 49.37667,
+        "speed_pct_of_no_load": 63.46343,
+        "speed_fluctuation_pct": 1.333849,
+        "power_w": 11.99833,
+        "voltage_v": 12.01582,
+        "current_ma": 2361,
+        "efficiency_pct": 42.82791
+      },
+      "sample_index": 44
+    },
+    {
+      "torque_nm": 2.374366,
+      "speed_rpm": 48.2433,
+      "current_a": 2.38,
+      "efficiency_pct": 41.9465,
+      "power_w": 11.9953,
+      "received_at": "2026-08-18T19:51:03+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 104,
+        "torque_kg_cm": 24.21189,
+        "speed_rpm": 48.24334,
+        "speed_pct_of_no_load": 62.00677,
+        "speed_fluctuation_pct": 1.164599,
+        "power_w": 11.99534,
+        "voltage_v": 12.02012,
+        "current_ma": 2380,
+        "efficiency_pct": 41.94648
+      },
+      "sample_index": 45
+    },
+    {
+      "torque_nm": 2.420533,
+      "speed_rpm": 47.5267,
+      "current_a": 2.472,
+      "efficiency_pct": 40.4399,
+      "power_w": 12.048,
+      "received_at": "2026-08-18T19:51:04+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 105,
+        "torque_kg_cm": 24.68266,
+        "speed_rpm": 47.52667,
+        "speed_pct_of_no_load": 61.08564,
+        "speed_fluctuation_pct": 1.083333,
+        "power_w": 12.048,
+        "voltage_v": 12.00391,
+        "current_ma": 2472,
+        "efficiency_pct": 40.43991
+      },
+      "sample_index": 46
+    },
+    {
+      "torque_nm": 2.4632,
+      "speed_rpm": 46.7467,
+      "current_a": 2.462,
+      "efficiency_pct": 40.2872,
+      "power_w": 12.0497,
+      "received_at": "2026-08-18T19:51:05+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 106,
+        "torque_kg_cm": 25.11774,
+        "speed_rpm": 46.74667,
+        "speed_pct_of_no_load": 60.08311,
+        "speed_fluctuation_pct": 1.172642,
+        "power_w": 12.04967,
+        "voltage_v": 12.00762,
+        "current_ma": 2462,
+        "efficiency_pct": 40.28718
+      },
+      "sample_index": 47
+    },
+    {
+      "torque_nm": 2.495467,
+      "speed_rpm": 46.06,
+      "current_a": 2.516,
+      "efficiency_pct": 40.0866,
+      "power_w": 12.037,
+      "received_at": "2026-08-18T19:51:06+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 107,
+        "torque_kg_cm": 25.44678,
+        "speed_rpm": 46.06,
+        "speed_pct_of_no_load": 59.20055,
+        "speed_fluctuation_pct": 1.106444,
+        "power_w": 12.037,
+        "voltage_v": 11.99707,
+        "current_ma": 2516,
+        "efficiency_pct": 40.08663
+      },
+      "sample_index": 48
+    },
+    {
+      "torque_nm": 2.594467,
+      "speed_rpm": 44.3633,
+      "current_a": 2.591,
+      "efficiency_pct": 38.7553,
+      "power_w": 12.0497,
+      "received_at": "2026-08-18T19:51:07+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 109,
+        "torque_kg_cm": 26.4563,
+        "speed_rpm": 44.36334,
+        "speed_pct_of_no_load": 57.01984,
+        "speed_fluctuation_pct": 0.714588,
+        "power_w": 12.04967,
+        "voltage_v": 11.99023,
+        "current_ma": 2591,
+        "efficiency_pct": 38.75533
+      },
+      "sample_index": 49
+    },
+    {
+      "torque_nm": 1.829867,
+      "speed_rpm": 38.4,
+      "current_a": 2.076,
+      "efficiency_pct": 32.148,
+      "power_w": 7.3727,
+      "received_at": "2026-08-18T19:51:08+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 110,
+        "torque_kg_cm": 18.65952,
+        "speed_rpm": 38.40001,
+        "speed_pct_of_no_load": 49.35522,
+        "speed_fluctuation_pct": 0,
+        "power_w": 7.372667,
+        "voltage_v": 12.04688,
+        "current_ma": 2076,
+        "efficiency_pct": 32.14803
+      },
+      "sample_index": 50
+    },
+    {
+      "torque_nm": 2.318433,
+      "speed_rpm": 0.0,
+      "current_a": 2.23,
+      "efficiency_pct": 0.0,
+      "power_w": 0.0,
+      "received_at": "2026-08-18T19:51:10+08:00",
+      "raw": {
+        "type": "measurement",
+        "brake_current_command": 111,
+        "torque_kg_cm": 23.64153,
+        "speed_rpm": 0,
+        "speed_pct_of_no_load": 0,
+        "speed_fluctuation_pct": 0,
+        "power_w": 0,
+        "voltage_v": 12.03613,
+        "current_ma": 2230,
+        "efficiency_pct": 0
+      },
+      "sample_index": 51
+    }
+  ]
+}
