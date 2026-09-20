@@ -2,78 +2,71 @@
 
 # FEETECH Developer Wiki
 
-One path from servo selection, power and FD setup to Python, Arduino, Linux and STM32 development.
+Find your servo, connect your controller, and design the mechanism with the matching documents.
 
-[Choose a servo](products/index.md){ .md-button .md-button--primary }
-[Run your first test](getting-started/index.md){ .md-button }
+<form class="ft-model-search" action="products/" method="get">
+  <label for="home-model-query">Already have a servo? Search the full model or label name.</label>
+  <div><input id="home-model-query" type="search" name="model_query" placeholder="ST3215 / HLS3950M / HD-1910" required><button type="submit">Find model</button></div>
+</form>
+
+[Help me choose a model](products/index.md) · [First-time setup](getting-started/index.md)
 
 </div>
 
-!!! warning "Identify the exact model first"
-    Models in one series may use different voltages, interfaces, travel or memory tables. Before applying power or writing a register, check the product label, model specifications and matching memory table.
+## What are you working on?
 
 <div class="grid cards" markdown>
 
--   :material-tune-variant: **Product selection**
+-   :material-magnify: **Find or compare a servo**
 
-    Filter by interface, voltage, torque, speed, dimensions, feedback and application.
+    Search model names, compare interfaces and check available documents.
 
-    [Open the guide](products/index.md)
+    [Find a model](products/index.md)
 
--   :material-file-document-multiple: **Product specifications**
+-   :material-power-plug: **Connect my first servo**
 
-    Browse product cards and detailed specifications by HD, HL, PWM, SC, SM and ST series.
+    Choose the bus or PWM setup path and complete a minimal unloaded test.
 
-    [Browse product specifications](products/datasheets/index.md)
+    [Choose a setup path](getting-started/index.md)
 
--   :material-power-plug: **Five-step startup**
+-   :material-console: **Write control software**
 
-    Power safely, connect an adapter, discover one device, test slowly, then use an SDK.
-
-    [Start here](getting-started/index.md)
-
--   :material-console: **Tools and SDKs**
-
-    FD plus official Python, Arduino/ESP32, Linux C++ and STM32 HAL SDKs.
+    Choose a platform and matching application layer; read first, then validate motion.
 
     [Choose a platform](sdk/index.md)
 
--   :material-robot-industrial: **Develop with AI**
+-   :material-ruler-square: **Design a bracket or joint**
 
-    Give an AI tool the complete repository, exact hardware facts and a safe verification plan.
+    Locate drawings and STEP, confirm datums, zero and full-travel clearance.
 
-    [AI workflow](ai-development.md)
+    [Plan the assembly](mechanical/index.md)
+
+-   :material-wrench: **Diagnose a problem**
+
+    Start with the symptom and keep a reproducible support record.
+
+    [Find your symptom](troubleshooting.md)
+
+-   :material-download: **Get engineering files**
+
+    Find model files, document status, offline packages and SDKs.
+
+    [Browse downloads](downloads.md)
 
 </div>
 
-## Recommended path
+## Keep the model and document revision together
 
-<div class="ft-route">
-  <a class="ft-route-step" href="products/">
-    <span class="ft-route-number">01</span>
-    <span class="ft-route-copy"><strong>Confirm the model and ratings</strong><small>Verify interface, input voltage, torque, dimensions and model specifications</small></span>
-  </a>
-  <a class="ft-route-step" href="getting-started/wiring/">
-    <span class="ft-route-number">02</span>
-    <span class="ft-route-copy"><strong>Build a safe test setup</strong><small>Use one servo, the correct adapter, independent power and a shared ground</small></span>
-  </a>
-  <a class="ft-route-step" href="getting-started/first-motion/">
-    <span class="ft-route-number">03</span>
-    <span class="ft-route-copy"><strong>Run the first motion</strong><small>Discover in FD, assign a unique ID and test unloaded at low speed</small></span>
-  </a>
-  <a class="ft-route-step" href="sdk/">
-    <span class="ft-route-number">04</span>
-    <span class="ft-route-copy"><strong>Use the matching SDK</strong><small>Choose by family and platform; read status before commanding motion</small></span>
-  </a>
-  <a class="ft-route-step" href="troubleshooting/">
-    <span class="ft-route-number">05</span>
-    <span class="ft-route-copy"><strong>Integrate the real mechanism</strong><small>Add load, multiple servos, limits and fault protection progressively</small></span>
-  </a>
-</div>
+The full model suffix matters. A family guide is an entry point, not proof that every model uses the same settings. Model pages show the status of drawings, pinouts, CAD, examples and test files; “Not supplied” remains an outstanding item.
 
-## Official resources
+[Identify families and interfaces](products/series.md) · [Look up protocol and parameters](reference/index.md) · [Develop with AI](ai-development.md)
 
-- [FEETECH website](https://www.feetechrc.com/)
-- [FEETECH on GitHub](https://github.com/ftservo)
-- [Legacy online documentation](http://doc.feetech.cn/#/f?q=2506a8cb7928)
-- [Downloads](downloads.md)
+## From first connection to a working mechanism
+
+1. **Identify** the physical model, interface and matching document revision.
+2. **Validate unloaded** using the [bus or PWM route](getting-started/index.md).
+3. **Integrate software** with a recorded configuration and matching example.
+4. **Validate the assembly** using the [mechanical handoff](mechanical/index.md).
+5. **Record and diagnose** the actual result with the [support checklist](troubleshooting.md#support).
+
+[Official website](https://www.feetechrc.com/) · [FEETECH GitHub](https://github.com/ftservo) · [Legacy documents](http://doc.feetech.cn/#/f?q=2506a8cb7928)

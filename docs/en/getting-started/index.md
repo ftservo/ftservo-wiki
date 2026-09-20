@@ -1,26 +1,26 @@
-# Get Started
+# Get started
 
-This flow is for a first test with a FEETECH bus servo. For an ordinary PWM servo, use a compatible PWM controller and the exact model's pulse range.
+Confirm the full physical model first, then choose the matching control path. Software bring-up and mechanical design have separate entry points.
 
-## Prepare
+[Find my model](../products/index.md){ .md-button .md-button--primary }
+[I am designing mechanics](../mechanical/index.md){ .md-button }
 
-- One identified FEETECH bus servo
-- A USB adapter matching its TTL or RS485 interface
-- An independent supply meeting the model's voltage and current requirements
-- Data-capable USB and bus cables
-- A Windows PC for FD, or a Python/Arduino/Linux/STM32 development device
+## Choose a control path
 
-## First power-up
+| Interface confirmed by the model documents | Start here | First completion check |
+| --- | --- | --- |
+| TTL / RS-485 bus | [Bus servo setup](bus.md) | Confirm one servo's identity and read-only communication before a small motion |
+| PWM | [PWM servo setup](pwm.md) | Confirm pinout and signal settings before neutral/stop and small-response checks |
+| Model or interface unknown | [Model and family identification](../products/series.md) | Obtain documents matching the physical suffix before experimental wiring or commands |
 
-1. Remove the mechanical load and connect only one servo.
-2. With power off, verify polarity, signal and ground pins.
-3. Connect the adapter to the computer, then enable servo power.
-4. Discover the device with FD or the SDK Ping example at the expected baud rate.
-5. Record the original ID and baud rate. Keep only this servo connected while changing its ID.
-6. Clear the shaft's motion envelope and command a small move at low speed.
+## Keep a result at each stage
 
-!!! danger
-    Do not power the motor from a computer USB port. Reverse polarity, overvoltage, prolonged stall, collisions and duplicate IDs can damage the servo, adapter or computer.
+| Stage | Required input | Record on completion | If blocked |
+| --- | --- | --- | --- |
+| Model identification | Label, suffix and document revision | Physical/document identity mapping | Request missing information from the model page |
+| Wiring | Supply, pinout, adapter/controller and ground | Wiring photos and actual configuration | [Power and wiring](wiring.md) |
+| Minimal validation | No load, clearance, confirmed control settings | Identity/PWM response, faults and stop method | [Troubleshooting by symptom](../troubleshooting.md) |
+| Software integration | Validated configuration and matching example | Platform, code revision and reproducible record | [Software development](../sdk/index.md) |
+| Mechanical integration | Drawings, model, zero and permitted travel | Assembly and clearance record | [Mechanics and assembly](../mechanical/index.md) |
 
-Next: [Power and wiring](wiring.md) · [FD](../tools/fd.md) · [First motion](first-motion.md) · [SDKs](../sdk/index.md)
-
+Some models currently have only a specification summary; dedicated pinouts, CAD or examples are not supplied. Check the model's resource status rather than substituting generic settings for missing information.

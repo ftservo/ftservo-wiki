@@ -2,78 +2,71 @@
 
 # FEETECH 开发者 Wiki
 
-从舵机选型、供电接线和 FD 调试，到 Python、Arduino、Linux 与 STM32 开发的一站式入口。
+找到你的舵机，接入控制程序，完成机械装配；每一步都能回到对应型号和资料。
 
-[选择舵机](products/index.md){ .md-button .md-button--primary }
-[第一次运行](getting-started/index.md){ .md-button }
+<form class="ft-model-search" action="products/" method="get">
+  <label for="home-model-query">已经拿到舵机？输入完整型号或标签名称。</label>
+  <div><input id="home-model-query" type="search" name="model_query" placeholder="ST3215 / HLS3950M / HD-1910" required><button type="submit">查找型号</button></div>
+</form>
+
+[还没选型，先看产品](products/index.md) · [第一次使用，从这里开始](getting-started/index.md)
 
 </div>
 
-!!! warning "先确认具体型号"
-    同系列的不同型号也可能使用不同电压、接口、行程或内存表。上电和写寄存器前，请核对产品标签、型号规格页及对应内存表。
+## 你现在要做什么？
 
 <div class="grid cards" markdown>
 
--   :material-tune-variant: **产品选型**
+-   :material-magnify: **选择或查找舵机**
 
-    按接口、电压、扭矩、速度、尺寸、反馈和应用筛选。
+    搜索型号、核对后缀，查看接口、参数与资料状态。
 
-    [打开选型指南](products/index.md)
+    [查找型号](products/index.md)
 
--   :material-file-document-multiple: **产品规格**
+-   :material-power-plug: **连接第一只舵机**
 
-    按 HD、HL、PWM、SC、SM、ST 系列浏览产品卡片和详细参数。
+    区分总线与 PWM，准备接线并完成空载最小验证。
 
-    [浏览产品规格](products/datasheets/index.md)
+    [选择入门路线](getting-started/index.md)
 
--   :material-power-plug: **五步快速开始**
+-   :material-console: **编写控制程序**
 
-    正确供电、连接调试板、搜索设备、低速测试、再接入 SDK。
-
-    [开始连接](getting-started/index.md)
-
--   :material-console: **软件与 SDK**
-
-    FD 上位机以及 Python、Arduino/ESP32、Linux C++、STM32 HAL SDK。
+    按平台和系列找到教程，先读状态，再验证动作。
 
     [选择开发平台](sdk/index.md)
 
--   :material-robot-industrial: **让 AI 帮你开发**
+-   :material-ruler-square: **设计支架或关节**
 
-    下载包含文档和 SDK 的完整仓库，向 AI 提供具体型号与目标，生成可验证的项目。
+    取得安装图与 STEP，核对基准、零位和全行程净空。
 
-    [查看 AI 开发流程](ai-development.md)
+    [查看结构设计流程](mechanical/index.md)
+
+-   :material-wrench: **解决当前问题**
+
+    从找不到设备、不动作、抖动或装配干涉开始排查。
+
+    [按现象排查](troubleshooting.md)
+
+-   :material-download: **下载工程资料**
+
+    查看真实附件、资料版本、离线资料包与官方 SDK。
+
+    [查看下载资源](downloads.md)
 
 </div>
 
-## 推荐路线
+## 型号、后缀与资料版本一起确认
 
-<div class="ft-route">
-  <a class="ft-route-step" href="products/">
-    <span class="ft-route-number">01</span>
-    <span class="ft-route-copy"><strong>确认型号与电气规格</strong><small>核对接口、输入电压、扭矩、尺寸和型号规格</small></span>
-  </a>
-  <a class="ft-route-step" href="getting-started/wiring/">
-    <span class="ft-route-number">02</span>
-    <span class="ft-route-copy"><strong>搭建安全测试环境</strong><small>单舵机、匹配的调试板、独立电源并可靠共地</small></span>
-  </a>
-  <a class="ft-route-step" href="getting-started/first-motion/">
-    <span class="ft-route-number">03</span>
-    <span class="ft-route-copy"><strong>完成第一次运动</strong><small>FD 搜索设备、设置唯一 ID，并进行低速空载测试</small></span>
-  </a>
-  <a class="ft-route-step" href="sdk/">
-    <span class="ft-route-number">04</span>
-    <span class="ft-route-copy"><strong>接入匹配的 SDK</strong><small>按系列和控制平台选择示例，先读状态再写入动作</small></span>
-  </a>
-  <a class="ft-route-step" href="troubleshooting/">
-    <span class="ft-route-number">05</span>
-    <span class="ft-route-copy"><strong>扩展到真实机构</strong><small>逐步加入机械负载、多舵机、限位和故障保护</small></span>
-  </a>
-</div>
+系列教程提供接入入口，具体型号参数仍需正式资料支持。型号页会列出针序、安装图、CAD、示例和测试文件的状态；“待补充”就是尚未取得的资料。
 
-## 官方入口
+[识别系列与接口](products/series.md) · [查协议与参数](reference/index.md) · [让 AI 协助开发](ai-development.md)
 
-- [飞特官网](https://www.feetechrc.com/)
-- [飞特 GitHub](https://github.com/ftservo)
-- [原在线文档](http://doc.feetech.cn/#/f?q=2506a8cb7928)
-- [下载中心](downloads.md)
+## 从首次连接走到真实机构
+
+1. **确认身份**：实物完整型号、接口和对应资料版本。
+2. **空载验证**：走匹配的[总线或 PWM 入门路线](getting-started/index.md)。
+3. **程序接入**：使用匹配示例，保存实际配置与验证记录。
+4. **机构装配**：完成[零位、行程与装配交接](mechanical/index.md)。
+5. **记录结果**：异常时按[支持信息清单](troubleshooting.md#support)复现和反馈。
+
+[飞特官网](https://www.feetechrc.com/) · [飞特 GitHub](https://github.com/ftservo) · [原在线文档](http://doc.feetech.cn/#/f?q=2506a8cb7928)

@@ -6,7 +6,7 @@ repo_url: https://github.com/ftservo/ftservo-wiki
 edit_uri: edit/main/docs/
 
 # Model pages are reached from the series catalogs. Keeping them out of the
-# global sidebar avoids a 141-item navigation tree while retaining search.
+# global sidebar avoids a large model navigation tree while retaining search.
 not_in_nav: |
   products/models/**/*.md
   en/products/models/**/*.md
@@ -51,10 +51,16 @@ plugins:
           build: true
           nav:
             - 首页: index.md
-            - 产品选型:
+            - 开始使用:
+                - getting-started/index.md
+                - 总线舵机入门: getting-started/bus.md
+                - PWM 舵机入门: getting-started/pwm.md
+                - 供电与接线: getting-started/wiring.md
+                - 第一次运动: getting-started/first-motion.md
+            - 产品与选型:
                 - products/index.md
                 - 系列与接口: products/series.md
-                - 产品规格:
+                - 型号目录:
                     - products/datasheets/index.md
                     - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
@@ -62,34 +68,39 @@ plugins:
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
-            - 快速开始:
-                - getting-started/index.md
-                - 供电与接线: getting-started/wiring.md
-                - 第一次运动: getting-started/first-motion.md
-            - 通信与调试:
-                - 通信协议: reference/protocol.md
-                - SCSCL 内存表: reference/memory-scscl.md
-                - SMS / STS 内存表: reference/memory-sms-sts.md
-                - HLS 内存表: reference/memory-hls.md
-                - 调试板与转换器: tools/adapters.md
-                - FD 调试软件: tools/fd.md
-            - SDK:
+            - 程序开发:
                 - sdk/index.md
                 - Python: sdk/python.md
                 - Arduino / ESP32: sdk/arduino.md
                 - Linux / STM32 HAL: sdk/linux-stm32.md
-            - 常见问题: troubleshooting.md
-            - 下载中心: downloads.md
-            - 用 AI 开发: ai-development.md
+                - FD 搜索与配置: tools/fd.md
+                - 调试板与适配器: tools/adapters.md
+                - 用 AI 开发: ai-development.md
+            - 结构与装配:
+                - mechanical/index.md
+            - 协议与参数:
+                - reference/index.md
+                - 数据包协议: reference/protocol.md
+                - SCSCL 内存表: reference/memory-scscl.md
+                - SMS / STS 内存表: reference/memory-sms-sts.md
+                - HLS 内存表: reference/memory-hls.md
+            - 故障排查: troubleshooting.md
+            - 资料下载: downloads.md
         - locale: en
           name: English
           build: true
           nav:
             - Home: index.md
-            - Product Selection:
+            - Get Started:
+                - getting-started/index.md
+                - Bus servo setup: getting-started/bus.md
+                - PWM servo setup: getting-started/pwm.md
+                - Power and wiring: getting-started/wiring.md
+                - First motion: getting-started/first-motion.md
+            - Products and Selection:
                 - products/index.md
-                - Series and Interfaces: products/series.md
-                - Product Specifications:
+                - Families and interfaces: products/series.md
+                - Model Catalog:
                     - products/datasheets/index.md
                     - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
@@ -97,25 +108,24 @@ plugins:
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
-            - Get Started:
-                - getting-started/index.md
-                - Power and Wiring: getting-started/wiring.md
-                - First Motion: getting-started/first-motion.md
-            - Communication and Setup:
-                - Bus Protocol: reference/protocol.md
-                - SCSCL Memory Table: reference/memory-scscl.md
-                - SMS / STS Memory Table: reference/memory-sms-sts.md
-                - HLS Memory Table: reference/memory-hls.md
-                - Debug Boards and Adapters: tools/adapters.md
-                - FD Servo Utility: tools/fd.md
-            - SDKs:
+            - Software Development:
                 - sdk/index.md
                 - Python: sdk/python.md
                 - Arduino / ESP32: sdk/arduino.md
                 - Linux / STM32 HAL: sdk/linux-stm32.md
+                - FD discovery and setup: tools/fd.md
+                - Debug boards and adapters: tools/adapters.md
+                - Develop with AI: ai-development.md
+            - Mechanics and Assembly:
+                - mechanical/index.md
+            - Protocol and Parameters:
+                - reference/index.md
+                - Packet protocol: reference/protocol.md
+                - SCSCL memory table: reference/memory-scscl.md
+                - SMS / STS memory table: reference/memory-sms-sts.md
+                - HLS memory table: reference/memory-hls.md
             - Troubleshooting: troubleshooting.md
             - Downloads: downloads.md
-            - Develop with AI: ai-development.md
 
 markdown_extensions:
   - admonition
@@ -143,12 +153,13 @@ validation:
   anchors: warn
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css?v=79bf665764
 extra_javascript:
-  - javascripts/language-redirect.js
-  - javascripts/servo-selector-data.js
-  - javascripts/servo-selector.js
-  - javascripts/servo-characteristic-chart.js
+  - javascripts/language-redirect.js?v=31c7d2eb41
+  - javascripts/servo-selector-data.js?v=533591c0af
+  - javascripts/servo-selector.js?v=a89d21a438
+  - javascripts/developer-context.js?v=6a26876af4
+  - javascripts/servo-characteristic-chart.js?v=b1088300e5
 extra:
   social:
     - icon: fontawesome/brands/github

@@ -12,6 +12,20 @@
   --md-typeset-a-color: #c2410c;
 }
 .md-header { background: linear-gradient(105deg, #a93800, var(--ft-orange) 58%, #f48c06); }
+.ft-model-search { margin: 1.2rem 0 0.8rem; }
+.ft-model-search label { display: block; margin-bottom: 0.4rem; font-weight: 700; font-size: 0.75rem; }
+.ft-model-search > div { display: flex; gap: 0.5rem; }
+.ft-model-search input { min-width: 0; flex: 1; padding: 0.6rem 0.75rem; border: 1px solid #cfa98b; border-radius: 0.45rem; background: #fff; color: #352318; font: inherit; }
+.ft-model-search button { padding: 0.6rem 0.85rem; border-radius: 0.45rem; background: #a93800; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.ft-model-search :focus-visible, .ft-model-context :focus-visible { outline: 3px solid #098cd1; outline-offset: 3px; }
+.md-typeset .ft-model-context { margin: 1rem 0; padding: 0.75rem 0.9rem; border: 1px solid #ddc3b1; border-left: 4px solid var(--ft-orange); border-radius: 0.5rem; font-size: 0.7rem; background: var(--ft-soft); color: #352318; }
+.md-typeset .ft-model-context p { margin: 0.3rem 0 0.5rem; }
+.ft-model-context-actions { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; align-items: baseline; }
+.ft-model-context-actions a, .ft-model-context-actions button { padding: 0.25rem 0; }
+.md-typeset .ft-model-context-actions button { font: inherit; text-decoration: underline; cursor: pointer; color: #654b3d; }
+[data-md-color-scheme="slate"] .md-typeset .ft-model-context { background: #352118; color: #fff7ed; border-color: #825332; }
+[data-md-color-scheme="slate"] .md-typeset .ft-model-context-actions button { color: #f6e8de; }
+@media screen and (max-width: 30em) { .ft-model-search > div { flex-direction: column; } }
 .md-typeset h1, .md-typeset h2, .md-typeset h3 { font-weight: 750; letter-spacing: -0.02em; }
 .md-typeset .ft-hero {
   margin: 0 0 1.8rem;

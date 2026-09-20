@@ -81,7 +81,7 @@
     metrics.className = "ft-selector-metrics";
     const metricRows = [
       [copy.voltage, item.voltage == null ? copy.pending : item.voltageLabel || `${item.voltage} V`],
-      [copy.torque, item.torque == null ? copy.pending : item.torqueLabel || item.torqueLabel || item.torqueLabel || item.torqueLabel || `${item.torque} kg·cm`],
+      [copy.torque, item.torque == null ? copy.pending : item.torqueLabel || `${item.torque} kg·cm`],
     ];
     metricRows.forEach(([label, value]) => {
       const wrapper = document.createElement("div");
@@ -129,11 +129,40 @@
     addOptions(controls.family, data.map((item) => item.family));
     addVoltageOptions(controls.voltage, data);
 
+    // Accept label/catalog spellings with or without hyphens and spaces while
+    // preserving every suffix as a distinct result.
+    const normalize = (value) => String(value).normalize("NFKC").toLowerCase().replace(/[\s\-_·]/g, "");
+    const parameters = { query: "model_query", interface: "interface", family: "family", voltage: "voltage", torque: "torque", sort: "sort" };
+    function readFilters() {
+      const query = new URLSearchParams(window.location.search);
+      Object.entries(parameters).forEach(([key, parameter]) => {
+        const fallback = key === "sort" ? "model" : "";
+        const value = query.get(parameter) ?? fallback;
+        const control = controls[key];
+        control.value = control.tagName === "SELECT" && ![...control.options].some((option) => option.value === value) ? fallback : value;
+      });
+      visible = PAGE_SIZE;
+    }
+    function writeFilters() {
+      const url = new URL(window.location.href);
+      Object.entries(parameters).forEach(([key, parameter]) => {
+        const value = controls[key].value;
+        if (!value || (key === "sort" && value === "model")) url.searchParams.delete(parameter);
+        else url.searchParams.set(parameter, value);
+      });
+      window.history.replaceState(null, "", url);
+      // Keep language links shareable, including opening them in a new tab.
+      document.querySelectorAll('.md-select__link[hreflang]').forEach((link) => {
+        const target = new URL(link.href);
+        target.search = url.search;
+        link.href = target.href;
+      });
+    }
     function filteredData() {
-      const query = controls.query.value.trim().toLowerCase();
+      const query = normalize(controls.query.value.trim());
       const minTorque = controls.torque.value === "" ? null : Number(controls.torque.value);
       const filtered = data.filter((item) => {
-        const haystack = `${item.model} ${item.coverModel} ${item.family} ${item.interface} ${item.description}`.toLowerCase();
+        const haystack = normalize(`${item.model} ${item.coverModel} ${item.family} ${item.interface} ${item.description}`);
         if (query && !haystack.includes(query)) return false;
         if (controls.interface.value && item.interface !== controls.interface.value) return false;
         if (controls.family.value && item.family !== controls.family.value) return false;
@@ -169,6 +198,7 @@
     Object.values(controls).forEach((control) => {
       control.addEventListener(control.tagName === "INPUT" ? "input" : "change", () => {
         visible = PAGE_SIZE;
+        writeFilters();
         render();
       });
     });
@@ -176,9 +206,12 @@
     reset.addEventListener("click", () => {
       Object.entries(controls).forEach(([key, control]) => { control.value = key === "sort" ? "model" : ""; });
       visible = PAGE_SIZE;
+      writeFilters();
       render();
       controls.query.focus();
     });
+    window.addEventListener("popstate", () => { readFilters(); render(); });
+    readFilters();
     render();
   }
 
