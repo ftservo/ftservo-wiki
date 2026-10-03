@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "model_id": "sm-8524-c002",
+  "model_name": "SM-8524-C002",
+  "family": "SMS",
+  "interface": "RS-485",
+  "document_revision": "A/0",
+  "sources": [
+    {
+      "type": "official_product_page",
+      "url": "https://www.feetech.cn/24v-85kgcm-modbus-rtu舵机",
+      "captured": "2026-10-02",
+      "note": "主要规格转录自飞特官网该型号产品页参数表 / Specifications transcribed from the model's official FEETECH product page."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/24v-85kgcm-modbus-rtu舵机",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "SM-8524-C002"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "available",
+      "path": "images/drawing.webp",
+      "revision": null,
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20220318/6378319111587299877959153.png"
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

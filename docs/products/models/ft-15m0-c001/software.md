@@ -4,6 +4,22 @@
 
 控制接口：**PWM**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/15kgcm-digital-180-degree-dual-axis-robot-steering-gear-ft15m) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 控制信号 Command signal: | Pulse width modification |
+| 控制系统类型 Control System Type: | Digital comparator |
+| 脉冲宽度范围Pulse width range | 500→2500 μsec |
+| 中立位置Neutral position | 1500 μsec |
+| 旋转方向Rotating direction | 逆时针 Counterclockwise(在500→2500 μsec) |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## PWM 控制路线
 
 使用主控的定时器 / PWM 外设。串行总线 SDK 示例、设备 ID、波特率和寄存器表不适用于本页列出的 PWM 接口。

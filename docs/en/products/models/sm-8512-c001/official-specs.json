@@ -1,0 +1,147 @@
+{
+  "model": "SM-8512-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/12v-85-kgcm-serial-rs485-bus-steering-gear",
+  "table": [
+    [
+      "SM-8512-C001是12V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，外接不锈钢主舵盘。堵转扭矩85kg.cm，能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、机器人等行业领域。 SM-8512-C001 is 12V serial port smart bus servo，all aluminum alloy shell is adopted、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，external connect stainless steel main servo horn. The stall torque is 85kg.cm，can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-8512-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "12V 85kg.cm 串行RS485总线舵机/12V 85kg. cm Serial Control RS485 Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：62mm B：34mm C：47mm"
+    ],
+    [
+      "重量 Weight:",
+      "215± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "15T(7.6mm)"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Aluminium"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "40CM"
+    ],
+    [
+      "马达 Motor:",
+      "Brushless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "12V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.167sec/60degree@12V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "540 mA@12V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "85kg.cm@12V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "28kg.cm@12V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "7.9A@12V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half Duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "360° (when 0~ 4095)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作 电流）,Temperature（工作温度）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM-8512-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [
+    [
+      "输入电压下限：官网表为 12.0，所挂载 PDF 为 9.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMin: website table gives 12.0, attached PDF gives 9.0; a new filter value is withheld pending revision confirmation."
+    ],
+    [
+      "输入电压上限：官网表为 12.0，所挂载 PDF 为 24.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMax: website table gives 12.0, attached PDF gives 24.0; a new filter value is withheld pending revision confirmation."
+    ]
+  ],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage"
+  ]
+}

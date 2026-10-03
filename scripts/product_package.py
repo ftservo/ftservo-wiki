@@ -28,10 +28,10 @@ KINDS = {
     "test_conditions": ("测试记录与条件说明", "Test record and conditions"),
 }
 APP_LAYERS = {
-    "SCS": ("scscl", "SCSCL", "memory-scscl.md"),
-    "STS": ("sms_sts", "SMS_STS", "memory-sms-sts.md"),
-    "SMS": ("sms_sts", "SMS_STS", "memory-sms-sts.md"),
-    "HLS": ("hls", "HLSCL", "memory-hls.md"),
+    "SCS": ("scscl", "SCSCL", "parameter/memory-scscl.md"),
+    "STS": ("sms_sts", "SMS_STS", "parameter/memory-sts.md"),
+    "SMS": ("sms_sts", "SMS_STS", "parameter/memory-sms.md"),
+    "HLS": ("hls", "HLSCL", "parameter/memory-hls.md"),
 }
 
 
@@ -79,8 +79,8 @@ def new_manifest(model_id: str, name: str, family: str, interface: str, revision
 
 def resource_section(manifest: dict, en: bool) -> str:
     title = "Resources and document status" if en else "资料下载与完整性"
-    note = ("Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings."
-            if en else "仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。")
+    note = ("Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings."
+            if en else "本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。")
     lines = [BEGIN, f"## {title} {{#resources}}", "", note, "",
              "| Resource | Status / file | Revision |" if en else "| 资料 | 状态 / 文件 | 版本 |",
              "| --- | --- | --- |"]
@@ -90,6 +90,9 @@ def resource_section(manifest: dict, en: bool) -> str:
         status = item["status"]
         if status == "available":
             link = f"[{PurePosixPath(item['path']).name}]({quote(item['path'], safe='/')})"
+        elif item.get("external_only") and item.get("source", "").startswith("https://"):
+            label_text = "View on manufacturer website (online)" if en else "官网查看（需联网）"
+            link = f"[{label_text}]({item['source']})"
         elif status == "not_applicable":
             link = "Not applicable" if en else "不适用"
         else:
@@ -172,7 +175,7 @@ Before outputting a signal, obtain this model's connector orientation/pinout, si
         else:
             route = "## Choose the application layer\n\n"
             if layer:
-                route += f"Family reference: **{family}** → Python `{layer[0]}`; Arduino / C++ `{layer[1]}`. Read the [family memory-table guide](../../../reference/{layer[2]}) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.\n\n"
+                route += f"Family reference: **{family}** → Python `{layer[0]}`; Arduino / C++ `{layer[1]}`. Read the [family memory-table guide](../../../reference/{layer[2]}) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.\n\n"
             else:
                 route += "This package does not yet establish an SDK application layer or memory-table version for this model. A TTL interface alone does not establish compatibility with SCSCL, SMS_STS or HLSCL. Obtain the model/firmware documentation before selecting a class or sending register writes.\n\n"
             route += """| Development environment | Existing guide |
@@ -230,7 +233,7 @@ Share this record with [technical support](main.md#support) when requesting a mo
     else:
         route = "## 选择应用层\n\n"
         if layer:
-            route += f"系列入口：**{family}** → Python `{layer[0]}`；Arduino / C++ `{layer[1]}`。参阅[系列内存表指南](../../../reference/{layer[2]})与[数据包协议](../../../reference/protocol.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。\n\n"
+            route += f"系列入口：**{family}** → Python `{layer[0]}`；Arduino / C++ `{layer[1]}`。参阅[系列内存表指南](../../../reference/{layer[2]})与[数据包协议](../../../reference/protocol/index.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。\n\n"
         else:
             route += "当前资料包尚未确认本型号适用的 SDK 应用层及内存表版本。TTL 接口本身不能证明兼容 SCSCL、SMS_STS 或 HLSCL；取得对应型号和固件的资料后，再选择类或发送寄存器写入。\n\n"
         route += """| 开发环境 | 已有指南 |

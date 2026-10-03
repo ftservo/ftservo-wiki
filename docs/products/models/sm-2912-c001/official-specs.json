@@ -1,0 +1,135 @@
+{
+  "model": "SM-2912-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/24v40kg-rs485-serial-bus-steering-gear",
+  "table": [
+    [
+      "SM-2912-C001是兼容12V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，6T输出头。堵转扭矩22kg.cm，能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、物流、机器人等行业领域。 SM-2912-C001 is compatible 12V/24V serial port smart bus servo，all aluminum alloy shell、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，6T output shaft. The stall torque is 22kg.cm，can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, logistics, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-2912-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "12V 22kg RS485串行总线舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 OperatinTemperatureRange:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40mm B：28mm C：42.3mm"
+    ],
+    [
+      "重量 Weight:",
+      "102± 1g"
+    ],
+    [
+      "出力轴 Horn Type:",
+      "6T/OD4.75mm"
+    ],
+    [
+      "减速比Gear Ratio:",
+      "1/241"
+    ],
+    [
+      "齿轮材质 Gear material:",
+      "钢 Steel"
+    ],
+    [
+      "外壳材质 Case material:",
+      "Aluminium"
+    ],
+    [
+      "马达 Motor:",
+      "Brushless Motor"
+    ],
+    [
+      "轴承类型 Bearing type:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No Limiter"
+    ],
+    [
+      "控制信号 Command signal：",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half Duplex Asynchronous Serial Communication"
+    ],
+    [
+      "波特率Baud rate：",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "电源电压voltage：",
+      "12V"
+    ],
+    [
+      "空载速度±10% No Load Speed：",
+      "0.092sec/60°(109RPM)"
+    ],
+    [
+      "空载电流Running Current:",
+      "≦150mA"
+    ],
+    [
+      "堵转扭矩Stall torque：",
+      "22kg.cm"
+    ],
+    [
+      "堵转电流Stall Current (at locked):",
+      "2.2A"
+    ],
+    [
+      "静态电流Quiescent Current：",
+      "22mA"
+    ],
+    [
+      "额定负载 Rated Torgue:",
+      "7kg.cm"
+    ],
+    [
+      "额定电流 Rated Current:",
+      "700mA"
+    ],
+    [
+      "Kt常数:",
+      "10kg.cm/A"
+    ],
+    [
+      "电子分辨率 Resolution:",
+      "0.088°(360°/4096)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM2912-C001-串型规格书-20260321.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

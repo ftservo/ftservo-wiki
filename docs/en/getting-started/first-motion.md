@@ -14,4 +14,4 @@ This page covers bus servos with a confirmed application layer. Use FD or a matc
 
 Resolution, center, range, multi-turn mode and direction encoding vary. Values such as `0`, `512`, `2048` or `4095` have no safe meaning without the exact model's memory table. Confirm raw range, counts per travel/revolution, operating mode, signed direction representation and mechanical soft limits before converting angles.
 
-Continue with the [SDK guide](../sdk/index.md) or [protocol reference](../reference/protocol.md).
+Continue with the [SDK guide](../sdk/index.md) or [protocol reference](../reference/protocol/index.md).

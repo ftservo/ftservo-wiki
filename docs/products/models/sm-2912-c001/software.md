@@ -4,9 +4,24 @@
 
 控制接口：**RS-485**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/24v40kg-rs485-serial-bus-steering-gear) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 控制信号 Command signal： | Digital Packet |
+| 协议类型 Protocol Type: | Half Duplex Asynchronous Serial Communication |
+| 波特率Baud rate： | 38400bps ~ 1 Mbps |
+| 电子分辨率 Resolution: | 0.088°(360°/4096) |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## 选择应用层
 
-系列入口：**SMS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/memory-sms-sts.md)与[数据包协议](../../../reference/protocol.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
+系列入口：**SMS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/parameter/memory-sms.md)与[数据包协议](../../../reference/protocol/index.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
 
 | 开发环境 | 已有指南 |
 | --- | --- |

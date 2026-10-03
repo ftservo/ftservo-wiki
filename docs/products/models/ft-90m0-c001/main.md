@@ -1,5 +1,7 @@
 # FT-90M0-C001
 
+![FT-90M0-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `FT-90M0-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 PWM 系列目录](../../datasheets/pwm.md){ .md-button }
@@ -35,10 +37,27 @@
 
 控制信号与首次调试请继续查看本型号的[程序开发](software.md)；PWM 型号不使用串行总线 SDK。
 
+<!-- official-brochure:start -->
+## 官网宣传册补充参数
+
+[飞特官网 2024 宣传册](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf) · PDF 14
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 尺寸 Size | 23.2X12.1X25.25mm  |
+| 重量 Weight | 13.5g |
+| 最高转速 No load speed | 0.1sec/60°@6V |
+| 堵转扭矩 Peak stall torque | 2.3kg.cm@6V |
+| 电机类型 Motor | 铁芯电机    |
+| 齿轮类型 Gear type | 铜齿 |
+| 外壳材质 Case | PC 塑料 |
+| 转动角度 Running degree | 280°(1000-2000μsec)      |
+<!-- official-brochure:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |

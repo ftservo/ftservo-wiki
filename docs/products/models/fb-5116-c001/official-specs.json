@@ -1,0 +1,135 @@
+{
+  "model": "FB-5116-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/6v-15kg-digital-steering-gear",
+  "table": [
+    [
+      "型 号 Model：",
+      "FB-5116-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 15公斤数字舵机/6V 15kg.cm Digital Servo"
+    ],
+    [
+      "配套双模式切换板Supporting dual-mode switching debug board",
+      "FRS (点击跳转Click to jump)"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40.1mm B：20.1mm C：38.9mm"
+    ],
+    [
+      "重量 Weight:",
+      "65± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜 Copper"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic, POM"
+    ],
+    [
+      "外壳 Case:",
+      "PA+Fiberglass"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4.8V-8.4V"
+    ],
+    [
+      "静态电流 Idle current(at stopped)",
+      "5mA"
+    ],
+    [
+      "空载速度 No-load speed:",
+      "0.2sec/60°@6V"
+    ],
+    [
+      "空载电流 Running current(at no load) :",
+      "150mA @6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "15.5kg.cm@6V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "5kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1.7A@6V"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "300° (at 500→2500μsec)"
+    ],
+    [
+      "旋转方向 Rotating direction",
+      "逆时针 Counterclockwise(在1500 →2000 μsec)"
+    ],
+    [
+      "反馈电压 Feedback Voltage",
+      "900usec-2.60V/1500usec- 1.66V/2100us-0.72V"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FB-5116-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [
+    [
+      "输入电压下限：官网表为 4.8，所挂载 PDF 为 4.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMin: website table gives 4.8, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation."
+    ]
+  ],
+  "filled_fields": [
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

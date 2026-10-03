@@ -4,9 +4,27 @@
 
 Control interface: **TTL**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/84v40kg-serial-bus-steering-gear) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Command signal | Bus Packet Communication TTL level |
+| Protocol Type | Half duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 300°(when 0～1023)士5 |
+| Feedback | Load, Speed, Input Voltage |
+| Position Sensor Resolution | Potentiometer(300°/1024)士5 |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **SCS** → Python `scscl`; Arduino / C++ `SCSCL`. Read the [family memory-table guide](../../../reference/memory-scscl.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **SCS** → Python `scscl`; Arduino / C++ `SCSCL`. Read the [family memory-table guide](../../../reference/parameter/memory-scscl.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

@@ -1,0 +1,140 @@
+{
+  "model": "SC-1250-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/74v-25kgcm-plastic-aluminum-medium-shell-steel-teeth-180-degree-single-shaft-ttl-serial-port-steering-gear",
+  "table": [
+    [
+      "SC-1250-C001是7.4V 25KG串口总线舵机，采用铝合金中框，利于散热，金属齿轮箱、铁芯电机、飞特自主研发的TTL控制板，高品质电位器，25T型输出头。堵转扭矩25kg.cm，有效控制角度为220°，具有伺服模式和连续转电机工作模式，反馈位置、速度、电压、温度、负载参数，从而实现过载保护。适合应用于教学、创客、低频小扭矩的应用场景。 SC-1250-C001 is 7.4V 25kg serial bus smart servo，aluminum alloy middle case is used to facilitate heat dissipation，metal gearbox, Feetech self researched and developed TTL control board，high quality potentiometer，25T output shaft. The stall torque is 25kg.cm，the effective control angle is 220°，has servo mode and continuous rotation motor working mode，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for the application scenarios of teaching, maker, low frequency and small torque."
+    ],
+    [
+      "型 号 Model：",
+      "SC-1250-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 25KG.CM塑料铝中壳钢齿180度单轴TTL串口舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40.0mm B：20.0mm C：43mm"
+    ],
+    [
+      "重量 Weight:",
+      "63.5± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/OD5.9mm"
+    ],
+    [
+      "外壳 Case:",
+      "PA+Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "15CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4-8.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.151sec/60°@7.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "250 mA@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "25kg.cm@7.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "8.3kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "3.5A@7.4V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "220°(when 0～1024)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Temperature （工作温度）"
+    ],
+    [
+      "位置传感器分辨率 Position Sensor Resolution:",
+      "0.215°(220°/1024)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SC-1250-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "shaft",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage"
+  ]
+}

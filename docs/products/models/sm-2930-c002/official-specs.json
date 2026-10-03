@@ -1,0 +1,127 @@
+{
+  "model": "SM-2930-C002",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/503950",
+  "table": [
+    [
+      "SM-2930-C002是兼容24V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，6T输出头。堵转扭矩30kg.cm（注：此版本为内部限流版本），能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、物流、机器人等行业领域。 SM-2930-C002 is compatible 24V serial port smart bus servo，all aluminum alloy shell、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，6T output shaft. The stall torque is 30kg.cm（please note：this version is internal current limiting version），can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, logistics, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-2930-C002"
+    ],
+    [
+      "产品名称 Product Name:",
+      "24V 30kg.cm金属壳钢齿360度串口舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-40℃～80℃"
+    ],
+    [
+      "运行温度 OperatinTemperatureRange:",
+      "-40℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40mm B：28mm C：92.2mm"
+    ],
+    [
+      "重量 Weight:",
+      "230± 5g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No Limit"
+    ],
+    [
+      "轴承类型 Bearing type：",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "大扭矩High torque：",
+      "30Kg.cm"
+    ],
+    [
+      "宽工作电压Wide operating voltage：",
+      "16.8V-25.2V 供电"
+    ],
+    [
+      "马达 Motor:",
+      "Brushless Motor"
+    ],
+    [
+      "高分辨率High resolution：",
+      "12 位编码器（360 度 0.088°）"
+    ],
+    [
+      "伺服控制模式Servo control mode:",
+      "转动范围0-360°及多圈任意[敏感词]角度"
+    ],
+    [
+      "控制信号 Command signal：",
+      "Digital Packet"
+    ],
+    [
+      "ID范围 ID range：",
+      "254个ID地址可选"
+    ],
+    [
+      "波特率Baud rate：",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "额定负载 Rated Torgue：",
+      "10kg.cm"
+    ],
+    [
+      "额定电流 Rated Current：",
+      "600mA"
+    ],
+    [
+      "空载速度No Load Speed：",
+      "0.083sec/60°(120RPM)@24V"
+    ],
+    [
+      "静态电流Quiescent Current：",
+      "24mA@24V"
+    ],
+    [
+      "空载电流No-load current：",
+      "≦120mA@24V"
+    ],
+    [
+      "堵转电流Stall current：",
+      "1.6A@24V"
+    ],
+    [
+      "分辨率Resolution [deg/pulse]：",
+      "0.088°(360°/4096)"
+    ],
+    [
+      "堵转扭矩Stall torque：",
+      "30kg.cm@24V"
+    ],
+    [
+      "反馈 Feedback：",
+      "Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM-2930-C002.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "continuous",
+    "torqueVoltage"
+  ]
+}

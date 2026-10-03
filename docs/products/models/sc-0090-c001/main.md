@@ -1,5 +1,7 @@
 # SC-0090-C001
 
+![SC-0090-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `SC-0090-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 SC 系列目录](../../datasheets/sc.md){ .md-button }
@@ -35,17 +37,69 @@
 
 通信指令和软件集成方法请继续查看 [SDK 指南](../../../sdk/index.md)以及对应产品系列的协议资料。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/6v-23kg-serial-bus-steering-gear_65522) · 核对日期：2026-10-02；页面型号：SCS0009。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | SCS0009 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 Operating Temperature Range: | -15℃～70℃ |
+| 尺寸 Size: | A：23.2mm B：12.1mm C：25.25mm |
+| 重量 Weight: | 13.2± 1g |
+| 齿轮类型 Gear type: | 铜Copper+钢Steel |
+| 机构极限角度 Limit angle: | No limit |
+| 轴承 Bearing: | NO |
+| 出力轴 Horn gear spline: | 20T/OD3.95mm |
+| 摆臂 Horn type: | Plastic,POM |
+| 外壳 Case: | PC |
+| 舵机线 Connector wire: | 15cm |
+| 马达 Motor: | Core Motor（铁芯马达） |
+| 工作电压Operating Voltage Range: | 4-7.4V |
+| 空载速度 No load speed: | 0.1sec/60°@6V |
+| 空载电流 Runnig current(at no load) : | 150 mA@6V |
+| 堵转扭矩 Peak stall torque: | 2.3kg.cm@6V |
+| 额定扭矩 Rated torque: | 0.7kg.cm@6V |
+| 堵转电流 Stall current: | 1.0A@6V |
+| 控制信号 Command signal: | Digital Packet |
+| 协议类型 Protocol Type: | Half duplex Asynchronous Serial Communication |
+| ID范围 ID range: | 0-253 |
+| 通读速率 Communication Speed: | 38400bps ~ 1 Mbps |
+| 旋转角度 Running degree: | 300°(when 0～1024) |
+| 反馈 Feedback: | Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压）,Temperature（工作温度） |
+| 位置传感器分辨率 Position Sensor Resolution: | 0.293°(300°/1024) |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771873533994748433885.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M2.0X4 | 4 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![SC-0090-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771873533994748433885.pdf) | A/0 |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

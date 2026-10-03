@@ -1,0 +1,140 @@
+{
+  "model": "SC-2304-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/580399",
+  "table": [
+    [
+      "SC-2304-C001是6V 3.0KG串口总线舵机，采用铝壳，钢齿轮箱、空芯杯电机、飞特自主研发的TTL控制板，高品质电位器，25T型输出头。堵转扭矩3.0kg.cm，有效控制角度为270±5°，具有伺服模式和连续转电机工作模式，反馈位置、速度、电压、温度、负载参数，从而实现过载保护。适合应用于教学、创客、机器人关节等小扭力传动应用场景。 SC-2304-C001 is a 6V 3.0kg serial bus servo. It features an aluminum housing, steel gearbox, coreless motor, FEETECH self-developed TTL control board, high-precision potentiometer and 25T output spline. It delivers a stall torque of 3.0kg·cm with an effective rotation angle of 270±5°. Supporting both servo mode and continuous rotation motor mode, it feeds back position, speed, voltage, temperature and load data to realize overload protection. It is ideal for low-torque transmission scenarios including STEM education, maker projects and robot joints."
+    ],
+    [
+      "型 号 Model：",
+      "SC-2304-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 3.0kg.cm铝壳钢齿轮空芯杯串行总线舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-20℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-10℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：23.5mm B：8mm C：23.4mm"
+    ],
+    [
+      "重量 Weight:",
+      "17± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Metal Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "15T/3.9mm"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminum"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "15±0.5CM"
+    ],
+    [
+      "马达 Motor:",
+      "Coreless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4.8V-7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.078sec/60°(129RPM)@6V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "≤80mA@6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "3.2kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1.2A@6V"
+    ],
+    [
+      "静态电流 Idle Current：",
+      "2mA@6V"
+    ],
+    [
+      "额定负载 Rated Torgue:",
+      "1.05kg.cm@6V"
+    ],
+    [
+      "额定电流 Rated Current:",
+      "400mA@6V"
+    ],
+    [
+      "Kt常数:",
+      "2.5kg.cm/A"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "中位 Neutral Position",
+      "511"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 500Kbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "270±5°(when 20～1003)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入压）,Temperature（工作温度）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SC-2304-C001规格书-20260709.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "gearNote",
+    "gearNoteEn",
+    "torqueVoltage"
+  ]
+}

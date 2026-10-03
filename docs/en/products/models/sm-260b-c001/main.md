@@ -1,5 +1,7 @@
 # SM-260B-C001
 
+![SM-260B-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-260B-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,76 @@ Use this page to compare the main specifications of `SM-260B-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/573021) · Checked 2026-10-02. The complete model on the page is SM-260B-C001.
+
+!!! warning "Claims requiring confirmation"
+    voltageMin: website table gives 24.0, attached PDF gives 12.0; a new filter value is withheld pending revision confirmation.
+    voltageMax: website table gives 24.0, attached PDF gives 25.2; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-260B-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Size | A：78mm B：43mm C：65.5mm |
+| Weight | 455g |
+| Gear type | 钢 Steel |
+| Limit angle | No limit |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | One character (OD10mm |
+| Horn type | ≦0.8° |
+| Case | Aluminium |
+| Connector wire | 30CM |
+| Motor | 4 Pole Brushless motor |
+| Operating Voltage Range | 24V |
+| No load speed | 0.192sec/ 60° 52RPM@24V |
+| Runnig current(at no load) | 320 mA@24V |
+| Peak stall torque | 260kg.cm@24V |
+| Stall current | 9.1A@24V |
+| Rated Load | 65kg. cm@24V |
+| Rated current | 2200mA@24V |
+| KM | 28.5kg. cm/A |
+| Terminal resistance | 2.0 Ω |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 360° (when 0~4096) |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+| Position Sensor Resolution | 12Bits Magnetic Coding(360° /4096 ） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773471491504707918547.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.8° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-260B-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773471491504707918547.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

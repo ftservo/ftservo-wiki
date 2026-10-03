@@ -1,0 +1,149 @@
+{
+  "model": "ST-3215-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/74v-19-kgcm-plastic-case-metal-tooth-magnetic-code-double-axis-ttl-series-steering-gear",
+  "table": [
+    [
+      "ST-3215-C001是7.4V 19KG串口总线智能舵机，采用塑胶外壳、铁芯电机、金属齿牙箱、飞特自主研发的TTL控制板，12位高精度磁编码传感器。堵转扭矩19kg.cm，能实现360度任意角度可控，多圈连续转，步进等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电压、温度、负载参数，从而实现过载保护。适合应用在工业设备、机器人等小扭力传动应用场景。 ST-3215-C001 is 7.4V 19kg serial bus smart servo，adopt plastic case、core motor、metal gearbox、Feetech self researched and developed TTL control board，12 bit high precision magnetic coding sensor. The stall torque is 19kg.cm，can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode, it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, robot and Small torque drive application scenarios."
+    ],
+    [
+      "型 号 Model：",
+      "ST-3215-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 19KG.双轴TTL串型舵机/7.4V 19KG. Dual axis TTL string servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：45.2mm B：24.7mm C：35mm"
+    ],
+    [
+      "重量 Weight:",
+      "55± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜Copper"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic,POM"
+    ],
+    [
+      "外壳 Case:",
+      "aluminium alloy"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "150mm ±5 mm"
+    ],
+    [
+      "马达 Motor:",
+      "Coreless motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "6-7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.238sec/60°@6V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "150 mA@6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "19.5kg.cm@6V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "6.5kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "2000mA@6V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "DigitalPacket"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "HalfDuplex Asynchronous Serial( ommuni cati on"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "360° (when 0~4096)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load (负载),Position (位置) , Speed (工作速度)I nputVoltage (输入电压)，Current (工作电流)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "ST-3215-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [
+    [
+      "外壳：官网简介与规格表不一致，待厂家确认。",
+      "Case: product introduction and specification table disagree; confirmation required."
+    ],
+    [
+      "电机：官网简介与规格表不一致，待厂家确认。",
+      "Motor: product introduction and specification table disagree; confirmation required."
+    ],
+    [
+      "输入电压下限：官网表为 6.0，所挂载 PDF 为 4.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation."
+    ]
+  ],
+  "filled_fields": [
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "continuous",
+    "shaft",
+    "gear"
+  ]
+}

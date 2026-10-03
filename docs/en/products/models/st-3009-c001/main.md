@@ -1,5 +1,7 @@
 # ST-3009-C001
 
+![ST-3009-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `ST-3009-C001` and plan power, control and mechanical integration.
 
 [Back to ST catalog](../../datasheets/st.md){ .md-button }
@@ -35,17 +37,78 @@ Use this page to compare the main specifications of `ST-3009-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-motor:start -->
+## Motor classification from the official brochure
+
+Brushless coreless motor. [2024 FEETECH official brochure](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf), PDF page 8; matched full model `ST-3009-C001`.
+<!-- official-motor:end -->
+
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/6v-9kg-cm-brushless-360-°-magnetic-coding-serial-port-actuator) · Checked 2026-10-02. The complete model on the page is ST-3009-C001.
+
+!!! warning "Claims requiring confirmation"
+    voltageMin: website table gives 4.8, attached PDF gives 5.0; a new filter value is withheld pending revision confirmation.
+    voltageMax: website table gives 8.4, attached PDF gives 9.0; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | ST-3009-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Size | A：20mm B：30mm C：36.5mm |
+| Weight | 45± 1g |
+| Gear type | Metal Gear |
+| Limit angle | NO limit |
+| Bearing | 滚珠轴承Ball bearings |
+| Horn gear spline | 25T/OD5.9mm |
+| The rocker phantom | 0° |
+| Case | Aluminium |
+| Connector wire | 15CM |
+| Motor | 无刷马达Brushless Motor |
+| Operating Voltage Range | 4.8-8.4V |
+| No load speed | 0.1sec/60°（ 100 RPM ）@7.4V |
+| Runnig current(at no load) | 390mA@7.4V |
+| Peak stall torque | 11.5kg.cm@7.4V |
+| Rated torque | 3.8kg.cm@7.4V |
+| Stall current | 2.8A@7.4V |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 出厂默认1Mbps（38400bps ~ 1 Mbps） |
+| Running degree | 360° (when 0~4096) |
+| Feedback | Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入压）,Current（工作电流），Temperature（工 作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391772418560580549086706.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sensor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![ST-3009-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391772418560580549086706.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

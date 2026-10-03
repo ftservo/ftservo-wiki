@@ -1,0 +1,147 @@
+{
+  "model": "SC-0017-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/533183",
+  "table": [
+    [
+      "SC-0017-C001是6V 5.5KG串口总线舵机， 采用塑胶外壳，金属齿轮箱、铁芯电机、飞特自主研发的TTL控制板，高品质电位器，25T型输出头。 堵转扭矩6.2kg.cm，具有伺服模式和连续转电机工作模式，反馈位置、速度、电压、温度、负载参数，从而实现过载保护。适合应用于教学、创客、机器人关节等小扭力传动应用场景。 SC-0017-C001 is 6V 5.5kg serial bus servo， adopt plastic case，metal gearbox、core motor, Feetech self researched and developed TTL control board , high quality potentiometer, 25T output shaft. The stall torque is 6.2kg.cm,, with servo mode and continuous motor working mode, feedback position, speed, voltage, temperature, load parameters, so as to achieve overload protection. It is suitable for teaching, maker, robot joints and other small torque transmission applications."
+    ],
+    [
+      "型 号 Model：",
+      "SC-0017-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 5.5kg串行总线舵机/6V 5.5kg.cm Serial Control BUS Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-20℃~+60℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-10℃~+50℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A: 12mm B: 29.8mm C: 29.6mm"
+    ],
+    [
+      "重量 Weight:",
+      "17.7± 2g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Metal"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承类型 Bearing type:",
+      "No"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "减速比Gear Ratio：",
+      "1/259"
+    ],
+    [
+      "外壳 Case:",
+      "PA66+GF"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "15±0.5CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4.8V-7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.105sec/60°(95RPM)@7.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "150mA(Max)@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "6.2kg.cm@7.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "2.07kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "400mA@7.4V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "210±5°(when 0～1023)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load， Speed, Position."
+    ],
+    [
+      "电子分辨率 Resolution [deg/pulse]:",
+      "0.214°(220°/1024)"
+    ],
+    [
+      "中位 Neutral Position:",
+      "511"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SC-0017-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gearNote",
+    "gearNoteEn",
+    "motorNote",
+    "motorNoteEn",
+    "case"
+  ]
+}

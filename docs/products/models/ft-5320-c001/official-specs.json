@@ -1,0 +1,154 @@
+{
+  "model": "FT-5320-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/74v-20-kgcm-digital-180-degree-aluminum-middle-shell-copper-gear-iron-core-steering-gear",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-5320-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 20kg.cm数码180度铝中壳铜齿轮铁芯舵机/7.4V 20kg.cm Digital 180 Degree Aluminum Medium Shell Copper Gear Iron Core Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：55mm B：20mm C: 43mm"
+    ],
+    [
+      "重量 Weight:",
+      "67土1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜 Copper Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic"
+    ],
+    [
+      "外壳 Case:",
+      "PA+A lumi num"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "6V-7.4V"
+    ],
+    [
+      "静态电流Idle current (atstopped)",
+      "6MA@7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.151sec/60°@7.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "120mA@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "20kg.cm@7.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "6.5kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "3A@7.4V"
+    ],
+    [
+      "控制信号Command si gnal",
+      "Pulse width modification"
+    ],
+    [
+      "放大器类型Amplifier type",
+      "Digital compara tor"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500~2500 μ sec"
+    ],
+    [
+      "中立位置Stop position",
+      "1500 μ sec"
+    ],
+    [
+      "旋转角度Running degree",
+      "180° （at 500- > 2500 μ sec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤4 μ sec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwise (在1500→2000 μ sec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-5320-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [
+    [
+      "外壳材质：官网表为 plastic，所挂载 PDF 为 metal；新增筛选值暂缓录入，请核对版本。",
+      "case: website table gives plastic, attached PDF gives metal; a new filter value is withheld pending revision confirmation."
+    ],
+    [
+      "输入电压下限：官网表为 6.0，所挂载 PDF 为 4.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation."
+    ],
+    [
+      "输入电压上限：官网表为 7.4，所挂载 PDF 为 8.4；新增筛选值暂缓录入，请核对版本。",
+      "voltageMax: website table gives 7.4, attached PDF gives 8.4; a new filter value is withheld pending revision confirmation."
+    ]
+  ],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "positionRange",
+    "gear",
+    "motorNote",
+    "motorNoteEn",
+    "weightTolerance",
+    "torqueVoltage"
+  ]
+}

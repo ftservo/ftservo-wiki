@@ -1,0 +1,135 @@
+{
+  "model": "FT-15M0-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/15kgcm-digital-180-degree-dual-axis-robot-steering-gear-ft15m",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-15M0-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 15公斤数码180度机器人舵机/6V 15kg. cm Digital 180° Robot Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-20℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-10℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40.2mm B：20.2mm C：40.1mm"
+    ],
+    [
+      "重量 Weight:",
+      "61.8± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜 Copper"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminum"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30±0.5CM"
+    ],
+    [
+      "马达 Motor:",
+      "铁芯电机Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4-8.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.161sec/60°(62RPM)@7.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "140mA@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "19.5kg.cm@7.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "6.5kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "2.8A@7.4V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Pulse width modification"
+    ],
+    [
+      "控制系统类型 Control System Type:",
+      "Digital comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500→2500 μsec"
+    ],
+    [
+      "中立位置Neutral position",
+      "1500 μsec"
+    ],
+    [
+      "操作角度 Operating Travel",
+      "180° (士5° ) (when 500~ 2500 μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤4 μsec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwise(在500→2500 μsec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-15M0-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

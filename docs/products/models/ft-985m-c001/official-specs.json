@@ -1,0 +1,148 @@
+{
+  "model": "FT-985M-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/667011",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-985M-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 85kg.cm180°舵机/7.4V 85KG 180 Degree Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：59mm B：29mm C: 55mm"
+    ],
+    [
+      "重量 Weight:",
+      "195.9g± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "15T/7.6mm"
+    ],
+    [
+      "减速比Gear Ratio：",
+      "1/374"
+    ],
+    [
+      "外壳 Case:",
+      "Alumi num"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30±0.5CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "6-9V （ 12V版本 FT-985M-C002 ）"
+    ],
+    [
+      "静态电流Idle current (atstopped)",
+      "26mA@7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.263sec/60°(38RPM)@7.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "600mA@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "85kg.cm@7.4V 9 5kg.cm@8.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "21kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "8A@7.4V"
+    ],
+    [
+      "控制信号Command si gnal",
+      "Pulse width modulation"
+    ],
+    [
+      "控制系统类型 Control System Type",
+      "Digital comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500~2500 μ sec"
+    ],
+    [
+      "中立位置Stop position",
+      "1500 μ sec"
+    ],
+    [
+      "操作角度Running degree",
+      "180±5°(at 500→2500μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤4 μ sec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwi se (在1500→2500 μ sec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-985M-C001.pdf"
+    ],
+    [
+      "电子保护 Electronic Protection",
+      "堵转8秒/Stall 8sec"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "voltageMin",
+    "voltageMax",
+    "torqueVoltage"
+  ]
+}

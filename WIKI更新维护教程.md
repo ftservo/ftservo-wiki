@@ -1,5 +1,9 @@
 # FEETECH Wiki 更新与产品资料维护教程
 
+## PDF 文件体积管理
+
+Wiki 不再收录本地 PDF。规格书使用官网 HTTPS 链接，已整理的参数与 WebP 图纸继续保留。资料清单中相应附件填写 `status: "missing"`、`path: null`、`external_only: true`，并在 `source` 保存准确的官网链接。离线 ZIP 不包含这些 PDF；官网资料导入脚本仅更新规格书链接，不复制 PDF 到文档目录。
+
 本教程面向资料整理工程师和 Wiki 管理员。目标是让客户从一个完整型号出发，找到程序接入、机械设计和可下载资料，明确每份文件的适用范围。工程师不需要 GitHub 账号，可离线填写资料包后交给管理员。
 
 ## 全站框架与内容归属
@@ -167,7 +171,7 @@
 3. **中文接入：**将三个页面、清单及确认发布的附件放入 `docs/products/models/<型号-id>/`，不复制模板 README、空白记录和编辑草稿。
 4. **英文接入：**将模板 `en/` 内的三个页面及清单放入 `docs/en/products/models/<型号-id>/`，将共享附件按相同相对路径复制过去。中英文页面必须同时存在。
 5. **目录入口：**更新中英文 `docs/products/datasheets/<系列>.md`；其中 HTML 卡片的主页面链接为 `../../models/<型号-id>/main/`。Markdown 文件之间使用 `.md` 源文件链接。
-6. **选型器：**在 `docs/javascripts/servo-selector-data.js` 加入/更新条目，`detail` 为 `models/<型号-id>/main/`；若新增型号，同步页面显示的型号数量。不要把新型号的每个子页都塞进 `mkdocs.yml` 的侧栏。
+6. **选型器：**在 `docs/javascripts/servo-selector-data.js` 加入/更新条目，`detail` 为 `models/<型号-id>/main/`；按文末“产品主图与选型参数维护”填写专业字段，再运行 `python scripts/sync_servo_catalog.py`。结果数量自动计算。不要把新型号的每个子页都塞进 `mkdocs.yml` 的侧栏。
 7. **刷新与检查：**在仓库根目录执行下面命令。新资料只刷新清单区域，不覆盖工程师写的规格和集成说明。
 
 ```powershell
@@ -220,3 +224,85 @@
 - 审阅 `git diff`，不提交 `site/`、虚拟环境、缓存、导出包、凭据或无关改动。
 
 仓库已经存在的未提交改动应由维护者一起审阅，不要用全目录覆盖或批量还原破坏其他人的工作。
+
+## 产品主图与选型参数维护（2026-10）
+
+选型器和产品卡片的数据源是 `docs/javascripts/servo-selector-data.js`，每个完整型号只保留一个条目。它是 `window.FEETECH_SERVO_DATA=[...];` 包裹的 JSON 数组，新增字段直接写在该型号对象内，不要写注释或末尾逗号。专业参数没有正式资料时省略或填 `null`，不能填 0、不能从型号名字或其它系列推断。勾选同组条件是“或”，不同组是“且”；启用某个数值筛选时，缺失该参数的型号会被排除。收起专业选型后，仅基础条件生效，专业条件保留供再次展开。
+
+### 更新主图
+
+1. 将该型号真实产品图保存为 `docs/products/models/<型号-id>/images/main.webp`。统一 **800×800 px、纯白背景、产品完整居中**，产品最长方向占画面 75%–85%（目标 80%，即约 640px），不得裁掉输出轴和安装耳。美工交付要求见[主图交付规范](产品型号资料包模板/主图交付规范.md)，已裁剪的 HL-3950-C001 主图即为构图样例。
+2. 同步相同图片到 `docs/en/products/models/<型号-id>/images/main.webp`。
+3. 在数据对象中设置 `"image": "models/<型号-id>/images/main.webp"`。型号页使用 `![型号](images/main.webp)`。
+4. 运行下方同步命令，再删除已无引用的 `main.jpg`。不要给其它型号填入 3950 图片路径：缺少 `image` 时卡片自动使用 3950 占位图，并显示占位标记；上传真实图片后该标记自动消失。
+
+### 更新卡片预览图纸
+
+PC 端鼠标悬停或点击“参数预览”，在独立浮层中并排展示主图与机身图纸；移动端点击卡片进入型号页，不展示详细参数。
+
+将型号真实机身尺寸图放入中英文型号的 `images/` 目录，在选型数据中填写 `"drawing": "models/<型号-id>/images/drawing.png"`。图纸保留原始尺寸线、文字与比例，可用 PNG 或 WebP；不要将舵盘附件图作为机身尺寸图。未填 `drawing` 时使用 HL-3950-C001 图纸，并明确提示仅为占位，不代表本型号尺寸。不得据此给其它型号填写尺寸参数。
+
+### 字段规则
+
+| 字段 | 格式 / 单位 | 维护要求 |
+| --- | --- | --- |
+| `model`, `family`, `interface`, `detail` | 完整型号、系列、接口、型号页路径 | 保留后缀；`detail` 为 `models/<型号-id>/main/` |
+| `voltage`, `voltageLabel` | 比较电压 V、真实输入范围文字 | 电压勾选按目录比较电压匹配；文字展示实际允许范围 |
+| `voltageMin`, `voltageMax` | V | 仅在该型号资料明确给出时填写，供工程资料保存，不自动推断 |
+| `torque`, `torqueLabel` | kg·cm、含供电的文字 | 堵转扭矩，不是额定持续扭矩；例如 `50`、`50 kg·cm@12V` |
+| `speed`, `speedVoltage`, `speedLabel` | rpm、V、含供电的文字 | 空载速度，不能拿带负载实测速度替代。只有 s/60° 时 rpm=10/秒数；优先采用官网给出的 rpm |
+| `positionRange` | ° | 位置模式可定位的角度跨度，0–360°填 360；不是机械极限或无限连续转动。需备注参考零点、断电位置与多圈能力 |
+| `continuous` | `true` / `false` / `null` | 明确支持电机模式连续旋转才填 true；无机械限位不等于此功能 |
+| `motor` | `brushed-iron` / `brushed-coreless` / `brushless-coreless` | 有刷铁心 / 有刷空心杯 / 无刷空心杯。资料只写 Coreless 时留空，在 `motorNote` 中记录，向工程师确认 |
+| `gear` | `copper` / `steel` / `titanium` / `plastic` | 铜齿 / 钢齿 / 钛齿 / 塑胶；混合材料不要强行归类 |
+| `case` | `plastic` / `metal` / `hybrid` | 全塑胶 / 全金属 / 铝中壳+塑胶 |
+| `shaft` | `single` / `dual` | 单轴 / 双轴，以结构图核实 |
+| `dimensions` | `[A,B,C]`，mm | 三边对应产品图纸标注，最长边自动取最大值。型号页说明是否包含安装耳、轴和舵盘 |
+| `weight`, `weightTolerance` | g | 标称质量及公差，注明是否含线材、舵盘等 |
+| `parameterSource`, `parameterChecked` | 官方资料 URL、YYYY-MM-DD | 保存来源和核对日期；版本记录在 `revision` 中，未经核实的项目保留空值 |
+
+HL-3950-C001 已提供完整维护示例：75 rpm@12 V、360°位置控制、钢齿、全金属铝壳、双轴、三边 45.22/24.72/35 mm、74.5±1 g。电机类型因官网只写空心杯而留空。数值范围滑块为扭矩 0–150 kg·cm、速度 0–180 rpm；输入框允许填写范围以外的值。未操作的滑块不限制结果，重置后恢复不限，避免隐藏高扭矩/高速产品。
+
+### 同步、复核与发布
+
+界面分为基础与专业两种模式：基础模式使用接口、系列、电压下拉框与最低扭矩/速度输入；专业模式使用左侧多选和范围条件、右侧独立滚动的产品列表。两种模式共享基础条件；专业多选切回基础模式时，下拉框显示“已选 N 项”，选中具体选项后替换该组多选条件。PC 卡片通过独立浮层展示主图、图纸与详细参数，不能增加卡片高度；移动端隐藏预览，点击卡片进入型号页。修改布局时同时验证中英文和窄屏。
+
+```powershell
+python scripts/sync_servo_catalog.py
+python scripts/product_package.py validate
+mkdocs build --strict
+git diff --check
+```
+
+同步脚本检查专业字段、双语图片路径，并刷新所有中英文系列卡片的图片、电压、扭矩、速度；悬停详情直接读取同一数据源。型号概览和结构页的参数表仍需员工同步更新并复核，不要仅改选型器。浏览器检查中文/英文、专业展开、重置、数值边界、多个勾选条件、手机点击卡片与型号链接；用筛选后 URL 验证刷新及切换语言仍保留条件。正式图与参数经工程师复核后再提交 PR，禁止提交 `site/` 和缓存。
+
+### 本次批量资料导入记录
+
+2026-10-02 导入 170 份 `models_buffer` 型号资料，其中新增 28 个型号。主图按 800×800 WebP、机身最长方向约占 80% 裁剪；长线缆不决定构图比例，输出轴和安装耳保留。原始资料离线归档在 `imports/models-buffer-2026-10-02.zip`，逐型号裁剪范围、体积与歧义记录见同目录 JSON，归档不发布到网站。
+
+电机仅写“无刷”时不能归类成“无刷空心杯”；仅写“空心杯”时不能推断有刷/无刷。原文保存在 `motorNote` / `motorNoteEn` 中，未确认的分类仍留空。`FS-90MR-C002` 的速度单位 `100 RPM/60°@6V` 有歧义，保留型号页原文，暂不填写数值 `speed`。扭矩、电压矛盾保留来源警示，待工程师确认后修订。
+
+### 官网参数、规格书与图纸补全
+
+2026-10-02 的官网资料补全记录见 `imports/official-servo-audit-2026-10-02.md`。每个已核对的型号目录新增 `official-specs.json`，保存完整型号、来源、核对日期、官网规格表及待确认项；中英文主页面、程序页和结构页同步更新。官网原始下载与抓取检查点位于 `imports/official-feetech-2026-10-02/`，此缓存已加入 `.gitignore`，不得提交。
+
+后续员工更新时，先核对实物标签的完整型号和后缀，再核对官网规格表及 PDF 封面型号。文件标题匹配、上传日期较新，均不代表 PDF 正文适用于该后缀。官网挂载其它型号或无法验证的附件只保留原站链接和待确认说明，不登记为本型号已确认资料。官网简介、参数表或 PDF 出现冲突时，在 `official-specs.json` 和页面中说明；新筛选值暂缓录入，已有数据的修订需工程师核对版本与测试条件。
+
+机身尺寸图存为 `images/drawing.webp`，采用无损 WebP，保留全部标注；不能按产品主图的 800×800 规则裁掉尺寸线。没有独立图纸但规格书中有机身图时，可从已核对的 PDF 对应页提取，记录页码和 PDF 来源。舵盘附件图不放入卡片预览。将真实图路径写入选型数据的 `drawing`，将已确认规格书和图纸路径、来源、版本写入中英文 `manifest.json`，运行资料包校验。
+
+补全脚本分四步，可从本地检查点恢复；最后一步会实际修改网站资料，须先审阅抓取结果、附件核对结果与冲突项：
+
+```powershell
+python scripts/crawl_official_servos.py
+python scripts/download_official_servo_assets.py
+python scripts/extract_official_pdf_specs.py
+python scripts/import_official_servo_specs.py
+python scripts/supplement_official_brochure.py
+python scripts/sync_servo_catalog.py
+python scripts/product_package.py validate
+mkdocs build --strict
+```
+
+选型器默认“主推优先”，HLS 排第一组、STS 排第二组，其它系列随后。其它排序方式在各组内部按扭矩、速度、重量或型号排序。参数预览的来源警示指向型号页的详细核对说明；材料原文无法准确归类时可使用 `gearNote` / `gearNoteEn` 等说明字段，而不填错误分类。
+
+部分电机分类来自官网 2024 宣传册中的完整型号编号，来源和 PDF 页码写入 `motorSource`、`motorSourcePage` 及 `official-specs.json`。宣传册只写“铁芯”时不推断为有刷；仅有明确“有刷空心杯”或“无刷空心杯”字样且型号、后缀对应时才归类。网站与宣传册冲突时先确认版本，不用宣传册覆盖现有已核对参数。

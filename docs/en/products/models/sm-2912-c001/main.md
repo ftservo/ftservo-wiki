@@ -1,5 +1,7 @@
 # SM-2912-C001
 
+![SM-2912-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-2912-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,61 @@ Use this page to compare the main specifications of `SM-2912-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/24v40kg-rs485-serial-bus-steering-gear) · Checked 2026-10-02. The complete model on the page is SM-2912-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-2912-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| OperatinTemperatureRange | -15℃～70℃ |
+| Size | A：40mm B：28mm C：42.3mm |
+| Weight | 102± 1g |
+| Horn Type | 6T/OD4.75mm |
+| Gear Ratio | 1/241 |
+| Gear material | 钢 Steel |
+| Case material | Aluminium |
+| Motor | Brushless Motor |
+| Bearing type | 滚珠轴承 Ball bearings |
+| Limit angle | No Limiter |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| Baud rate | 38400bps ~ 1 Mbps |
+| voltage | 12V |
+| No Load Speed | 0.092sec/60°(109RPM) |
+| Running Current | ≦150mA |
+| Stall torque | 22kg.cm |
+| Stall Current (at locked) | 2.2A |
+| Quiescent Current | 22mA |
+| Rated Torgue | 7kg.cm |
+| Rated Current | 700mA |
+| Kt | 10kg.cm/A |
+| Resolution | 0.088°(360°/4096) |
+
+Attachment checks: PDF content model not verified: SM2912-C001-串型规格书-20260321.pdf
+
+Other files linked by the manufacturer (model applicability unconfirmed):
+
+- [SM2912-C001-串型规格书-20260321.pdf](https://www.feetechrc.com/Data/feetechrc/upload/file/20260706/6391895917187692344479707.pdf)
+
+![SM-2912-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
 | Model datasheet | Not supplied | — |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

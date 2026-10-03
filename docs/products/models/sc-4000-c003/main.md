@@ -1,5 +1,7 @@
 # SC-4000-C003
 
+![SC-4000-C003](images/main.webp){ .ft-model-main-image }
+
 本页提供 `SC-4000-C003` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 SC 系列目录](../../datasheets/sc.md){ .md-button }
@@ -35,17 +37,70 @@
 
 通信指令和软件集成方法请继续查看 [SDK 指南](../../../sdk/index.md)以及对应产品系列的协议资料。
 
+<!-- official-motor:start -->
+## 官网宣传册补充电机分类
+
+有刷空心杯电机。[飞特官网 2024 宣传册](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf)，PDF 第 12 页，按完整型号 `SC-4000-C003` 对应。
+<!-- official-motor:end -->
+
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/84v-40kg-serial-bus-steering-gear) · 核对日期：2026-10-02；页面型号：SC-4000-C003。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | SC-4000-C003 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 Operating Temperature Range: | -15℃～70℃ |
+| 尺寸 Size: | A：40mm B：20mm C：43mm |
+| 重量 Weight: | 78g士0.2 |
+| 齿轮类型 Gear type: | Metal Gear |
+| 机构极限角度 Limit angle: | No Limiter |
+| 轴承 Bearing: | 2 Ball bearings |
+| 出力轴 Horn gear spline: | 25T |
+| 摆臂 Horn type: | Aluminium |
+| 外壳 Case: | Aluminium |
+| 舵机线 Connector wire: | 200mm ±5 mm |
+| 马达 Motor: | Coreless motor |
+| 工作电压Operating Voltage Range: | 6-8.4V |
+| 空载速度 No load speed: | 0.12sec/60degree@8.4V 83RPM |
+| 空载电流 Runnig current(at no load) : | 120 mA@8.4V |
+| 堵转扭矩 Peak stall torque: | 42.5kg.cm@8.4V |
+| 额定扭矩 Rated torque: | 13kg.cm@8.4V |
+| 堵转电流 Stall current: | 1800mA@8.4V |
+| 控制信号 Command signal: | Bus Packet Communication TTL level |
+| 协议类型 Protocol Type: | Half duplex Asynchronous Serial Communication |
+| ID范围 ID range: | 0-253 |
+| 通读速率 Communication Speed: | 38400bps ~ 1 Mbps |
+| 旋转角度 Running degree: | 300°(when 0～1023)士5° |
+| 反馈 Feedback: | Load， Speed， Input Vol tage |
+| 位置传感器分辨率 Position Sensor Resolution: | Potentiometer (300° /1024) 士5° |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771791662132454211154.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 位置传感器分辨率 Position Sensor (Resolution) | Potentiometer (300°/1024)±5° | 2 |
+
+![SC-4000-C003 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771791662132454211154.pdf) | — |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

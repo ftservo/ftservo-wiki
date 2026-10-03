@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "model_id": "fu-8830-c001",
+  "model_name": "FU-8830-C001",
+  "family": "FU",
+  "interface": "CAN",
+  "document_revision": "2024-10-17",
+  "sources": [
+    {
+      "type": "existing_catalog",
+      "path": "docs/javascripts/servo-selector-data.js",
+      "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "public_product_page",
+      "url": "https://www.feetech.cn/en/503338.html",
+      "note": "Public product page used for the specification summary; published datasheet is FU-8830-C001规格书-20241017.pdf."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/503338",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "FU-8830-C001"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "available",
+      "path": "images/drawing.webp",
+      "revision": null,
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20241113/6386708845684291306110204.png"
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # HD-1910-C001
 
+![HD-1910-C001](images/main.webp){ .ft-model-main-image }
+
 `HD-1910-C001` is a compact TTL serial-bus servo for small bipeds and lightweight joints. It combines a coreless motor, metal gears, and a dual-shaft output for Microduck and Open Duck-style robot prototypes.
 
 [Back to the HD catalog](../../datasheets/hd.md){ .md-button }
@@ -53,17 +55,67 @@ HD-1910-C001 is intended for lightweight Microduck/Open Duck-style bipeds. A ser
 
 Public project reference: [Pollen Robotics Microduck](https://github.com/pollen-robotics/microduck)
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/510257) · Checked 2026-10-02. The complete model on the page is HD-1910-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | HD-1910-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Temperature Range | 25℃ ±5℃ |
+| Humidity Range | 65%±10% |
+| Size | A: 34mm B: 20mm C: 23mm |
+| Weight | 21±2g |
+| Gear type | Metal Gear |
+| Limit angle | No limit |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 25T/OD4.95mm |
+| Gear Ratio | 1/320 |
+| Back Lash | ≦0.5° |
+| Case | PA66+GF43% |
+| Connector wire | 15± 0.5cm |
+| Motor | Coreless Motor |
+| Rated Input Voltage | 4V-8.4V |
+| No load speed | 0.137sec/60 °(73RPM)@4.8V |
+| Runnig current(at no load) | ≤160mA@4.8V |
+| Peak stall torque | 9kg.cm@4.8V |
+| Stall current | 1.2A@4.8V |
+| Rated Load | 2.2kg. cm@4.8V |
+| Rated current | 500mA@4.8V |
+| KT | 7.5kg.cm/A |
+| Operating Modes | 模式0：角度伺服模式 （默认此模式，0-360度[敏感词]位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
+| Multi-Loop Mode | [敏感词]精度下可以正负7圈[敏感词]位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
+| Constant force output | 设定输出扭矩值，舵机可保持该扭矩(44号地址输入相对应的目标扭矩值，舵机可保持该扭矩) Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Control Algorithm | PID |
+| Neutral Position | 2048 |
+| Running degree | 360° (when 0~4095) |
+| Resolution [deg/pulse] | 0.088°(360°/4096) |
+| Rotating Direction | Clockwise(0→4095） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+![HD-1910-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
 | Model datasheet | Not supplied | — |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

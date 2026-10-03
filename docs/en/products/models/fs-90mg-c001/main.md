@@ -1,5 +1,7 @@
 # FS-90MG-C001
 
+![FS-90MG-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FS-90MG-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,71 @@ Use this page to compare the main specifications of `FS-90MG-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/22kg9g-digital-steering-gear-fs90mg) · Checked 2026-10-02. The complete model on the page is FS-90MG-C001.
+
+!!! warning "Claims requiring confirmation"
+    voltageMin: website table gives 4.8, attached PDF gives 3.3; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FS-90MG-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -1℃～70℃ |
+| Size | A：22.5mm B：12.1mm C：26.7mm |
+| Weight | 12.7± 1g |
+| Gear type | Copper |
+| Limit angle | 180degree |
+| Bearing | NO Ball bearings |
+| Horn gear spline | 21T |
+| Horn type | Plastic,POM |
+| Case | ABS |
+| Connector wire | 250mm |
+| Motor | Metal brush motor |
+| Operating Voltage Range | 4.8-6V |
+| Idle current(at stopped) | 5mA-6mA |
+| No load speed | 0.07sec/60degr@6V |
+| Runnig current(at no load) | 220 mA @6V |
+| Peak stall torque | 2.2kg.cm@6V |
+| Rated torque | 0.7kg.cm@6V |
+| Stall current | 800mA@6V |
+| Running degree | 180°(when 500～2500μsec) |
+| Rotating direction | CW(when 1500～900 µsec) CCW(when 1500～2100 µsec) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391781983688313884325544.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦2.0° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M2.5X4 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦2° | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FS-90MG-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391781983688313884325544.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

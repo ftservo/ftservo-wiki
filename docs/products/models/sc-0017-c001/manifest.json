@@ -10,6 +10,14 @@
       "type": "existing_catalog",
       "path": "docs/javascripts/servo-selector-data.js",
       "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/533183",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "SC-0017-C001"
+      ]
     }
   ],
   "assets": [
@@ -17,8 +25,9 @@
       "kind": "datasheet",
       "status": "missing",
       "path": null,
-      "revision": null,
-      "source": null
+      "revision": "A/0",
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771860081423543033374.pdf",
+      "external_only": true
     },
     {
       "kind": "pinout",
@@ -36,10 +45,10 @@
     },
     {
       "kind": "drawing",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/drawing.webp",
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20251107/6389813042689202858059069.png"
     },
     {
       "kind": "cad",

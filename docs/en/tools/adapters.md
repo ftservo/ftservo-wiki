@@ -44,4 +44,4 @@ Debug boards connect a PC or controller to FEETECH servos. Confirm the servo's p
 - Do not power hardware outside the adapter or servo voltage range.
 - For unstable communication, check interface type, baud rate, common ground, cabling, supply drop, and termination.
 
-Continue with [FD Servo Utility](fd.md) or [Bus Protocol](../reference/protocol.md).
+Continue with [FD Servo Utility](fd.md) or [Bus Protocol](../reference/protocol/index.md).

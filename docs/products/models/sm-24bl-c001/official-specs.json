@@ -1,0 +1,121 @@
+{
+  "model": "SM-24BL-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/24v-24kgcm-rs485串行总线舵机",
+  "table": [
+    [
+      "SM-24BL-C001是兼容12V/24V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，6T输出头。堵转扭矩24kg.cm（能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、物流、机器人等行业领域。 SM-24BL-C001 is compatible 12V/24V serial port smart bus servo，all aluminum alloy shell、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，6T output shaft. The stall torque is 24kg.cm can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, logistics, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-24BL-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "24V 24kg RS485串行总线舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-40℃～70℃"
+    ],
+    [
+      "运行温度 OperatinTemperatureRange:",
+      "-40℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40mm B：28mm C：47.8mm"
+    ],
+    [
+      "重量 Weight:",
+      "89.6± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No Limit"
+    ],
+    [
+      "堵转扭力 Stall Torque (at locked)：",
+      "24Kg.cm"
+    ],
+    [
+      "工作电压 Input Voltage：",
+      "8V~26V"
+    ],
+    [
+      "空载速度±10% No Load Speed：",
+      "0.08sec/60°(120RPM)@24V"
+    ],
+    [
+      "空载电流±10%Running Current ：",
+      "90mA@24V"
+    ],
+    [
+      "堵转电流Stall Current (at locked)：",
+      "1.3A@24V"
+    ],
+    [
+      "额定负载 Rated Torgue：",
+      "6kg.cm@24V"
+    ],
+    [
+      "额定电流 Rated Current：",
+      "350mA@24V"
+    ],
+    [
+      "电机内阻 Terminal resistance：",
+      "10.2Ω"
+    ],
+    [
+      "控制信号 Command Signal：",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type：",
+      "Half Duplex Asynchronous SerialCommunication"
+    ],
+    [
+      "通讯波特率 Communication Baud：",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree：",
+      "360°(when 0～4095)"
+    ],
+    [
+      "旋转方向 Rotating Direction：",
+      "Clockwise(0→4095）"
+    ],
+    [
+      "反馈 Feedback：",
+      "Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Current（工作电流）,Temperature（工作温度）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM-24BL-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

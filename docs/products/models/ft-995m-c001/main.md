@@ -1,5 +1,7 @@
 # FT-995M-C001
 
+![FT-995M-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `FT-995M-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 PWM 系列目录](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,87 @@
 
 控制信号与首次调试请继续查看本型号的[程序开发](software.md)；PWM 型号不使用串行总线 SDK。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf) · 核对日期：2026-10-02；页面型号：FT-995M-C001。
+
+!!! warning "官网资料待确认项"
+    官网网页型号写为 FT-995-C001；本次仅采用封面型号 FT995M-C001 已核对的 PDF，不采用网页规格表。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| Model: | FT-995M-C001 |
+| 工作电压 Operating Voltage | 7.4V / 8.4V |
+| 空载速度 No Load Speed±10% | 0.286sec/60° (35RPM) / 0.25sec/60°(40RPM) |
+| 空载电流±10% Running Current ( no load) | 600mA / 800mA |
+| 堵转扭力 Stall Torque (at locked) | 95kg.cm / 105kg.cm |
+| 堵转电流±10% Stall Current (at locked) | 9.5A / 10.5A |
+| 静态电流±10% Idle Current (at stopped) | 26mA / 26mA |
+| 工作电压 Input Voltage | 6V-9V |
+| 额定负载 Rated Torgue | 22.5kg.cm / 25kg.cm |
+| 额定电流 Rated Current | 2200mA / 2900mA |
+| Kt常数 | 10kg.cm/A |
+| 外观尺寸 Size | 65X30X48 / 见图纸See drawings |
+| 机构极限角度 Limit Angle | No limit |
+| 外壳材质 Case material | Aluminum |
+| 齿轮材质 Gear material | 钢 Steel |
+| 轴承类型 Bearing type | 滚珠轴承 Ball bearings |
+| 角度传感器 Angle Sensor | 类型Type / Carbon-Film Potentiometer |
+| 连接器和电缆 Connector and Cable | 类型 Type / JR |
+| 重量The Weight | 187.5g± 1g |
+| 出力轴 Horn Type | 15T/7.6mm |
+| 减速比Gear Ratio | 1/399 |
+| 齿轮虚位Back Lash | ≦0.5° |
+| 摇臂虚位 The rocker phantom | 0° |
+| 出力轴螺丝 The rocker screw | M3X6 |
+| 马达Motor | Core Motor |
+| 控制信号 Command Signal | Pulse width modulation |
+| 控制系统类型 Control System Type | Digital comparator |
+| 操作角度 Operating Travel | 180±5° (at 500→2500μsec) |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° |
+| 回中差 Centering Deviation | ≦1° |
+| 中立位置 Neutral Position | 1500 μsec |
+| 死区宽度 Dead Band Width | ≤4 μsec |
+| 旋转方向 Rotating Direction | 逆时针 Counterclockwise(在1500 →2500 μsec) |
+| 脉波宽度范围 Pulse Width Range | 500→2500 μsec |
+| 电子保护 Electronic Protection | 堵转8秒/Stall 8sec / 舵机堵转后，输出扭矩超 过过载扭矩并持续超过8S 后自动输出保护扭矩，可 修改过载扭矩，保护时间 及保护扭矩。 |
+| 信号周期 Signal Period | 20ms |
+| 信号高电平电压 Signal high Voltage | 2V-5V |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 角度传感器 Angle Sensor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦1° | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FT-995M-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf) | A/0 |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 不适用 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

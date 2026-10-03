@@ -1,5 +1,7 @@
 # SM-160B-C001
 
+![SM-160B-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-160B-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,69 @@ Use this page to compare the main specifications of `SM-160B-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/721026) · Checked 2026-10-02. The complete model on the page is SM-160B-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-160B-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Size | A：62mm B：34mm C：47mm |
+| Weight | 211± 3g |
+| Gear type | 钢 Steel |
+| Limit angle | No limit |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 15T/OD7.6mm |
+| Back Lash | ≦0.5° |
+| Case | Aluminium |
+| Connector wire | 40CM |
+| Motor | 4 Pole Brushless Motor |
+| Operating Voltage Range | 16.8V-25.2V |
+| No load speed | 0.181sec/60°@24V |
+| Runnig current(at no load) | 250mA@24V |
+| Peak stall torque | 160kg.cm@24V |
+| Rated torque | 40kg.cm@24V |
+| Idle Current (at stopped) | 25mA@24V |
+| Stall current | 9A@24V |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1Mbps |
+| Running degree | 360° (when 0~ 4096) |
+| Feedback | Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作 电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773494375352463060390.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 5 |
+| 齿轮虚位Back Lash | ≦0.5° | 5 |
+| 摇臂虚位 The rocker phantom | 0° | 5 |
+| 出力轴螺丝 The rocker screw | M3X6 | 5 |
+| 信号高电平电压 Signal high Voltage | +13V | 9 |
+| 信号低电平电压 Signal Low Voltage | -8V | 9 |
+
+![SM-160B-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773494375352463060390.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

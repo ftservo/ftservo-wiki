@@ -1,0 +1,121 @@
+{
+  "model": "SM-30BL-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/12v-14kgcm-rs485串行总线舵机",
+  "table": [
+    [
+      "SM-30BL-C001是兼容12V/24V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，6T输出头。堵转扭矩30kg.cm（注：此版本为内部限流版本），能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、物流、机器人等行业领域。 SM-30BL-C001 is compatible 12V/24V serial port smart bus servo，all aluminum alloy shell、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，6T output shaft. The stall torque is 30kg.cm（please note：this version is internal current limiting version），can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, logistics, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-30BL-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "12V 30kg RS485串行总线舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 OperatinTemperatureRange:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：54mm B：28mm C：40.1mm"
+    ],
+    [
+      "重量 Weight:",
+      "102± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No Limiter"
+    ],
+    [
+      "大扭矩High torque：",
+      "30Kg.cm"
+    ],
+    [
+      "宽工作电压Wide operating voltage：",
+      "9V~12V"
+    ],
+    [
+      "高分辨率High resolution：",
+      "12 位编码器（360 度 0.088°）"
+    ],
+    [
+      "伺服控制模式Servo control mode：",
+      "转动范围0-360°及多圈任意[敏感词]角度"
+    ],
+    [
+      "控制信号 Command signal：",
+      "Digital Packet"
+    ],
+    [
+      "串行总线连接Serial bus connection：",
+      "254个ID地址可选"
+    ],
+    [
+      "波特率Baud rate：",
+      "34800 ~1000000"
+    ],
+    [
+      "静态电流Quiescent Current：",
+      "35mA@12V"
+    ],
+    [
+      "空载电流No-load current：",
+      "420mA@12V"
+    ],
+    [
+      "额定负载 Rated Torgue:",
+      "10kg.cm@12V"
+    ],
+    [
+      "堵转电流Stall current：",
+      "3.8A@12V"
+    ],
+    [
+      "额定电流 Rated Current:",
+      "1300mA@12V"
+    ],
+    [
+      "位置分辨率Position resolution：",
+      "0.088°(360°/4096)"
+    ],
+    [
+      "堵转扭矩Stall torque：",
+      "30kg.cm@12V"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM-30BL-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "continuous",
+    "gear",
+    "speed",
+    "speedLabel",
+    "positionRange",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage"
+  ]
+}

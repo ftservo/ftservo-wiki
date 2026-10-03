@@ -4,9 +4,33 @@
 
 Control interface: **TTL**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/705193) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Operating Modes | 模式0：角度伺服模式 （默认此模式，0-360度[敏感词]位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
+| Constant force output | 设定输出扭矩值，舵机可保持该扭矩(44号地址输入相对应的目标扭矩值，舵机可保持该扭矩) Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
+| Multi-Loop Mode | [敏感词]精度下可以正负7圈[敏感词]位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253(默认出厂值为“ID1”） |
+| Communication Speed | 38400bps ~ 1 Mbps（默认出厂波特率为1000000） |
+| Control Algorithm | PID（可自定义） |
+| Neutral Position | 180°（2048） |
+| Running degree | 360° (when 0~4096) |
+| Resolution [deg/pulse] | 0.088°(360°/4096) |
+| Rotating Direction | Clockwise(0→4096） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **HLS** → Python `hls`; Arduino / C++ `HLSCL`. Read the [family memory-table guide](../../../reference/memory-hls.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **HLS** → Python `hls`; Arduino / C++ `HLSCL`. Read the [family memory-table guide](../../../reference/parameter/memory-hls.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

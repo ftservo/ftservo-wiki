@@ -4,6 +4,22 @@
 
 Control interface: **PWM**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/552203) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Command si gnal | Pulse width modification |
+| Pulse width range | 500~2500usec |
+| Stop position | 500→2500 μsec |
+| Running degree | 180° (at 500→2500μsec) |
+| Rotating direction | 逆时针 Counterclockwise(在1500→2000 μsec) |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## PWM control path
 
 Use your controller's timer/PWM peripheral. Serial-bus SDK examples, device IDs, baud rates and register tables do not apply to this PWM interface.

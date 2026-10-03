@@ -1,5 +1,7 @@
 # FT-1108-C001
 
+![FT-1108-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `FT-1108-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 PWM 系列目录](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,72 @@
 
 控制信号与首次调试请继续查看本型号的[程序开发](software.md)；PWM 型号不使用串行总线 SDK。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/880989) · 核对日期：2026-10-02；页面型号：FT-1108-C001。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | FT-1108-C001 |
+| 存储温度 Storage Temperature Range | -20℃～70℃ |
+| 运行温度 Operating Temperature Range: | -20℃～60℃ |
+| 尺寸 Size: | A：21.2mm B：11.4mm C：20.2mm . |
+| 重量 Weight: | 9.8± 1g |
+| 齿轮类型 Gear type: | Metal Gear |
+| 机构极限角度 Limit angle: | No limit |
+| 轴承 Bearing: | 滚珠轴承 Ball bearings |
+| 出力轴 Horn gear spline: | 25T/3.95mm |
+| 摇臂虚位The rocker phantom： | 0° |
+| 外壳 Case: | Aluminum |
+| 舵机线 Connector wire: | 6.5±0.5CM |
+| 马达 Motor: | Coreless Motor |
+| 工作电压Operating Voltage Range: | 4.8-7.4V |
+| 静态电流Idle current (at stopped) . | 6mA@6V |
+| 空载速度 No load speed: | 0. 055sec/ 60°@6V |
+| 空载电流 Runnig current(at no load) : | 90mA@6V |
+| 堵转扭矩 Peak stall torque: | 2.5kg.cm@6V |
+| 额定扭矩 Rated torque: | 0.7kg.cm@6V |
+| 堵转电流 Stall current: | 0.9A@6V |
+| 控制信号Command si gnal | Pulse width modification |
+| 放大器类型Amplifier type | Digital comparator |
+| 脉冲宽度范围Pulse width range | 500~2500usec |
+| 停止位置Stop position | 1500 μsec |
+| 旋转角度Running degree | 180° (at 500→2500μsec) |
+| 死区宽度Dead band width | ≤4 μsec |
+| 旋转方向Rotating direction | 逆时针 Counterclockwise(在500→2500 μsec) |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782183968933605657705.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 5 |
+| 齿轮虚位Back Lash | ≦0.5° | 5 |
+| 出力轴螺丝 The rocker screw | M2X4 | 5 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 5 |
+| 回中差 Centering Deviation | ≦2° | 5 |
+| 信号周期 Signal Period | 20ms | 8 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![FT-1108-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782183968933605657705.pdf) | A/0 |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 不适用 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

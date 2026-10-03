@@ -4,9 +4,17 @@
 
 ## Start with the engineering files
 
-Check the [resource table](main.md#resources) for this exact model's dimensioned 2D drawing and STEP model. Neither is currently supplied in this package. The outline dimensions on the overview, if present, are insufficient to release a mounting part for manufacture.
+Check the [resource table](main.md#resources) for this exact model's dimensioned 2D drawing and STEP model. The official dimensioned image is supplied below; check the resource table for STEP availability. The outline dimensions on the overview, if present, are insufficient to release a mounting part for manufacture.
 
 Use a dimensioned, approved drawing for tolerances and interfaces; use STEP for assembly and clearance checks. STL is suitable for visualization or fit prototypes only when its units and scale are confirmed; do not derive manufacturing tolerances from its mesh. Ask the manufacturer to resolve any drawing/CAD discrepancy.
+
+<!-- official-drawing:start -->
+## Official dimensioned drawing
+
+![FT-3325-C001](images/drawing.webp){ .ft-model-drawing }
+
+[Full-size drawing](images/drawing.webp) · [Official source](https://www.feetechrc.com/6v-7kgcm-digital-250-degree-steering-gear-ft3325m.html)
+<!-- official-drawing:end -->
 
 ## Check before designing the bracket
 
@@ -19,7 +27,7 @@ Use a dimensioned, approved drawing for tolerances and interfaces; use STEP for 
 | Cable and connector | Exit direction, mating connector, unplugging space, bend allowance and full-travel routing |
 | Load and supports | Force direction, lever arm, continuous/peak torque, duty cycle, radial/axial load limits and any external bearing requirements |
 
-These dimensions and load limits are not supplied here; do not borrow them from another model or suffix. Model-specific horn, screw and bearing recommendations require confirmation.
+Refer to the supplied drawing for dimensions; unspecified fits, tolerances and load limits still require model-specific confirmation. Model-specific horn, screw and bearing recommendations require confirmation.
 
 ## Assembly verification sequence
 

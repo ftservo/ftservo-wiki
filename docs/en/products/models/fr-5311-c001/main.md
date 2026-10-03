@@ -1,5 +1,7 @@
 # FR-5311-C001
 
+![FR-5311-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FR-5311-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,74 @@ Use this page to compare the main specifications of `FR-5311-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/6v-13kg-digital-steering-gear) · Checked 2026-10-02. The complete model on the page is FR-5311-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FR-5311-C001 |
+| Supporting dual-mode switching debug board | FRS (点击跳转Click to jump) |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -15℃～70℃ |
+| Size | A：40.1mm B：20.1mm C：38.8mm |
+| Weight | 60.5± 1g |
+| Gear type | 铜 Copper |
+| Limit angle | NO limit |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 25T/5.9mm |
+| Horn type | Plastic,POM |
+| Case | PA+Fiberglass |
+| Connector wire | 30CM |
+| Motor | Core Motor |
+| Operating Voltage Range | 4-8.4V |
+| Idle current (at stopped) | 6mA@6V |
+| No load speed | 0.2sec/60°@6V |
+| Runnig current(at no load) | 150mA@6V |
+| Peak stall torque | 15.5kg.cm@6V |
+| Rated torque | 5kg.cm@6V |
+| Stall current | 1.7A@6V |
+| Command signal | Pulse.width modification |
+| Control System Type | Digital comparator |
+| Pulse width range | 500→2500 μsec |
+| Neutral position | 1500 μsec |
+| Running degree | 300°(at 500→2500μsec) |
+| Dead band width | ≤4 μsec |
+| Rotating direction | 逆时针 Counterclockwise(在1500 →2000 μsec) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391781970758598654558182.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦1° | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FR-5311-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391781970758598654558182.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

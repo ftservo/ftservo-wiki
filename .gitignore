@@ -4,3 +4,9 @@ exports/
 __pycache__/
 .DS_Store
 Thumbs.db
+*.pdf
+*.PDF
+/imports/
+/imports/official-feetech-*/
+/imports/feetechrc-*.html
+/imports/hl3950-official.html

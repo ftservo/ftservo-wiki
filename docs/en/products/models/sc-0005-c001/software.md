@@ -4,9 +4,27 @@
 
 Control interface: **TTL**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/522732) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Command signal | Digital Packet |
+| Protocol Type | Half duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 500k bps |
+| Running degree | 270°(when 0～1023) |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度） |
+| Position Sensor Resolution | 0.293°(280°/1024) |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **SCS** → Python `scscl`; Arduino / C++ `SCSCL`. Read the [family memory-table guide](../../../reference/memory-scscl.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **SCS** → Python `scscl`; Arduino / C++ `SCSCL`. Read the [family memory-table guide](../../../reference/parameter/memory-scscl.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

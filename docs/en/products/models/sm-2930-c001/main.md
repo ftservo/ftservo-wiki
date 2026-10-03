@@ -1,5 +1,7 @@
 # SM-2930-C001
 
+![SM-2930-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-2930-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,68 @@ Use this page to compare the main specifications of `SM-2930-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/552537) · Checked 2026-10-02. The complete model on the page is SM-2930-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-2930-C001 |
+| Storage Temperature Range | -40℃～80℃ |
+| OperatinTemperatureRange | -40℃～60℃ |
+| Size | A：40mm B：28mm C：45.8mm |
+| Weight | 106± 3g |
+| Gear type | 钢 Steel |
+| Limit angle | No Limit |
+| Bearing type | 滚珠轴承 Ball bearings |
+| High torque | 30Kg.cm |
+| Wide operating voltage | 16.8V-25.2V 供电 |
+| Motor | Brushless Motor |
+| High resolution | 12 位编码器（360 度 0.088°） |
+| Servo control mode | 转动范围0-360°及多圈任意[敏感词]角度 |
+| Command signal | Digital Packet |
+| ID | 254个ID地址可选 |
+| Baud rate | 38400bps ~ 1 Mbps |
+| Continuous current | 0.8A |
+| Rated Torgue | 10kg.cm |
+| Rated Current | 600mA |
+| No Load Speed | 0.081sec/60°(124RPM)@24V |
+| Quiescent Current | 24mA@24V |
+| No-load current | ≦120mA@24V |
+| Stall current | 1.6A@24V |
+| Resolution [deg/pulse] | 0.088°(360°/4096) |
+| Stall torque | 30kg.cm@24V |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773554821206113895207.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 出力轴螺丝 The rocker screw | M2.5X8 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-2930-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773554821206113895207.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

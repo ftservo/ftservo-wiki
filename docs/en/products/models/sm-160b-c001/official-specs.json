@@ -1,0 +1,142 @@
+{
+  "model": "SM-160B-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/721026",
+  "table": [
+    [
+      "SM-160B-C001是24V 串口总线智能舵机，采用全铝合金外壳、无刷电机、钢齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，外接不锈钢主舵盘。堵转扭矩160kg.cm，能实现360度任意角度可控，多圈连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在工业设备、机器人等行业领域。 SM-160B-C001 is 24V serial port smart bus servo，all aluminum alloy shell、brushless motor、steel gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，external connect stainless steel main servo horn. The stall torque is 160kg.cm，can achieve 0-360 degrees any angle controllable，multi-turn continuous operation mode，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, robot and other industries."
+    ],
+    [
+      "型 号 Model：",
+      "SM-160B-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "24V 160kg.cm 串口总线智能舵机/24V 160kg.cm Serial bus servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：62mm B：34mm C：47mm"
+    ],
+    [
+      "重量 Weight:",
+      "211± 3g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "15T/OD7.6mm"
+    ],
+    [
+      "齿轮虚位Back Lash:",
+      "≦0.5°"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "40CM"
+    ],
+    [
+      "马达 Motor:",
+      "4 Pole Brushless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "16.8V-25.2V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.181sec/60°@24V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "250mA@24V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "160kg.cm@24V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "40kg.cm@24V"
+    ],
+    [
+      "静态电流 Idle Current (at stopped)",
+      "25mA@24V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "9A@24V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half Duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "360° (when 0~ 4096)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作 电流）,Temperature（工作温度）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM-160B-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage"
+  ]
+}

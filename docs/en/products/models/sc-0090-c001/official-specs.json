@@ -1,0 +1,144 @@
+{
+  "model": "SC-0090-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/6v-23kg-serial-bus-steering-gear_65522",
+  "table": [
+    [
+      "SC-0090-C001是6V 2.3KG串口总线舵机，采用塑胶外壳，金属齿轮箱、铁芯电机、飞特自主研发的TTL控制板，高品质电位器，25T型输出头。堵转扭矩2.3kg.cm，有效控制角度为300°，具有伺服模式和连续转电机工作模式，反馈位置、速度、电压、温度、负载参数，从而实现过载保护。适合应用于教学、创客、机器人关节等小扭力传动应用场景。 SCS009 is 6V 2.3kg serial bus servo，adopt plastic case，metal gearbox、core motor, Feetech self researched and developed TTL control board , high quality potentiometer, 25T output shaft. The stall torque is 2.3kg.cm, effective control angle is 300 °, with servo mode and continuous motor working mode, feedback position, speed, voltage, temperature, load parameters, so as to achieve overload protection. It is suitable for teaching, maker, robot joints and other small torque transmission applications."
+    ],
+    [
+      "型 号 Model：",
+      "SCS0009"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 2.3kg 串行总线舵机/6V 2. 3kg. cm Serial Control BUS Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：23.2mm B：12.1mm C：25.25mm"
+    ],
+    [
+      "重量 Weight:",
+      "13.2± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜Copper+钢Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "NO"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "20T/OD3.95mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic,POM"
+    ],
+    [
+      "外壳 Case:",
+      "PC"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "15cm"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor（铁芯马达）"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4-7.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.1sec/60°@6V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "150 mA@6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "2.3kg.cm@6V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "0.7kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1.0A@6V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "300°(when 0～1024)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压）,Temperature（工作温度）"
+    ],
+    [
+      "位置传感器分辨率 Position Sensor Resolution:",
+      "0.293°(300°/1024)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SC-0090-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage",
+    "gearNote",
+    "gearNoteEn"
+  ]
+}

@@ -4,6 +4,22 @@
 
 Control interface: **PWM**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/74v-40-kgcm-digital-180-degree-metal-shell-steel-gear-brushless-steering-gear) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Command si gnal | Pulse width modification |
+| Pulse width range | 500~2500 μ sec |
+| Stop position | 1500 μ sec |
+| Running degree | 180° at 500→2500 μ sec) |
+| Rotating direction | 逆时针 Counterclockwi se (在1500→2000 μ sec) |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## PWM control path
 
 Use your controller's timer/PWM peripheral. Serial-bus SDK examples, device IDs, baud rates and register tables do not apply to this PWM interface.

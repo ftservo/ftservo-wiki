@@ -4,6 +4,20 @@
 
 控制接口：**PWM**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/6v-15kg-digital-steering-gear) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 旋转角度 Running degree: | 300° (at 500→2500μsec) |
+| 旋转方向 Rotating direction | 逆时针 Counterclockwise(在1500 →2000 μsec) |
+| 反馈电压 Feedback Voltage | 900usec-2.60V/1500usec- 1.66V/2100us-0.72V |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## PWM 控制路线
 
 使用主控的定时器 / PWM 外设。串行总线 SDK 示例、设备 ID、波特率和寄存器表不适用于本页列出的 PWM 接口。

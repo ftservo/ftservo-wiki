@@ -1,5 +1,7 @@
 # SM-30BL-C001
 
+![SM-30BL-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `SM-30BL-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 SM 系列目录](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,63 @@
 
 通信指令和软件集成方法请继续查看 [SDK 指南](../../../sdk/index.md)以及对应产品系列的协议资料。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/12v-14kgcm-rs485串行总线舵机) · 核对日期：2026-10-02；页面型号：SM-30BL-C001。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | SM-30BL-C001 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 OperatinTemperatureRange: | -15℃～70℃ |
+| 尺寸 Size: | A：54mm B：28mm C：40.1mm |
+| 重量 Weight: | 102± 1g |
+| 齿轮类型 Gear type: | 钢 Steel |
+| 机构极限角度 Limit angle: | No Limiter |
+| 大扭矩High torque： | 30Kg.cm |
+| 宽工作电压Wide operating voltage： | 9V~12V |
+| 高分辨率High resolution： | 12 位编码器（360 度 0.088°） |
+| 伺服控制模式Servo control mode： | 转动范围0-360°及多圈任意[敏感词]角度 |
+| 控制信号 Command signal： | Digital Packet |
+| 串行总线连接Serial bus connection： | 254个ID地址可选 |
+| 波特率Baud rate： | 34800 ~1000000 |
+| 静态电流Quiescent Current： | 35mA@12V |
+| 空载电流No-load current： | 420mA@12V |
+| 额定负载 Rated Torgue: | 10kg.cm@12V |
+| 堵转电流Stall current： | 3.8A@12V |
+| 额定电流 Rated Current: | 1300mA@12V |
+| 位置分辨率Position resolution： | 0.088°(360°/4096) |
+| 堵转扭矩Stall torque： | 30kg.cm@12V |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773557722774916658958.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 5 |
+| 齿轮虚位Back Lash | ≦0.5° | 5 |
+| 出力轴螺丝 The rocker screw | M3X6 | 5 |
+| 信号高电平电压 Signal high Voltage | +13V | 9 |
+| 信号低电平电压 Signal Low Voltage | -8V | 9 |
+
+![SM-30BL-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773557722774916658958.pdf) | A/2 |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

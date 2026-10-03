@@ -31,7 +31,7 @@ FD fields depend on the servo model and memory table. Before writing:
 
 - Save the original values or take a screenshot.
 - Distinguish runtime fields from persistent settings.
-- Open the matching memory table from [Bus Protocol](../reference/protocol.md); do not reuse addresses across families.
+- Open the matching memory table from [Bus Protocol](../reference/protocol/index.md); do not reuse addresses across families.
 - Follow model-specific save and restart instructions after changing mode, limits, calibration, or protection.
 - Keep the first movement slow, small, unloaded, and clear of people.
 

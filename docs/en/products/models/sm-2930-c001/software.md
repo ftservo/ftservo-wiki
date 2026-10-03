@@ -4,9 +4,27 @@
 
 Control interface: **RS-485**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/552537) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| High resolution | 12 位编码器（360 度 0.088°） |
+| Servo control mode | 转动范围0-360°及多圈任意[敏感词]角度 |
+| Command signal | Digital Packet |
+| ID | 254个ID地址可选 |
+| Baud rate | 38400bps ~ 1 Mbps |
+| Resolution [deg/pulse] | 0.088°(360°/4096) |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **SMS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/memory-sms-sts.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **SMS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/parameter/memory-sms.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

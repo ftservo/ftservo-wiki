@@ -1,5 +1,7 @@
 # SM-30BL-C001
 
+![SM-30BL-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-30BL-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,63 @@ Use this page to compare the main specifications of `SM-30BL-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/12v-14kgcm-rs485串行总线舵机) · Checked 2026-10-02. The complete model on the page is SM-30BL-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-30BL-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| OperatinTemperatureRange | -15℃～70℃ |
+| Size | A：54mm B：28mm C：40.1mm |
+| Weight | 102± 1g |
+| Gear type | 钢 Steel |
+| Limit angle | No Limiter |
+| High torque | 30Kg.cm |
+| Wide operating voltage | 9V~12V |
+| High resolution | 12 位编码器（360 度 0.088°） |
+| Servo control mode | 转动范围0-360°及多圈任意[敏感词]角度 |
+| Command signal | Digital Packet |
+| Serial bus connection | 254个ID地址可选 |
+| Baud rate | 34800 ~1000000 |
+| Quiescent Current | 35mA@12V |
+| No-load current | 420mA@12V |
+| Rated Torgue | 10kg.cm@12V |
+| Stall current | 3.8A@12V |
+| Rated Current | 1300mA@12V |
+| Position resolution | 0.088°(360°/4096) |
+| Stall torque | 30kg.cm@12V |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773557722774916658958.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 5 |
+| 齿轮虚位Back Lash | ≦0.5° | 5 |
+| 出力轴螺丝 The rocker screw | M3X6 | 5 |
+| 信号高电平电压 Signal high Voltage | +13V | 9 |
+| 信号低电平电压 Signal Low Voltage | -8V | 9 |
+
+![SM-30BL-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773557722774916658958.pdf) | A/2 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

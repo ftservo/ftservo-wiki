@@ -10,6 +10,14 @@
       "type": "existing_catalog",
       "path": "docs/javascripts/servo-selector-data.js",
       "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/15kg-low-voltage-drive-digital-9g-steering-gear",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "FT-90B0-C001"
+      ]
     }
   ],
   "assets": [
@@ -18,7 +26,8 @@
       "status": "missing",
       "path": null,
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20200612/6372758020556571544810589.pdf",
+      "external_only": true
     },
     {
       "kind": "pinout",
@@ -36,10 +45,10 @@
     },
     {
       "kind": "drawing",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/drawing.webp",
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20200612/6372758022461271691525224.png"
     },
     {
       "kind": "cad",

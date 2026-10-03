@@ -4,9 +4,26 @@
 
 Control interface: **TTL**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/519352) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 360° (when 0~4096) |
+| Feedback | Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入压）,Current（工作电流），Temperature（工 作温度） |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **STS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/memory-sms-sts.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **STS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/parameter/memory-sts.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

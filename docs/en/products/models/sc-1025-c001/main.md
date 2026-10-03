@@ -1,5 +1,7 @@
 # SC-1025-C001
 
+![SC-1025-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SC-1025-C001` and plan power, control and mechanical integration.
 
 [Back to SC catalog](../../datasheets/sc.md){ .md-button }
@@ -35,17 +37,69 @@ Use this page to compare the main specifications of `SC-1025-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/568655) · Checked 2026-10-02. The complete model on the page is SC-1025-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SC-1025-C001 |
+| Storage Temperature Range | -20℃~+60℃ |
+| Operating Temperature Range | -10℃~+50℃ |
+| Size | A: 16.8mm B: 32.4mm C: 30.9mm |
+| Weight | 26.7± 2g |
+| Gear type | Metal |
+| Limit angle | NO limit |
+| Bearing type | 滚珠轴承 Ball bearings |
+| Horn gear spline | 25T/5.9mm |
+| Gear Ratio | 1/361 |
+| Case | PA66+GF |
+| Connector wire | 15±0.5CM |
+| Motor | Core Motor |
+| Operating Voltage Range | 4.8V-7.4V |
+| No load speed | 0.143sec/60°(70RPM)@7.4V |
+| Runnig current(at no load) | 140mA(Max)@7.4V |
+| Peak stall torque | 10.5kg.cm@7.4V |
+| Rated torque | 3.5kg.cm@7.4V |
+| Stall current | 400mA@7.4V |
+| Command signal | Digital Packet |
+| Protocol Type | Half duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 210±5°(when 0～1023) |
+| Feedback | Load， Speed, Position. |
+| Resolution [deg/pulse] | 0.214°(220°/1024) |
+| Neutral Position | 511 |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771850054838077502346.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 5 |
+| 齿轮虚位Back Lash | ≦0.5° | 5 |
+| 出力轴螺丝 The rocker screw | M3.0X6 | 5 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![SC-1025-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771850054838077502346.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

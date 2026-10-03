@@ -4,9 +4,27 @@
 
 Control interface: **RS-485**. Confirm the full model suffix against the physical label.
 
+<!-- official-control:start -->
+## Model-specific control specifications
+
+[Official source](https://www.feetechrc.com/24v-24kgcm-modbus-rtu舵机) · 2026-10-02
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| High resolution | 12 位编码器（360 度 /4096， 0.088°） |
+| Servo control mode | 转动范围0-360°及多圈任意[敏感词]角度 |
+| Communication Baud Rate | 38400bps ~ 1 Mbps |
+| Resolution | 0.088 ° (360 °/4096) |
+| Running degree | 360 ° (when 0～4095) |
+| Neutral Position | 2048 |
+| Control Algorithm | PID |
+
+Consult the exact firmware memory table for register writes; the specification table does not replace it.
+<!-- official-control:end -->
+
 ## Choose the application layer
 
-Family reference: **SMS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/memory-sms-sts.md) and [packet protocol](../../../reference/protocol.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
+Family reference: **SMS** → Python `sms_sts`; Arduino / C++ `SMS_STS`. Read the [family memory-table guide](../../../reference/parameter/memory-sms.md) and [packet protocol](../../../reference/protocol/index.md). This identifies the family entry point, not confirmed addresses, units or modes for this model and firmware.
 
 | Development environment | Existing guide |
 | --- | --- |

@@ -1,5 +1,7 @@
 # FT-995M-C001
 
+![FT-995M-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FT-995M-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,87 @@ Use this page to compare the main specifications of `FT-995M-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf) · Checked 2026-10-02. The complete model on the page is FT-995M-C001.
+
+!!! warning "Claims requiring confirmation"
+    The website table names FT-995-C001; only the PDF with verified cover model FT995M-C001 is used. Website table claims are excluded.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FT-995M-C001 |
+| Operating Voltage | 7.4V / 8.4V |
+| No Load Speed± | 0.286sec/60° (35RPM) / 0.25sec/60°(40RPM) |
+| Running Current ( no load) | 600mA / 800mA |
+| Stall Torque (at locked) | 95kg.cm / 105kg.cm |
+| Stall Current (at locked) | 9.5A / 10.5A |
+| Idle Current (at stopped) | 26mA / 26mA |
+| Input Voltage | 6V-9V |
+| Rated Torgue | 22.5kg.cm / 25kg.cm |
+| Rated Current | 2200mA / 2900mA |
+| Kt | 10kg.cm/A |
+| Size | 65X30X48 / 见图纸See drawings |
+| Limit Angle | No limit |
+| Case material | Aluminum |
+| Gear material | 钢 Steel |
+| Bearing type | 滚珠轴承 Ball bearings |
+| Angle Sensor | 类型Type / Carbon-Film Potentiometer |
+| Connector and Cable | 类型 Type / JR |
+| The Weight | 187.5g± 1g |
+| Horn Type | 15T/7.6mm |
+| Gear Ratio | 1/399 |
+| Back Lash | ≦0.5° |
+| The rocker phantom | 0° |
+| The rocker screw | M3X6 |
+| Motor | Core Motor |
+| Command Signal | Pulse width modulation |
+| Control System Type | Digital comparator |
+| Operating Travel | 180±5° (at 500→2500μsec) |
+| Left | ≤ 5° |
+| Centering Deviation | ≦1° |
+| Neutral Position | 1500 μsec |
+| Dead Band Width | ≤4 μsec |
+| Rotating Direction | 逆时针 Counterclockwise(在1500 →2500 μsec) |
+| Pulse Width Range | 500→2500 μsec |
+| Electronic Protection | 堵转8秒/Stall 8sec / 舵机堵转后，输出扭矩超 过过载扭矩并持续超过8S 后自动输出保护扭矩，可 修改过载扭矩，保护时间 及保护扭矩。 |
+| Signal Period | 20ms |
+| Signal high Voltage | 2V-5V |
+| Signal Low Voltage | 0.0V-0.45V |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sensor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦1° | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FT-995M-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782067113306061460283.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

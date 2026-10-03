@@ -4,9 +4,27 @@
 
 控制接口：**RS-485**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/24v-24kgcm-modbus-rtu舵机) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 高分辨率High resolution： | 12 位编码器（360 度 /4096， 0.088°） |
+| 伺服控制模式Servo control mode： | 转动范围0-360°及多圈任意[敏感词]角度 |
+| 通讯波特率 Communication Baud Rate: | 38400bps ~ 1 Mbps |
+| 电子分辨率 Resolution: | 0.088 ° (360 °/4096) |
+| 旋转角度 Running degree: | 360 ° (when 0～4095) |
+| 中位 Neutral Position: | 2048 |
+| 控制算法 Control Algorithm: | PID |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## 选择应用层
 
-系列入口：**SMS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/memory-sms-sts.md)与[数据包协议](../../../reference/protocol.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
+系列入口：**SMS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/parameter/memory-sms.md)与[数据包协议](../../../reference/protocol/index.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
 
 | 开发环境 | 已有指南 |
 | --- | --- |

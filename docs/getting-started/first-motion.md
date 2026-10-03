@@ -22,4 +22,4 @@
 - 方向位或有符号速度的表达方式
 - 机械软限位和零位
 
-完成后再进入 [SDK](../sdk/index.md) 或 [协议与内存表](../reference/protocol.md)。
+完成后再进入 [SDK](../sdk/index.md) 或 [协议与内存表](../reference/protocol/index.md)。

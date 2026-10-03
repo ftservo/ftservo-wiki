@@ -1,5 +1,7 @@
 # SM-105B-C001
 
+![SM-105B-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `SM-105B-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 SM 系列目录](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,68 @@
 
 通信指令和软件集成方法请继续查看 [SDK 指南](../../../sdk/index.md)以及对应产品系列的协议资料。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/861651) · 核对日期：2026-10-02；页面型号：SM-105B-C001。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | SM-105B-C001 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 Operating Temperature Range: | -15℃～60℃ |
+| 尺寸 Size: | A：58.5mm B：33.5mm C：44mm |
+| 重量 Weight: | 200± 3g |
+| 齿轮类型 Gear type: | 钢 Steel |
+| 机构极限角度 Limit angle: | No limit |
+| 轴承 Bearing: | 滚珠轴承 Ball bearings |
+| 出力轴 Horn gear spline: | 15T/OD7.6mm |
+| 齿轮虚位Back Lash: | ≦0.5° |
+| 外壳 Case: | Aluminium |
+| 舵机线 Connector wire: | 40CM |
+| 马达 Motor: | Brushless Motor |
+| 工作电压Operating Voltage Range: | 9V-16V |
+| 空载速度 No load speed: | 0.167sec/60°(60RPM) |
+| 空载电流 Runnig current(at no load) : | ≦240mA |
+| 堵转扭矩 Peak stall torque: | 150kg.cm |
+| 额定扭矩 Rated torque: | 50kg.cm |
+| 静态电流 Idle Current (at stopped) | 24mA |
+| 堵转电流 Stall current: | 6.3A |
+| 控制信号 Command signal: | Digital Packet |
+| 协议类型 Protocol Type: | Half Duplex Asynchronous Serial Communication |
+| ID范围 ID range: | 0-253 |
+| 通读速率 Communication Speed: | 38400bps ~ 1Mbps |
+| 旋转角度 Running degree: | 360° (when 0~ 4096) |
+| 反馈 Feedback: | Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作 电流）,Temperature（工作温度） |
+
+### 规格书中的补充参数
+
+[官网规格书](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773486236271034827287.pdf)
+
+| 参数 | 规格原文 | PDF 页码 |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-105B-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773486236271034827287.pdf) | A/0 |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

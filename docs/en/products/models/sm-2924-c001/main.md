@@ -1,5 +1,7 @@
 # SM-2924-C001
 
+![SM-2924-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-2924-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,65 @@ Use this page to compare the main specifications of `SM-2924-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/24v-24kgcm-modbus-rtu舵机) · Checked 2026-10-02. The complete model on the page is SM-2924-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-2924-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| OperatinTemperatureRange | -15℃～80℃ |
+| Size | A：40mm B：28mm C：42.3mm |
+| Weight | 102± 1g |
+| Case material | Aluminium |
+| Gear material | 钢 Steel |
+| Bearing type | 滚珠轴承 Ball bearings |
+| Limit angle | No Limiter |
+| Motor | Brushless Motor |
+| High resolution | 12 位编码器（360 度 /4096， 0.088°） |
+| Servo control mode | 转动范围0-360°及多圈任意[敏感词]角度 |
+| Duplex asynchronous | Modbus-RTU 通信协议 |
+| Serial bus connection | 254个ID地址可选 |
+| Communication Baud Rate | 38400bps ~ 1 Mbps |
+| Input Voltage Range | 9V-24V |
+| Operating Voltage | 24V |
+| No Load Speed | 0.092sec/60 °(109RPM) |
+| Running Current | ≦ 150mA |
+| Stall Torque | 22kg.cm |
+| Stall Current | 2.2A |
+| Idle Current | 22mA |
+| Rated Torgue | 7kg.cm |
+| Rated Current | 700mA |
+| Kt | 10kg.cm/A |
+| Resolution | 0.088 ° (360 °/4096) |
+| Running degree | 360 ° (when 0～4095) |
+| Neutral Position | 2048 |
+| Control Algorithm | PID |
+
+Attachment checks: PDF content model not verified: SM-2924-C001串型规格书V1.3-20250328-不限流版本.pdf
+
+Other files linked by the manufacturer (model applicability unconfirmed):
+
+- [SM-2924-C001串型规格书V1.3-20250328-不限流版本.pdf](https://www.feetechrc.com/Data/feetechrc/upload/file/20260707/6391901236065727117220028.pdf)
+
+![SM-2924-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
 | Model datasheet | Not supplied | — |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

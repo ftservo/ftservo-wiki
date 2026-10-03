@@ -1,260 +1,108 @@
 # ST series specifications
 
-Browse 19 ST series models. Each card shows the main electrical and control specifications for quick comparison.
+20 models. Compare primary specifications and open each model for integration details.
 
-[Back to specifications catalog](index.md) · [Product selection](../index.md)
-
-!!! info "Parameter scope"
-    Select a model by input voltage, control interface and stall torque, then open its specifications for integration guidance.
-
-## Models
+[Product selector](../index.md)
 
 <div class="servo-catalog-grid">
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3009-c001/main/">ST-3009-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3009BL-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>9 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3009-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-2000-c001/images/main.webp" alt="ST-2000-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-2000-c001/main/">ST-2000-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>5.5–9 V</dd></div><div><dt>Stall torque</dt><dd>24.3 kg·cm@8.4V</dd></div><div><dt>No-load speed</dt><dd>68 rpm@8.4 V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-2000-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3020-c001/main/">ST-3020-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3020-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>7.4 V</dd></div>
-    <div><dt>Stall torque</dt><dd>20 kg·cm@7.4V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3020-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3009-c001/images/main.webp" alt="ST-3009-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3009-c001/main/">ST-3009-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>9 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>100 rpm@7.4V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3009-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3025-c001/main/">ST-3025-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3025BL-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>20 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3025-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3020-c001/images/main.webp" alt="ST-3020-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3020-c001/main/">ST-3020-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>7.4 V</dd></div><div><dt>Stall torque</dt><dd>20 kg·cm@7.4V</dd></div><div><dt>No-load speed</dt><dd>68 rpm@8.4V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3020-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3025-c002/main/">ST-3025-C002</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3025BL-C002 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>40 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3025-c002/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3025-c001/images/main.webp" alt="ST-3025-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3025-c001/main/">ST-3025-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>20 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>170 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3025-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3032-c001/main/">ST-3032-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3032 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3032-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3025-c002/images/main.webp" alt="ST-3025-C002" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3025-c002/main/">ST-3025-C002</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>40 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>85 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3025-c002/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3032-c036/main/">ST-3032-C036</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3032-C036 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3032-c036/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3032-c001/images/main.webp" alt="ST-3032-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3032-c001/main/">ST-3032-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>111.11 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3032-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3035-c001/main/">ST-3035-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3035-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>35 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3035-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3032-c036/images/main.webp" alt="ST-3032-C036" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3032-c036/main/">ST-3032-C036</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>111.11 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3032-c036/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3036-c001/main/">ST-3036-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3036-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3036-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3035-c001/images/main.webp" alt="ST-3035-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3035-c001/main/">ST-3035-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>35 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>45 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3035-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3036-c002/main/">ST-3036-C002</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3036-C002 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3036-c002/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3036-c001/images/main.webp" alt="ST-3036-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3036-c001/main/">ST-3036-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>110 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3036-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3045-c001/main/">ST-3045-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3045M · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>6 kg·cm@6V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3045-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3036-c002/images/main.webp" alt="ST-3036-C002" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3036-c002/main/">ST-3036-C002</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>4.5 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>110 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3036-c002/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3046-c001/main/">ST-3046-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3046 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>7.4 V</dd></div>
-    <div><dt>Stall torque</dt><dd>40 kg·cm@7.4V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3046-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3045-c001/images/main.webp" alt="ST-3045-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3045-c001/main/">ST-3045-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>6 V</dd></div><div><dt>Stall torque</dt><dd>6 kg·cm@6V</dd></div><div><dt>No-load speed</dt><dd>75.19 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3045-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3095-c001/main/">ST-3095-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3095-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>7.4 V</dd></div>
-    <div><dt>Stall torque</dt><dd>95 kg·cm@7.4V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3095-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3046-c001/images/main.webp" alt="ST-3046-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3046-c001/main/">ST-3046-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>7.4 V</dd></div><div><dt>Stall torque</dt><dd>40 kg·cm@7.4V</dd></div><div><dt>No-load speed</dt><dd>45.45 rpm@7.4V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3046-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3120-c001/main/">ST-3120-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3120-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>120 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3120-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3095-c001/images/main.webp" alt="ST-3095-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3095-c001/main/">ST-3095-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>7.4 V</dd></div><div><dt>Stall torque</dt><dd>95 kg·cm@7.4V</dd></div><div><dt>No-load speed</dt><dd>40 rpm@8.4V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3095-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3200-c001/main/">ST-3200-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3200-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>200 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3200-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3120-c001/images/main.webp" alt="ST-3120-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3120-c001/main/">ST-3120-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>120 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>22 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3120-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3215-c001/main/">ST-3215-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3215 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>7.4 V</dd></div>
-    <div><dt>Stall torque</dt><dd>19 kg·cm@7.4V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3215-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3200-c001/images/main.webp" alt="ST-3200-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3200-c001/main/">ST-3200-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>200 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>38 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3200-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3215-c018/main/">ST-3215-C018</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">ST-3215-C018 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>30 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3215-c018/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3215-c001/images/main.webp" alt="ST-3215-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3215-c001/main/">ST-3215-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>7.4 V</dd></div><div><dt>Stall torque</dt><dd>19 kg·cm@7.4V</dd></div><div><dt>No-load speed</dt><dd>42.02 rpm@6V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3215-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3235-c001/main/">ST-3235-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3235 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>30 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3235-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3215-c018/images/main.webp" alt="ST-3215-C018" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3215-c018/main/">ST-3215-C018</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>30 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>45.05 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3215-c018/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-3250-c001/main/">ST-3250-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS3250 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>9–12.6 V</dd></div>
-    <div><dt>Stall torque</dt><dd>50 kg·cm@12V</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3250-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3235-c001/images/main.webp" alt="ST-3235-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3235-c001/main/">ST-3235-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>30 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>45.05 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3235-c001/main/">Model page</a></div>
 </article>
 <article class="ft-selector-card servo-catalog-card">
-  <div class="ft-selector-card-top">
-    <h3><a href="../../models/st-5420-c001/main/">ST-5420-C001</a></h3>
-    <div class="ft-selector-badges"><span>STS</span><span>TTL</span></div>
-  </div>
-  <p class="ft-selector-identity">STS5420M-C001 · Document revision A/0</p>
-  <dl class="ft-selector-metrics">
-    <div><dt>Input voltage</dt><dd>Contact us</dd></div>
-    <div><dt>Stall torque</dt><dd>Contact us</dd></div>
-  </dl>
-  <p class="ft-selector-description">STS series · TTL control</p>
-  <div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-5420-c001/main/">View specifications</a></div>
+  <figure class="ft-product-image"><img src="../../models/st-3250-c001/images/main.webp" alt="ST-3250-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-3250-c001/main/">ST-3250-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>9–12.6 V</dd></div><div><dt>Stall torque</dt><dd>50 kg·cm@12V</dd></div><div><dt>No-load speed</dt><dd>75.19 rpm@12V</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-3250-c001/main/">Model page</a></div>
+</article>
+<article class="ft-selector-card servo-catalog-card">
+  <figure class="ft-product-image"><img src="../../models/st-5420-c001/images/main.webp" alt="ST-5420-C001" loading="lazy" width="800" height="800"><figcaption></figcaption></figure>
+<div class="ft-selector-card-top"><h3><a href="../../models/st-5420-c001/main/">ST-5420-C001</a></h3><div class="ft-selector-badges"><span>STS</span><span>TTL</span></div></div>
+<dl class="ft-selector-metrics"><div><dt>Input voltage</dt><dd>7.4 V</dd></div><div><dt>Stall torque</dt><dd>25kg·cm@7.4V</dd></div><div><dt>No-load speed</dt><dd>90 rpm</dd></div></dl><div class="ft-selector-actions"><a class="ft-selector-detail" href="../../models/st-5420-c001/main/">Model page</a></div>
 </article>
 </div>

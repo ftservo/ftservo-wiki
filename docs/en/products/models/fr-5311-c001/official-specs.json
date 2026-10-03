@@ -1,0 +1,147 @@
+{
+  "model": "FR-5311-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/6v-13kg-digital-steering-gear",
+  "table": [
+    [
+      "型 号 Model：",
+      "FR-5311-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "6V 15公斤数码舵机/Product Name: 6V 15kg. cm Digital Servo"
+    ],
+    [
+      "配套双模式切换板Supporting dual-mode switching debug board",
+      "FRS (点击跳转Click to jump)"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-15℃～70℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40.1mm B：20.1mm C：38.8mm"
+    ],
+    [
+      "重量 Weight:",
+      "60.5± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜 Copper"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic,POM"
+    ],
+    [
+      "外壳 Case:",
+      "PA+Fiberglass"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4-8.4V"
+    ],
+    [
+      "静态电流Idle current (at stopped)",
+      "6mA@6V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.2sec/60°@6V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "150mA@6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "15.5kg.cm@6V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "5kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1.7A@6V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Pulse.width modification"
+    ],
+    [
+      "控制系统类型 Control System Type",
+      "Digital comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500→2500 μsec"
+    ],
+    [
+      "中立位置Neutral position",
+      "1500 μsec"
+    ],
+    [
+      "旋转角度Running degree",
+      "300°(at 500→2500μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤4 μsec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwise(在1500 →2000 μsec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FR-5311-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

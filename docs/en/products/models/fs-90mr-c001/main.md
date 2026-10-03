@@ -1,5 +1,7 @@
 # FS-90MR-C001
 
+![FS-90MR-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FS-90MR-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,10 +37,27 @@ Use this page to compare the main specifications of `FS-90MR-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-brochure:start -->
+## Specifications from the official brochure
+
+[2024 FEETECH brochure](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf) · PDF 13
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Size | 22.6X12.2X26.6mm |
+| Weight | 12.7g |
+| No load speed | 0.07sec/60°@6V |
+| Peak stall torque | 2.2kg.cm@6V |
+| Motor | 铁芯电机    |
+| Gear type | 铜齿 |
+| Case | PC 塑料 |
+| Running degree | 连续转(1400-1600μsec) |
+<!-- official-brochure:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |

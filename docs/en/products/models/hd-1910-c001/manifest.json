@@ -10,6 +10,14 @@
       "type": "existing_catalog",
       "path": "docs/javascripts/servo-selector-data.js",
       "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/510257",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "HD-1910-C001"
+      ]
     }
   ],
   "assets": [
@@ -36,10 +44,10 @@
     },
     {
       "kind": "drawing",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/drawing.webp",
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20260918/6392534626111379811918658.png"
     },
     {
       "kind": "cad",

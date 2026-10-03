@@ -1,5 +1,7 @@
 # ST-3215-C001
 
+![ST-3215-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `ST-3215-C001` and plan power, control and mechanical integration.
 
 [Back to ST catalog](../../datasheets/st.md){ .md-button }
@@ -35,17 +37,73 @@ Use this page to compare the main specifications of `ST-3215-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/74v-19-kgcm-plastic-case-metal-tooth-magnetic-code-double-axis-ttl-series-steering-gear) · Checked 2026-10-02. The complete model on the page is ST-3215-C001.
+
+!!! warning "Claims requiring confirmation"
+    Case: product introduction and specification table disagree; confirmation required.
+    Motor: product introduction and specification table disagree; confirmation required.
+    voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | ST-3215-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～70℃ |
+| Size | A：45.2mm B：24.7mm C：35mm |
+| Weight | 55± 1g |
+| Gear type | 铜Copper |
+| Limit angle | NO limit |
+| Bearing | 滚珠轴承Ball bearings |
+| Horn gear spline | 25T |
+| Horn type | Plastic,POM |
+| Case | aluminium alloy |
+| Connector wire | 150mm ±5 mm |
+| Motor | Coreless motor |
+| Operating Voltage Range | 6-7.4V |
+| No load speed | 0.238sec/60°@6V |
+| Runnig current(at no load) | 150 mA@6V |
+| Peak stall torque | 19.5kg.cm@6V |
+| Rated torque | 6.5kg.cm@6V |
+| Stall current | 2000mA@6V |
+| Command signal | DigitalPacket |
+| Protocol Type | HalfDuplex Asynchronous Serial( ommuni cati on |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 360° (when 0~4096) |
+| Feedback | Load (负载),Position (位置) , Speed (工作速度)I nputVoltage (输入电压)，Current (工作电流) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391772523943436695270694.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![ST-3215-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391772523943436695270694.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

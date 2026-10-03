@@ -1,0 +1,136 @@
+{
+  "model": "FT-3329-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/556975",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-3329-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 10kg.cm数码250度舵机/7.4V 10kg.cm250 Degree Digital Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：30mm B：10mm C：35.7mm ."
+    ],
+    [
+      "重量 Weight:",
+      "28.3± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Metal Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/4.95mm"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "25CM"
+    ],
+    [
+      "马达 Motor:",
+      "Coreless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4-9V"
+    ],
+    [
+      "静态电流Idle current (at stopped) .",
+      "6mA"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.071sec/60degree(140RPM)@8.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "135mA@8.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "11.5kg.cm@8.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "3.8kg.cm@8.4V"
+    ],
+    [
+      "控制信号Command signal",
+      "Pulse width modification"
+    ],
+    [
+      "放大器类型Amplifier type",
+      "Digital Comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500→2500 μsec"
+    ],
+    [
+      "中位位置Stop position",
+      "1500 μsec"
+    ],
+    [
+      "旋转角度Running degree",
+      "250°(at 500→2500μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤8 μsec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwise(在1500→2000 μsec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-3329-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gearNote",
+    "gearNoteEn",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

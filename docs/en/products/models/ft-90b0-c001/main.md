@@ -1,5 +1,7 @@
 # FT-90B0-C001
 
+![FT-90B0-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FT-90B0-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,51 @@ Use this page to compare the main specifications of `FT-90B0-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/15kg-low-voltage-drive-digital-9g-steering-gear) · Checked 2026-10-02. The complete model on the page is FT-90B0-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FT-90B0-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～70℃ |
+| Size | A：22.5mm B：12.1mm C：22.4mm |
+| Weight | 10.5g |
+| Gear type | Plastic Gear |
+| Limit angle | 180degree |
+| Bearing | NO Ball bearings |
+| Horn gear spline | 21T(4.86) |
+| Horn type | Plastic,POM |
+| Case | PC |
+| Connector wire | 250mm ±5 mm（ JR）(Brown ,Red and Orange) |
+| Motor | Metal brush motor |
+| Operating Voltage Range | 3-6V |
+| Idle current(at stopped) | 4mA-6mA |
+| No load speed | 110RPM@6V |
+| Runnig current(at no load) | 120 mA @6V |
+| Peak stall torque | 1.5kg.cm@6V |
+| Rated torque | 0.5kg.cm@6V |
+| Stall current | 800mA@6V |
+| Running degree | 180°(when 500～2500 μ sec) |
+
+![FT-90B0-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20200612/6372758020556571544810589.pdf) | — |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

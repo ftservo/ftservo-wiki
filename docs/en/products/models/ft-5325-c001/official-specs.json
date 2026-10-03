@@ -1,0 +1,152 @@
+{
+  "model": "FT-5325-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/74v-25-kgcm-digital-180-degree-aluminum-medium-shell-steel-gear-iron-core-steering-gear",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-5325-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 25kg.cm数码180度铝中壳舵机/7.4V 25kg.cm digital 180 degree aluminum mid-shell servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：55mm B：20mm C:43mm"
+    ],
+    [
+      "重量 Weight:",
+      "67土1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Steel Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/5.9mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "Plastic, POM"
+    ],
+    [
+      "外壳 Case:",
+      "PA+Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "30CM"
+    ],
+    [
+      "马达 Motor:",
+      "Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "6V-7.4V"
+    ],
+    [
+      "静态电流Idle current (at stopped).",
+      "6MA@7.4V"
+    ],
+    [
+      "空载速度 No-load speed:",
+      "0. 151sec/60°@7.4V"
+    ],
+    [
+      "空载电流 Running current(at no load) :",
+      "120mA@7.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "25kg.cm@7.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "8.3kg.cm@7.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "3.5A@7.4V"
+    ],
+    [
+      "控制信号Command signal",
+      "Pulse width modification"
+    ],
+    [
+      "放大器类型Amplifier type",
+      "Digitalcompara tor"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "900~2100usec"
+    ],
+    [
+      "中立位置Stop position",
+      "1500 sec"
+    ],
+    [
+      "旋转角度Running degree",
+      "180° Continuous Rotation"
+    ],
+    [
+      "死区宽度Dead bandwidth",
+      "+/-25 μsec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "Counterclockwise (在1 500→2000μ sec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-5325-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [
+    [
+      "输入电压下限：官网表为 6.0，所挂载 PDF 为 4.0；新增筛选值暂缓录入，请核对版本。",
+      "voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation."
+    ],
+    [
+      "输入电压上限：官网表为 7.4，所挂载 PDF 为 8.4；新增筛选值暂缓录入，请核对版本。",
+      "voltageMax: website table gives 7.4, attached PDF gives 8.4; a new filter value is withheld pending revision confirmation."
+    ]
+  ],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "weightTolerance",
+    "positionRange",
+    "torqueVoltage"
+  ]
+}

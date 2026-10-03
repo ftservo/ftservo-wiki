@@ -1,5 +1,7 @@
 # SM-24BL-C015
 
+![SM-24BL-C015](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-24BL-C015` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,71 @@ Use this page to compare the main specifications of `SM-24BL-C015` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-motor:start -->
+## Motor classification from the official brochure
+
+Brushless coreless motor. [2024 FEETECH official brochure](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf), PDF page 6; matched full model `SM-24BL-C015`.
+<!-- official-motor:end -->
+
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/24v-24kgcm-modbus-rtu舵机-52876) · Checked 2026-10-02. The complete model on the page is SM-24BL-C015.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-24BL-C015 |
+| Storage Temperature Range | -40℃～80℃ |
+| OperatinTemperatureRange | -40℃～70℃ |
+| Size | A：113.5mm B：20mm C：54mm |
+| Weight | 256.9±3g |
+| Gear type | 钢 Steel |
+| Limit angle | No Limit |
+| Stall Torque (at locked) | 24Kg.cm |
+| Input Voltage | 9V~25V |
+| No Load Speed | 0.09sec/60°(110RPM)@24V |
+| Running Current | 150mA@24V |
+| Stall Current (at locked) | 1.3A@24V |
+| Rated Torgue | 8kg.cm@24V |
+| Rated Current | 350mA@24V |
+| Terminal resistance | 10.2Ω |
+| Command Signal | Digital Packet |
+| Protocol Type | Modbus-RTU |
+| Communication Baud | 38400bps ~ 1 Mbps |
+| Running degree | 360°(when 0～4095) |
+| Neutral Position | 180°（2047） |
+| Rotating Direction | Clockwise(0→4095） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773605570152888501893.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M2.5 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-24BL-C015 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773605570152888501893.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

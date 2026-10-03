@@ -10,10 +10,20 @@ edit_uri: edit/main/docs/
 not_in_nav: |
   products/models/**/*.md
   en/products/models/**/*.md
+  reference/protocol.md
+  reference/memory-hls.md
+  reference/memory-scscl.md
+  reference/memory-sms-sts.md
+  en/reference/protocol.md
+  en/reference/memory-hls.md
+  en/reference/memory-scscl.md
+  en/reference/memory-sms-sts.md
 
 theme:
   name: material
+  logo: assets/feetech-logo-white.svg
   language: zh
+  font: false
   features:
     - navigation.sections
     - navigation.indexes
@@ -65,6 +75,7 @@ plugins:
                     - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
                     - PWM: products/datasheets/pwm.md
+                    - FU: products/datasheets/fu.md
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
@@ -80,10 +91,22 @@ plugins:
                 - mechanical/index.md
             - 协议与参数:
                 - reference/index.md
-                - 数据包协议: reference/protocol.md
-                - SCSCL 内存表: reference/memory-scscl.md
-                - SMS / STS 内存表: reference/memory-sms-sts.md
-                - HLS 内存表: reference/memory-hls.md
+                - 数据包协议:
+                    - reference/protocol/index.md
+                    - FT-SCS 自定义协议: reference/protocol/ft-scs.md
+                    - MODBUS-RTU协议: reference/protocol/modbus.md
+                    - UAVCAN通信协议: reference/protocol/uavcan.md
+                    - CAN2.0A转FTSCS1.0 协议: reference/protocol/can-ftscs.md
+                    - CANopen舵机通信协议: reference/protocol/canopen.md
+                - 内存表参数:
+                    - reference/parameter/index.md
+                    - SCSCL 内存表: reference/parameter/memory-scscl.md
+                    - STS 内存表: reference/parameter/memory-sts.md
+                    - HLS 内存表: reference/parameter/memory-hls.md
+                    - SMS 内存表: reference/parameter/memory-sms.md
+                    - SMSMB 内存表: reference/parameter/memory-smsmb.md
+                    - SHC 内存表: reference/parameter/memory-shc.md
+                    - UAVCAN 内存表: reference/parameter/memory-fu.md
             - 故障排查: troubleshooting.md
             - 资料下载: downloads.md
         - locale: en
@@ -105,6 +128,7 @@ plugins:
                     - HD: products/datasheets/hd.md
                     - HL: products/datasheets/hl.md
                     - PWM: products/datasheets/pwm.md
+                    - FU: products/datasheets/fu.md
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
@@ -120,10 +144,22 @@ plugins:
                 - mechanical/index.md
             - Protocol and Parameters:
                 - reference/index.md
-                - Packet protocol: reference/protocol.md
-                - SCSCL memory table: reference/memory-scscl.md
-                - SMS / STS memory table: reference/memory-sms-sts.md
-                - HLS memory table: reference/memory-hls.md
+                - Packet Protocol:
+                    - reference/protocol/index.md
+                    - FT-SCS protocol: reference/protocol/ft-scs.md
+                    - MODBUS-RTU protocol: reference/protocol/modbus.md
+                    - UAVCAN protocol: reference/protocol/uavcan.md
+                    - CAN2.0A to FTSCS1.0 protocol: reference/protocol/can-ftscs.md
+                    - CANopen Servo protocol: reference/protocol/canopen.md
+                - Memory Table Parameters:
+                    - reference/parameter/index.md
+                    - SCSCL memory table: reference/parameter/memory-scscl.md
+                    - SMS memory table: reference/parameter/memory-sms.md
+                    - STS memory table: reference/parameter/memory-sts.md
+                    - HLS memory table: reference/parameter/memory-hls.md
+                    - SMSMB memory table: reference/parameter/memory-smsmb.md
+                    - SHC memory table: reference/parameter/memory-shc.md
+                    - UAVCAN memory table: reference/parameter/memory-fu.md
             - Troubleshooting: troubleshooting.md
             - Downloads: downloads.md
 
@@ -153,11 +189,11 @@ validation:
   anchors: warn
 
 extra_css:
-  - stylesheets/extra.css?v=79bf665764
+  - stylesheets/extra.css?v=285ab3f89d
 extra_javascript:
   - javascripts/language-redirect.js?v=31c7d2eb41
-  - javascripts/servo-selector-data.js?v=533591c0af
-  - javascripts/servo-selector.js?v=a89d21a438
+  - javascripts/servo-selector-data.js?v=46e8260e88
+  - javascripts/servo-selector.js?v=545dfc5219
   - javascripts/developer-context.js?v=6a26876af4
   - javascripts/servo-characteristic-chart.js?v=b1088300e5
 extra:

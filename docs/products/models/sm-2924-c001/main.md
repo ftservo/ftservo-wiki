@@ -1,5 +1,7 @@
 # SM-2924-C001
 
+![SM-2924-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `SM-2924-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 SM 系列目录](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,65 @@
 
 通信指令和软件集成方法请继续查看 [SDK 指南](../../../sdk/index.md)以及对应产品系列的协议资料。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/24v-24kgcm-modbus-rtu舵机) · 核对日期：2026-10-02；页面型号：SM-2924-C001。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | SM-2924-C001 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 OperatinTemperatureRange: | -15℃～80℃ |
+| 尺寸 Size: | A：40mm B：28mm C：42.3mm |
+| 重量 Weight: | 102± 1g |
+| 外壳材质 Case material: | Aluminium |
+| 齿轮材质 Gear material: | 钢 Steel |
+| 轴承类型 Bearing type: | 滚珠轴承 Ball bearings |
+| 机构极限角度 Limit angle: | No Limiter |
+| 马达 Motor: | Brushless Motor |
+| 高分辨率High resolution： | 12 位编码器（360 度 /4096， 0.088°） |
+| 伺服控制模式Servo control mode： | 转动范围0-360°及多圈任意[敏感词]角度 |
+| 双工异步Duplex asynchronous： | Modbus-RTU 通信协议 |
+| 串行总线连接Serial bus connection： | 254个ID地址可选 |
+| 通讯波特率 Communication Baud Rate: | 38400bps ~ 1 Mbps |
+| 工作电压范围 Input Voltage Range: | 9V-24V |
+| 典型工作电压 Operating Voltage: | 24V |
+| 空载速度±10% No Load Speed: | 0.092sec/60 °(109RPM) |
+| 空载电流 Running Current : | ≦ 150mA |
+| 堵转扭力 Stall Torque: | 22kg.cm |
+| 堵转电流 Stall Current： | 2.2A |
+| 静态电流 Idle Current | 22mA |
+| 额定负载 Rated Torgue: | 7kg.cm |
+| 额定电流 Rated Current: | 700mA |
+| Kt常数: | 10kg.cm/A |
+| 电子分辨率 Resolution: | 0.088 ° (360 °/4096) |
+| 旋转角度 Running degree: | 360 ° (when 0～4095) |
+| 中位 Neutral Position: | 2048 |
+| 控制算法 Control Algorithm: | PID |
+
+附件核对（未纳入资料包）：PDF content model not verified: SM-2924-C001串型规格书V1.3-20250328-不限流版本.pdf
+
+官网其它关联附件（适用型号尚未核实）：
+
+- [SM-2924-C001串型规格书V1.3-20250328-不限流版本.pdf](https://www.feetechrc.com/Data/feetechrc/upload/file/20260707/6391901236065727117220028.pdf)
+
+![SM-2924-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
 | 型号规格书 | 待补充 | — |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

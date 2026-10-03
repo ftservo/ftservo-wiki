@@ -10,6 +10,14 @@
       "type": "existing_catalog",
       "path": "docs/javascripts/servo-selector-data.js",
       "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/6v-7kgcm-digital-250-degree-steering-gear-ft3325m.html",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "FT-3325-C001"
+      ]
     }
   ],
   "assets": [
@@ -17,8 +25,9 @@
       "kind": "datasheet",
       "status": "missing",
       "path": null,
-      "revision": null,
-      "source": null
+      "revision": "A/0",
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782226687155392933473.pdf",
+      "external_only": true
     },
     {
       "kind": "pinout",
@@ -36,10 +45,10 @@
     },
     {
       "kind": "drawing",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/drawing.webp",
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20210724/6376274617390383386334840.png"
     },
     {
       "kind": "cad",

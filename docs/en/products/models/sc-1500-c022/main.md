@@ -1,5 +1,7 @@
 # SC-1500-C022
 
+![SC-1500-C022](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SC-1500-C022` and plan power, control and mechanical integration.
 
 [Back to SC catalog](../../datasheets/sc.md){ .md-button }
@@ -35,17 +37,68 @@ Use this page to compare the main specifications of `SC-1500-C022` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/6v-15kg-digital-robot-steering-gear) · Checked 2026-10-02. The complete model on the page is SCS15-C022.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SCS15-C022 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -10℃～60℃ |
+| Size | A：40.2mm B：20.2mm C：40mm |
+| Weight | 58.2± 1g |
+| Gear type | 铜 Copper |
+| Limit angle | NO limi |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 25T/OD5.9mm |
+| Case | PA |
+| Connector wire | 15cm |
+| Motor | Core Motor |
+| Operating Voltage Range | 4-8.4V |
+| No load speed | 0.156sec/60°@7.4V |
+| Runnig current(at no load) | 270 mA@7.4V |
+| Peak stall torque | 15.6kg.cm@7.4V |
+| Rated torque | 5.2kg.cm@7.4V |
+| Stall current | 2.5A@7.4V |
+| Command signal | Digital Packet |
+| Protocol Type | Half duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1 Mbps |
+| Running degree | 220°(when 0～1023） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Temperature（工作温度） |
+| Resolution [deg/pulse] | 0.215°(220°/1023) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771845929831597900239.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![SC-1500-C022 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771845929831597900239.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

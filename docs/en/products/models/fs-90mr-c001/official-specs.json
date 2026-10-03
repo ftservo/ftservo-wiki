@@ -1,0 +1,41 @@
+{
+  "model": "FS-90MR-C001",
+  "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf",
+  "pdf_page": 13,
+  "checked": "2026-10-02",
+  "table": [
+    [
+      "尺寸 Size",
+      "22.6X12.2X26.6mm"
+    ],
+    [
+      "重量 Weight",
+      "12.7g"
+    ],
+    [
+      "最高转速 No load speed",
+      "0.07sec/60°@6V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque",
+      "2.2kg.cm@6V"
+    ],
+    [
+      "电机类型 Motor",
+      "铁芯电机   "
+    ],
+    [
+      "齿轮类型 Gear type",
+      "铜齿"
+    ],
+    [
+      "外壳材质 Case",
+      "PC 塑料"
+    ],
+    [
+      "转动角度 Running degree",
+      "连续转(1400-1600μsec)"
+    ]
+  ],
+  "filled_fields": []
+}

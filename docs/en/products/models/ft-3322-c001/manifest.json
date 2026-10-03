@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "model_id": "ft-3322-c001",
+  "model_name": "FT-3322-C001",
+  "family": "FT",
+  "interface": "PWM",
+  "document_revision": "A/0",
+  "sources": [
+    {
+      "type": "official_product_page",
+      "url": "https://www.feetech.cn/728213",
+      "captured": "2026-10-02",
+      "note": "主要规格转录自飞特官网该型号产品页参数表 / Specifications transcribed from the model's official FEETECH product page."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/728213",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "FT-3322-C001"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": "A/0",
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782196214275119734720.pdf",
+      "external_only": true
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "not_applicable",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "available",
+      "path": "images/drawing.webp",
+      "revision": null,
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20251117/6389896791070589429272611.png"
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # SC-0005-C001
 
+![SC-0005-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SC-0005-C001` and plan power, control and mechanical integration.
 
 [Back to SC catalog](../../datasheets/sc.md){ .md-button }
@@ -17,7 +19,7 @@ Use this page to compare the main specifications of `SC-0005-C001` and plan powe
 | Item | Value |
 | --- | --- |
 | Input voltage | **6 V** |
-| Stall torque | **Contact us** |
+| Stall torque | **1.8kg·cm@6V** |
 | Control interface | `TTL` |
 | Product family | `SCS` |
 | Product model | `SCS0005-C001` |
@@ -35,17 +37,69 @@ Use this page to compare the main specifications of `SC-0005-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/522732) · Checked 2026-10-02. The complete model on the page is SC-0005-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SC-0005-C001 |
+| Storage Temperature Range | -20℃~+60℃ |
+| Operating Temperature Range | -10℃~+50℃ |
+| Size | A:21.6mm B: 11.7mm C: 20.5mm |
+| Weight | 8.8±0.5g |
+| Gear type | Metal teeth POM+金属齿 |
+| Limit angle | No limit |
+| Bearing | NO |
+| Horn Type | 28T/Φ3.9mm |
+| Gear Ratio | 1/320 |
+| Case | ABS |
+| Connector wire | 15cm |
+| Motor | Coreless motor |
+| Operating Voltage Range | 3.7V-6V |
+| No load speed | 0.059sec/60°(170RPM)@6V |
+| Runnig current(at no load) | 200mA@6V |
+| Peak stall torque | 1.8kg.cm@6V |
+| Rated torque | 0.6kg.cm@6V |
+| Stall current | 230mA@6V |
+| Idle Current | 20mA@6V |
+| Command signal | Digital Packet |
+| Protocol Type | Half duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 500k bps |
+| Running degree | 270°(when 0～1023) |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度） |
+| Position Sensor Resolution | 0.293°(280°/1024) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771876679316899843221.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 出力轴螺丝 The rocker screw | M1.7X3.5 | 4 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![SC-0005-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771876679316899843221.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

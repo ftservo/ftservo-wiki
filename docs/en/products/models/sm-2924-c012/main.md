@@ -1,5 +1,7 @@
 # SM-2924-C012
 
+![SM-2924-C012](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-2924-C012` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,75 @@ Use this page to compare the main specifications of `SM-2924-C012` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-motor:start -->
+## Motor classification from the official brochure
+
+Brushless coreless motor. [2024 FEETECH official brochure](https://www.feetechrc.com/Data/feetechrc/upload/file/20240706/2024%E9%A3%9E%E7%89%B9%E5%AE%A3%E4%BC%A0%E5%86%8C.pdf), PDF page 6; matched full model `SM-2924-C012`.
+<!-- official-motor:end -->
+
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetech.cn/559926) · Checked 2026-10-02. The complete model on the page is SM-2924-C012.
+
+!!! warning "Claims requiring confirmation"
+    voltageMax: website table gives 25.0, attached PDF gives 24.0; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-2924-C012 |
+| Storage Temperature Range | -30℃～80℃ |
+| OperatinTemperatureRange | -15℃～60℃ |
+| Size | A：55mm B：30mm C：91.85mm |
+| Weight | 267± 3g |
+| Gear type | 钢 Steel |
+| Limit angle | No Limit |
+| Stall Torque (at locked) | 20Kg.cm |
+| Input Voltage | 9V~25V |
+| No Load Speed | 0.098sec/60°(102RPM)@24V |
+| Running Current | 150mA@24V |
+| Stall Current (at locked) | 2.7A@24V |
+| Rated Torgue | 6kg.cm@24V |
+| Rated Current | 600mA@24V |
+| Terminal resistance | 1.13Ω |
+| Command Signal | Digital Packet |
+| Protocol Type | Modbus-RTU |
+| Communication Baud | 38400bps ~ 1 Mbps |
+| Running degree | 360°(when 0～4095) |
+| Neutral Position | 180°（2047） |
+| Rotating Direction | Clockwise(0→4095） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetech.cn/Data/feetechrc/upload/file/20260622/6391773601639478584757456.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位The rocker phantom | 0° | 4 |
+| 出力轴螺丝The rocker | No | 4 |
+| screw 马达 Motor | Brushless Motor | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-2924-C012 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetech.cn/Data/feetechrc/upload/file/20260622/6391773601639478584757456.pdf) | A/2 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

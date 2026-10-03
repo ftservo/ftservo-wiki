@@ -4,9 +4,28 @@
 
 控制接口：**TTL**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/691673) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 控制信号 Command signal: | Digital Packet |
+| 协议类型 Protocol Type: | Half Duplex Asynchronous Serial Communication |
+| ID范围 ID range: | 0-253 |
+| 通读速率 Communication Speed: | 38400bps ~ 1 Mbps |
+| 中位 Neutral Position: | 2048 |
+| 旋转角度 Running degree: | 360°(when 0～4096) |
+| 反馈 Feedback: | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压）,Temperature（工作温度） |
+| 电子分辨率 Resolution [deg/pulse] | 0.088°(360°/4096) |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## 选择应用层
 
-系列入口：**STS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/memory-sms-sts.md)与[数据包协议](../../../reference/protocol.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
+系列入口：**STS** → Python `sms_sts`；Arduino / C++ `SMS_STS`。参阅[系列内存表指南](../../../reference/parameter/memory-sts.md)与[数据包协议](../../../reference/protocol/index.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
 
 | 开发环境 | 已有指南 |
 | --- | --- |

@@ -1,0 +1,135 @@
+{
+  "model": "SM-1000-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/12v-100kg-180kg-485-magnetic-code-serial-bus-steering-gear",
+  "table": [
+    [
+      "SM-1000-C001是兼容12V串口总线舵机，采用粉末冶金外壳、铁芯电机、金属齿牙箱、飞特自主研发的RS485控制板，12位高精度磁编码传感器，D型输出头。堵转扭矩120kg.cm，能实现360度任意角度可控，连续转等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电流、电压、温度、负载参数，从而实现过载和过流保护。适合应用在对扭力要求大，使用频率低的应用场景。 SM-1000-C001 is compatible 12V serial port smart bus servo，Using powder metallurgy shell、core motor、metal gearbox、Feetech self researched and developed RS485 control board，12 bit high precision magnetic coding sensor，D shape output shaft. The stall torque is 120kg.cm，it can realize the function of setting the middle point with one key，acceleration slow start and slow stop，can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for the application scenarios with high torque requirement and low frequency."
+    ],
+    [
+      "型 号 Model：",
+      "SM-1000-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "12V 100kg.cm 485/Magnetic Coded Serial Control BUS Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～80℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：95.5mm B：65mm C：85mm"
+    ],
+    [
+      "重量 Weight:",
+      "860g ±0.2"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Metal Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "360degree (4096)"
+    ],
+    [
+      "轴承 Bearing:",
+      "2 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "D shape dia=8.0mm"
+    ],
+    [
+      "外壳 Case:",
+      "metal"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "150mm ±5 mm"
+    ],
+    [
+      "马达 Motor:",
+      "carbon motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "12V"
+    ],
+    [
+      "静态电流Idle current (at stopped)",
+      "15mA"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.25sec/ 60degree 40RPM|"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "200mA"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "120kg.cm@12V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "40@12V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "4500mA@12V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Bus Packet Communication RS485"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half duplex Asynchronous Serial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "360°(when 0～4095)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load,Speed,Input Voltage,Current"
+    ],
+    [
+      "位置传感器分辨率 Position Sensor Resolution:",
+      "360° (when 0~4095)-CW"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "SM100specs.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "gearNote",
+    "gearNoteEn",
+    "case",
+    "torqueVoltage"
+  ]
+}

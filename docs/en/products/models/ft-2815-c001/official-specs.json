@@ -1,0 +1,140 @@
+{
+  "model": "FT-2815-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/739911",
+  "table": [
+    [
+      "型 号 Model：",
+      "FT-2815-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "7.4V 15kg.cm数码180度铝壳钢齿轮空芯杯舵机"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-20℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A:23mm B:12mm C:27.5mm"
+    ],
+    [
+      "重量 Weight:",
+      "22.5± 2g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "Metal Gear"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/4.95mm"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminum"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "25±0.5CM"
+    ],
+    [
+      "马达 Motor:",
+      "Coreless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "4.8V-8.4V"
+    ],
+    [
+      "静态电流Idle current (at stopped) .",
+      "6mA@8.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.065sec/60°(153RPM)@8.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "250mA@8.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "19.5kg.cm@8.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "6.5kg.cm@8.4V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1300mA@8.4V"
+    ],
+    [
+      "控制信号Command si gnal",
+      "Pulse width modification"
+    ],
+    [
+      "控制系统类型Control System Type",
+      "Digital Comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "500→2500 μsec"
+    ],
+    [
+      "中立位置 Neutral Position",
+      "1500 μsec"
+    ],
+    [
+      "旋转角度Running degree",
+      "180±5°(at 500→2500μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤8 μsec"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "逆时针 Counterclockwise(在1500→2000 μsec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FT-2815-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gearNote",
+    "gearNoteEn",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

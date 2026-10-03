@@ -1,5 +1,7 @@
 # FT-90B0-C001
 
+![FT-90B0-C001](images/main.webp){ .ft-model-main-image }
+
 本页提供 `FT-90B0-C001` 的主要产品规格，便于完成供电、控制与机械集成选型。
 
 [返回 PWM 系列目录](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,51 @@
 
 控制信号与首次调试请继续查看本型号的[程序开发](software.md)；PWM 型号不使用串行总线 SDK。
 
+<!-- official-specs:start -->
+## 官网型号详细参数
+
+[飞特官网型号页](https://www.feetechrc.com/15kg-low-voltage-drive-digital-9g-steering-gear) · 核对日期：2026-10-02；页面型号：FT-90B0-C001。
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 型 号 Model： | FT-90B0-C001 |
+| 存储温度 Storage Temperature Range | -30℃～80℃ |
+| 运行温度 Operating Temperature Range: | -20℃～70℃ |
+| 尺寸 Size: | A：22.5mm B：12.1mm C：22.4mm |
+| 重量 Weight: | 10.5g |
+| 齿轮类型 Gear type: | Plastic Gear |
+| 机构极限角度 Limit angle: | 180degree |
+| 轴承 Bearing: | NO Ball bearings |
+| 出力轴 Horn gear spline: | 21T(4.86) |
+| 摆臂 Horn type: | Plastic,POM |
+| 外壳 Case: | PC |
+| 舵机线 Connector wire: | 250mm ±5 mm（ JR）(Brown ,Red and Orange) |
+| 马达 Motor: | Metal brush motor |
+| 工作电压Operating Voltage Range: | 3-6V |
+| 静态电流 Idle current(at stopped) | 4mA-6mA |
+| 空载速度 No load speed: | 110RPM@6V |
+| 空载电流 Runnig current(at no load) : | 120 mA @6V |
+| 堵转扭矩 Peak stall torque: | 1.5kg.cm@6V |
+| 额定扭矩 Rated torque: | 0.5kg.cm@6V |
+| 堵转电流 Stall current: | 800mA@6V |
+| 旋转角度 Running degree: | 180°(when 500～2500 μ sec) |
+
+![FT-90B0-C001 机身尺寸图](images/drawing.webp){ .ft-model-drawing }
+
+[查看原尺寸图纸](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## 资料下载与完整性 {#resources}
 
-仅为本型号资料包中已收录的文件提供下载链接。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
+本地附件已收录在型号资料包中；PDF 规格书通过官网链接查看，不包含在离线包中。“待补充”表示尚未提供，系列教程不能代替型号专用参数确认。
 
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
-| 型号规格书 | 待补充 | — |
+| 型号规格书 | [官网查看（需联网）](https://www.feetechrc.com/Data/feetechrc/upload/file/20200612/6372758020556571544810589.pdf) | — |
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 不适用 | — |
-| 2D 安装图 | 待补充 | — |
+| 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | 待补充 | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |

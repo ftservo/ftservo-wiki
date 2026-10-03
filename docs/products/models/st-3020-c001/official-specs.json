@@ -1,0 +1,147 @@
+{
+  "model": "ST-3020-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/6v-20-kgcm-360-degree-magnetic-code-ttl-serial-bus-steering-gear",
+  "table": [
+    [
+      "ST-3020-C001是8.4V 24.3KG串口总线智能舵机，采用铝合金中框、铁芯电机、金属齿牙箱、飞特自主研发的TTL控制板，12位高精度磁编码传感器。堵转扭矩8Kg.cm，能实现360度任意角度可控，多圈连续转，步进等工作模式，可实现一键设定中位功能，加速度缓启动与缓停止，能反馈位置、速度、电压、温度、电流、负载参数，从而实现过载保护和过流保护。适合应用在工业设备、机器人等小扭力传动应用场景。 ST-3020-C001 is 8.4V 24.3kg serial bus smart servo，adopt middle aluminum alloy case、core motor、metal gearbox, Feetech self researched and developed TTL control board, 12 bit high precision magnetic coding sensor. The stall torque is 8kg.cm, can feedback position、speed、voltage、current、temperature、load parameters，thus, overload and over-current protection can be realized. It is suitable for application in industrial equipment, robot and transmission application scenarios."
+    ],
+    [
+      "型 号 Model：",
+      "ST-3020-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "8.4V 24.3Kg.cm TTL串行总线舵机/8.4V 24.3kg.cm code Serial ControlServo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-30℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-10℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：40.2mm B：20.2mm C：40mm"
+    ],
+    [
+      "重量 Weight:",
+      "61.7± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "铜 Copper"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "NO limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/OD5.9mm"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminium"
+    ],
+    [
+      "类型 Type:",
+      "PH2.0-3P"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "15cm"
+    ],
+    [
+      "马达 Motor:",
+      "铁芯电机Core Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "5.5V-14V"
+    ],
+    [
+      "静态电流Idle1current (ats topped)",
+      "32MA@8.4V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.147sec/60° (68RPM)@8.4V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "280mA@8.4V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "24.3kg.cm@8.4V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "8.1kg.cm@6V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "2.6A@8.4V"
+    ],
+    [
+      "控制信号 Command signal:",
+      "Digital Packet"
+    ],
+    [
+      "协议类型 Protocol Type:",
+      "Half Duplex AsynchronousSerial Communication"
+    ],
+    [
+      "ID范围 ID range:",
+      "0-253"
+    ],
+    [
+      "通读速率 Communication Speed:",
+      "38400bps ~ 1 Mbps"
+    ],
+    [
+      "旋转角度 Running degree:",
+      "360° (when 0~4095)"
+    ],
+    [
+      "反馈 Feedback:",
+      "Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Current（工作电流）,Temperature（工作温度）"
+    ],
+    [
+      "位置传感器分辨率 Position Sensor Resolution:",
+      "12Bits Magnetic Coding(360° /4095）"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "ST-3020-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "voltageMin",
+    "voltageMax",
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "continuous",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn"
+  ]
+}

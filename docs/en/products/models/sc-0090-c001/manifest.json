@@ -10,6 +10,14 @@
       "type": "existing_catalog",
       "path": "docs/javascripts/servo-selector-data.js",
       "note": "Existing catalog identity only; original approved engineering documents are not yet bundled."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/6v-23kg-serial-bus-steering-gear_65522",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "SCS0009"
+      ]
     }
   ],
   "assets": [
@@ -17,8 +25,9 @@
       "kind": "datasheet",
       "status": "missing",
       "path": null,
-      "revision": null,
-      "source": null
+      "revision": "A/0",
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391771873533994748433885.pdf",
+      "external_only": true
     },
     {
       "kind": "pinout",
@@ -36,10 +45,10 @@
     },
     {
       "kind": "drawing",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/drawing.webp",
       "revision": null,
-      "source": null
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20220425/6378648350501215092509316.png"
     },
     {
       "kind": "cad",

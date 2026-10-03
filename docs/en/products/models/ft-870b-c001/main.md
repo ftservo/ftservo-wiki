@@ -1,5 +1,7 @@
 # FT-870B-C001
 
+![FT-870B-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FT-870B-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,73 @@ Use this page to compare the main specifications of `FT-870B-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/589317) · Checked 2026-10-02. The complete model on the page is FT-870B-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FT-870B-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Size | A：40mm B：20mm C: 39mm |
+| Weight | 78.8± 1g |
+| Gear type | 钛齿 Titanium |
+| Limit angle | NO |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 25T/5.9mm |
+| Gear Ratio | 1/356 |
+| Case | Aluminum |
+| Connector wire | 30±0.5CM |
+| Motor | 4 Pole Brushless Motor |
+| Operating Voltage Range | 6-9V |
+| Idle current (atstopped) | 26mA@8.4V |
+| No load speed | 0.142sec/60°(70RPM)@8.4V |
+| Runnig current(at no load) | 500mA@8.4V |
+| Peak stall torque | 75kg.cm@8.4V |
+| Rated torque | 18.75kg.cm@8.4V |
+| Command signal | Pulse width modulation |
+| Control System Type | Digital comparator |
+| Pulse width range | 500~2500 μ sec |
+| Stop position | 1500 μ sec |
+| Running degree | 180±5°(at 500→2500μsec) |
+| Dead band width | ≤4 μ sec |
+| Rotating direction | 逆时针 Counterclockwise(在1500→2000 μsec) |
+| Electronic Protection | 堵转4秒/Stall 4sec |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782099884661747375662.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sensor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦1° | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FT-870B-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782099884661747375662.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

@@ -1,5 +1,9 @@
 # 飞特 Wiki 维护教程
 
+## PDF 文件体积管理
+
+Wiki 不再收录本地 PDF。规格书使用官网 HTTPS 链接，已整理的参数与 WebP 图纸继续保留。资料清单中相应附件填写 `status: "missing"`、`path: null`、`external_only: true`，并在 `source` 保存准确的官网链接。离线 ZIP 不包含这些 PDF；官网资料导入脚本仅更新规格书链接，不复制 PDF 到文档目录。
+
 > 本文件供飞特员工维护仓库，不参与 Wiki 网站构建。
 
 型号资料整理、双语接入、附件清单与 ZIP 导出的完整流程见 [WIKI更新维护教程](WIKI更新维护教程.md)。可复制的文件夹模板见 [产品型号资料包模板](产品型号资料包模板/README.md)。
@@ -72,3 +76,16 @@ git commit -m "chore: update Python SDK"
 ```
 
 其他 SDK 替换对应路径。更新前审阅上游变更，更新后重新验证相关教程。
+
+## 选型器与产品卡片
+
+主图、基础/专业选型字段、未知值处理与员工维护步骤见 [产品主图与选型参数维护](WIKI更新维护教程.md#产品主图与选型参数维护2026-10)。数据源为 `docs/javascripts/servo-selector-data.js`，修改后运行 `python scripts/sync_servo_catalog.py` 同步中英文系列卡片，再执行资料包校验和严格构建。新型号的真实图片需中英文目录各保存一份；没有真实图片时自动使用明确标记的占位图。
+# Official model specifications and drawings (2026-10)
+
+The official-source audit is in `imports/official-servo-audit-2026-10-02.md` and its JSON counterpart. All 170 model folders contain an `official-specs.json` provenance record in both languages. Confirm the full model and suffix against the official table and the PDF cover before updating selector fields; a matching download filename or recent upload date alone is insufficient. Keep conflicting claims visible and withhold new filter values until the document revision and test conditions are confirmed.
+
+Keep real body drawings in `images/drawing.webp` using lossless WebP with all dimension labels intact. The 800×800 product-photo crop rule does not apply to engineering drawings. Set the selector's `drawing` path and update each locale's `manifest.json` with the local PDF/drawing path, source and revision. If a preview comes from a verified PDF, record the PDF page. Accessory horn drawings do not belong in card previews.
+
+The resumable workflow is `crawl_official_servos.py`, `download_official_servo_assets.py`, `extract_official_pdf_specs.py`, then `import_official_servo_specs.py`. Inspect the cached model and attachment checks before the import step. `supplement_official_brochure.py` uses explicit motor descriptions tied to complete model numbers in the official 2024 brochure; `motorSource` and `motorSourcePage` retain its provenance. Generic iron-core, coreless or brushless labels do not verify a more specific motor class. The cache in `imports/official-feetech-2026-10-02/` is ignored by Git.
+
+After an update, run `python scripts/sync_servo_catalog.py`, `python scripts/product_package.py validate`, and `mkdocs build --strict`. Check desktop and mobile in both languages. HLS and STS always precede other families; the selected sort orders models within each family priority group. Desktop previews show the photo and body drawing together without resizing neighboring cards; mobile cards open the model page.

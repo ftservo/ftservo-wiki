@@ -1,5 +1,7 @@
 # SM-70BL-C001
 
+![SM-70BL-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-70BL-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,64 @@ Use this page to compare the main specifications of `SM-70BL-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/713228) · Checked 2026-10-02. The complete model on the page is SM-70BL-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-70BL-C001 |
+| Storage Temperature Range | -40℃～70℃ |
+| OperatinTemperatureRange | -40℃～70℃ |
+| Size | A：40mm B：20mm C：47.8mm |
+| Weight | 91.6±1g |
+| Gear type | 钢 Steel |
+| Limit angle | No Limit |
+| Stall Torque (at locked) | 70Kg.cm |
+| Input Voltage | 16.8V-25.2V |
+| No Load Speed | 0.13sec/60°(78RPM)@24V |
+| Running Current | 180mA@24V |
+| Stall Current (at locked) | 3.5A@24V |
+| Rated Torgue | 17.5kg.cm@24V |
+| Rated Current | 870mA@24V |
+| Terminal resistance | 4.55 Ω |
+| Command Signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous SerialCommunication |
+| Communication Baud | 38400bps ~ 1 Mbps |
+| Running degree | 360°(when 0～4095) |
+| Rotating Direction | Clockwise(0→4095） |
+| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, InputVoltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773589511326637138227.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3.0 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-70BL-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773589511326637138227.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

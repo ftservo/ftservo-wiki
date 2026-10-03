@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # 产品选型
 
 不要只按“公斤扭矩”选舵机。一个可落地的选型至少要同时满足接口、电压、持续负载、速度、尺寸、行程、反馈和环境条件。
@@ -6,21 +11,38 @@
 
 <div id="ft-servo-selector" class="ft-selector" data-locale="zh">
   <div class="ft-selector-head">
-    <div><strong>快速找到合适的飞特舵机</strong><span>当前提供 142 款产品，可按接口、电压和扭矩快速筛选。</span></div>
-    <button type="button" class="ft-selector-reset" data-action="reset">重置条件</button>
+    <div><strong>找到适合你的飞特舵机</strong><span>筛选条件即时生效，快速比较候选型号。</span></div>
+    <div class="ft-selector-buttons"><button type="button" class="ft-selector-reset" data-action="advanced" aria-expanded="false" aria-controls="ft-professional-panel">专业选型</button><button type="button" class="ft-selector-reset" data-action="reset">重置条件</button></div>
   </div>
-  <div class="ft-selector-controls">
-    <label class="ft-selector-field ft-selector-search"><span>搜索型号</span><input type="search" data-filter="query" placeholder="例如 ST-3215 或 SMS" autocomplete="off"></label>
-    <label class="ft-selector-field"><span>控制接口</span><select data-filter="interface"><option value="">全部接口</option></select></label>
-    <label class="ft-selector-field"><span>产品系列</span><select data-filter="family"><option value="">全部系列</option></select></label>
-    <label class="ft-selector-field"><span>输入电压</span><select data-filter="voltage"><option value="">全部电压</option></select></label>
-    <label class="ft-selector-field"><span>最低堵转扭矩 kg·cm</span><input type="number" data-filter="torque" min="0" step="0.1" placeholder="不限"></label>
-    <label class="ft-selector-field"><span>排序</span><select data-filter="sort"><option value="model">型号名称</option><option value="torque-desc">扭矩从高到低</option><option value="torque-asc">扭矩从低到高</option><option value="voltage">电压从低到高</option></select></label>
+  <div class="ft-selector-layout">
+    <aside id="ft-professional-panel" class="ft-selector-sidebar" aria-label="专业筛选条件" hidden>
+      <div class="ft-sidebar-heading">筛选条件<small>同组可多选</small></div>
+      <label class="ft-selector-field"><span>搜索型号</span><input type="search" data-filter="query" aria-label="搜索型号" autocomplete="off" placeholder="ST-3215 / HL-3950"></label>
+      <fieldset class="ft-filter-group"><legend>控制接口</legend><div class="ft-filter-options" data-group="interface"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>产品系列</legend><div class="ft-filter-options" data-group="family"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>输入电压 · V</legend><div class="ft-filter-options" data-group="voltage"></div></fieldset>
+      <fieldset class="ft-filter-group ft-range-group"><legend>堵转扭矩 <small>kg·cm</small></legend><div class="ft-range-pair"><label class="ft-selector-field"><span>下限</span><input type="number" data-filter="torque" aria-label="下限" min="0" step="0.1" placeholder="不限"></label><span class="ft-range-dash">—</span><label class="ft-selector-field"><span>上限</span><input type="number" data-filter="torqueMax" aria-label="上限" min="0" step="0.1" placeholder="不限"></label></div><div class="ft-range-sliders"><input class="ft-filter-slider" type="range" min="0" max="150" step="0.1" value="0" data-default="0" data-range-for="torque" aria-label="堵转扭矩下限"><input class="ft-filter-slider" type="range" min="0" max="150" step="0.1" value="150" data-default="150" data-range-for="torqueMax" aria-label="堵转扭矩上限"></div></fieldset>
+      <fieldset class="ft-filter-group ft-range-group"><legend>空载速度 <small>rpm</small></legend><div class="ft-range-pair"><label class="ft-selector-field"><span>下限</span><input type="number" data-filter="speed" aria-label="下限" min="0" step="0.1" placeholder="不限"></label><span class="ft-range-dash">—</span><label class="ft-selector-field"><span>上限</span><input type="number" data-filter="speedMax" aria-label="上限" min="0" step="0.1" placeholder="不限"></label></div><div class="ft-range-sliders"><input class="ft-filter-slider" type="range" min="0" max="180" step="0.1" value="0" data-default="0" data-range-for="speed" aria-label="空载速度下限"><input class="ft-filter-slider" type="range" min="0" max="180" step="0.1" value="180" data-default="180" data-range-for="speedMax" aria-label="空载速度上限"></div></fieldset>
+      <fieldset class="ft-filter-group ft-limit-group"><legend>位置控制范围 ≥ · °</legend><label class="ft-selector-field"><span>下限</span><input type="number" data-filter="positionRange" aria-label="下限" min="0" step="0.1" placeholder="不限"></label><input class="ft-filter-slider" type="range" min="0" max="360" step="0.1" value="0" data-default="0" data-range-for="positionRange" aria-label="位置控制范围 ≥ · °"></fieldset><fieldset class="ft-filter-group ft-limit-group"><legend>最长边 ≤ · mm</legend><label class="ft-selector-field"><span>上限</span><input type="number" data-filter="maxEdge" aria-label="上限" min="0" step="0.1" placeholder="不限"></label><input class="ft-filter-slider" type="range" min="0" max="150" step="0.1" value="150" data-default="150" data-range-for="maxEdge" aria-label="最长边 ≤ · mm"></fieldset><fieldset class="ft-filter-group ft-limit-group"><legend>重量 ≤ · g</legend><label class="ft-selector-field"><span>上限</span><input type="number" data-filter="weight" aria-label="上限" min="0" step="0.1" placeholder="不限"></label><input class="ft-filter-slider" type="range" min="0" max="500" step="0.1" value="500" data-default="500" data-range-for="weight" aria-label="重量 ≤ · g"></fieldset>
+      <fieldset class="ft-filter-group"><legend>连续旋转</legend><div class="ft-filter-options" data-group="continuous"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>电机类型</legend><div class="ft-filter-options" data-group="motor"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>齿轮材质</legend><div class="ft-filter-options" data-group="gear"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>外壳材质</legend><div class="ft-filter-options" data-group="case"></div></fieldset>
+      <fieldset class="ft-filter-group"><legend>输出轴型</legend><div class="ft-filter-options" data-group="shaft"></div></fieldset>
+      <p class="ft-filter-note">空白表示不限；缺失参数不匹配。电压按目录比较值筛选。位置控制范围不等于连续旋转能力；最长边取三边尺寸最大值。滑块扭矩 0–150 kg·cm、速度 0–180 rpm，输入框可填写更大值。</p>
+    </aside>
+    <section class="ft-selector-main" aria-label="选型结果">
+      <div class="ft-selector-controls ft-selector-basic">
+        <label class="ft-selector-field"><span>搜索型号</span><input type="search" data-filter="query" aria-label="搜索型号" autocomplete="off" placeholder="ST-3215 / HL-3950"></label>
+        <label class="ft-selector-field"><span>控制接口</span><select data-category="interface" aria-label="控制接口"><option value="">全部</option></select></label><label class="ft-selector-field"><span>产品系列</span><select data-category="family" aria-label="产品系列"><option value="">全部</option></select></label><label class="ft-selector-field"><span>输入电压</span><select data-category="voltage" aria-label="输入电压"><option value="">全部</option></select></label>
+        <label class="ft-selector-field"><span>最低堵转扭矩 · kg·cm</span><input type="number" data-filter="torque" aria-label="最低堵转扭矩 · kg·cm" min="0" step="0.1" placeholder="不限"></label>
+        <label class="ft-selector-field"><span>最低空载速度 · rpm</span><input type="number" data-filter="speed" aria-label="最低空载速度 · rpm" min="0" step="0.1" placeholder="不限"></label>
+      </div>
+      <div class="ft-selector-toolbar"><div class="ft-selector-status" role="status" aria-live="polite">正在加载型号…</div><label class="ft-selector-sort"><span>排序</span><select data-filter="sort" title="HLS、STS 优先；各组内按所选指标排序"><option value="recommended">主推优先</option><option value="model">型号</option><option value="torque-desc">扭矩 ↓</option><option value="torque-asc">扭矩 ↑</option><option value="speed-desc">速度 ↓</option><option value="weight-asc">重量 ↑</option></select></label></div>
+      <div class="ft-results-scroll" tabindex="0" aria-label="产品列表"><div class="ft-selector-results"></div><button type="button" class="ft-selector-more" data-action="more" hidden>显示更多</button></div>
+    </section>
   </div>
-  <div class="ft-selector-status" role="status" aria-live="polite">正在载入型号资料…</div>
-  <div class="ft-selector-results"></div>
-  <button type="button" class="ft-selector-more" data-action="more" hidden>显示更多</button>
-  <noscript>此选型器需要浏览器启用 JavaScript。你仍可使用下方的产品规格目录。</noscript>
+  <noscript>此选型器需要 JavaScript；下方系列目录仍可查看。</noscript>
 </div>
 
 !!! info "选型提示"

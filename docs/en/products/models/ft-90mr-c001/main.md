@@ -1,5 +1,7 @@
 # FT-90MR-C001
 
+![FT-90MR-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FT-90MR-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,74 @@ Use this page to compare the main specifications of `FT-90MR-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/18kg-digital-steering-gear-ft90mr) · Checked 2026-10-02. The complete model on the page is FT-90MR-C001.
+
+!!! warning "Claims requiring confirmation"
+    voltageMax: website table gives 6.0, attached PDF gives 8.4; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FT-90MR-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -10℃～70℃ |
+| Size | A：23.2mm B：12.1mm C:25.5mm |
+| Weight | 12.5g |
+| Gear type | Metal Gear |
+| Limit angle | NO limit |
+| Bearing | NO Ball bearings |
+| Horn gear spline | 20T |
+| Horn type | Plastic,POM |
+| Case | ABS |
+| Connector wire | 250mm |
+| Motor | coremotor |
+| Operating Voltage Range | 3-6V |
+| Idle current (at stopped) . | 5mA-6mA |
+| No load speed | 100RPM @6V |
+| Runnig current(at no load) | 150 mA@6V |
+| Peak stall torque | 2.15kg.cm@6V |
+| Rated torque | 0.71kg.cm@6V |
+| Stall current | 1000mA@6V |
+| Command si gnal | Pulse width modification |
+| Amplifier type | Digitalcompara tor |
+| Pulse width range | 900~2100usec |
+| Stop position | 1500 sec |
+| Running degree | 360° Continuous Rotation |
+| Dead band width | +/-25 μsec |
+| Rotating direction | CCW(when 1500~ 2500 μsec) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782439748873876545492.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / NO | 4 |
+| 齿轮虚位Back Lash | ≦2.0° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M2.0X4 | 4 |
+| 信号周期 Signal Period | 20ms | 7 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 7 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 7 |
+
+![FT-90MR-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782439748873876545492.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

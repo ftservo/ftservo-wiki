@@ -4,9 +4,33 @@
 
 控制接口：**TTL**。先将完整型号后缀与实物标签核对。
 
+<!-- official-control:start -->
+## 官网型号控制参数
+
+[官网来源](https://www.feetechrc.com/531930) · 2026-10-02
+
+| 参数 | 官网规格原文（含测试条件） |
+| --- | --- |
+| 运行模式 Operating Modes： | 模式0：角度伺服模式 （默认此模式，0-360度[敏感词]位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
+| 恒力输出 Constant force output： | 设定输出扭矩值，舵机可保持该扭矩(44号地址输入相对应的目标扭矩值，舵机可保持该扭矩) Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
+| 多圈模式 Multi-Loop Mode： | [敏感词]精度下可以正负7圈[敏感词]位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
+| 控制信号 Command signal: | Digital Packet |
+| 协议类型 Protocol Type: | Half Duplex Asynchronous Serial Communication |
+| ID范围 ID range: | 0-253(默认出厂值为“ID1”） |
+| 通读速率 Communication Speed: | 38400bps ~ 1 Mbps（默认出厂波特率为1000000） |
+| 控制算法 Control Algorithm： | PID（可自定义） |
+| 中位 Neutral Position： | 180°（2048） |
+| 旋转角度 Running degree: | 360° (when 0~4096) |
+| 电子分辨率 Resolution [deg/pulse] | 0.088°(360°/4096) |
+| 旋转方向 Rotating Direction： | Clockwise(0→4096） |
+| 反馈 Feedback: | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+
+寄存器写入仍需本完整型号与固件对应的内存表；此规格表不能替代内存表。
+<!-- official-control:end -->
+
 ## 选择应用层
 
-系列入口：**HLS** → Python `hls`；Arduino / C++ `HLSCL`。参阅[系列内存表指南](../../../reference/memory-hls.md)与[数据包协议](../../../reference/protocol.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
+系列入口：**HLS** → Python `hls`；Arduino / C++ `HLSCL`。参阅[系列内存表指南](../../../reference/parameter/memory-hls.md)与[数据包协议](../../../reference/protocol/index.md)。这里仅确定系列入口，不代表已确认本型号及固件的寄存器地址、单位或模式。
 
 | 开发环境 | 已有指南 |
 | --- | --- |

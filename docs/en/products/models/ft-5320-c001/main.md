@@ -1,5 +1,7 @@
 # FT-5320-C001
 
+![FT-5320-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `FT-5320-C001` and plan power, control and mechanical integration.
 
 [Back to PWM catalog](../../datasheets/pwm.md){ .md-button }
@@ -35,17 +37,78 @@ Use this page to compare the main specifications of `FT-5320-C001` and plan powe
 
 For control signals and first tests, continue with this model’s [software integration](software.md) page. PWM models do not use serial-bus SDKs.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/74v-20-kgcm-digital-180-degree-aluminum-middle-shell-copper-gear-iron-core-steering-gear) · Checked 2026-10-02. The complete model on the page is FT-5320-C001.
+
+!!! warning "Claims requiring confirmation"
+    case: website table gives plastic, attached PDF gives metal; a new filter value is withheld pending revision confirmation.
+    voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation.
+    voltageMax: website table gives 7.4, attached PDF gives 8.4; a new filter value is withheld pending revision confirmation.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | FT-5320-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -20℃～60℃ |
+| Size | A：55mm B：20mm C: 43mm |
+| Weight | 67土1g |
+| Gear type | 铜 Copper Gear |
+| Limit angle | NO limit |
+| Bearing | Ball bearings |
+| Horn gear spline | 25T/5.9mm |
+| Horn type | Plastic |
+| Case | PA+A lumi num |
+| Connector wire | 30CM |
+| Motor | Core Motor |
+| Operating Voltage Range | 6V-7.4V |
+| Idle current (atstopped) | 6MA@7.4V |
+| No load speed | 0.151sec/60°@7.4V |
+| Runnig current(at no load) | 120mA@7.4V |
+| Peak stall torque | 20kg.cm@7.4V |
+| Rated torque | 6.5kg.cm@7.4V |
+| Stall current | 3A@7.4V |
+| Command si gnal | Pulse width modification |
+| Amplifier type | Digital compara tor |
+| Pulse width range | 500~2500 μ sec |
+| Stop position | 1500 μ sec |
+| Running degree | 180° （at 500- &gt; 2500 μ sec) |
+| Dead band width | ≤4 μ sec |
+| Rotating direction | 逆时针 Counterclockwise (在1500→2000 μ sec) |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782390145326623606523.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / Carbon-Film Potentiometer | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 摇臂虚位 The rocker phantom | 0° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 两边角度差 Left&Right Travelling Angledeviation | ≤ 5° | 4 |
+| 回中差 Centering Deviation | ≦1° | 4 |
+| 信号周期 Signal Period | 20ms | 8 |
+| 信号高电平电压 Signal high Voltage | 2V-5V | 8 |
+| 信号低电平电压 Signal Low Voltage | 0.0V-0.45V | 8 |
+
+![FT-5320-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260623/6391782390145326623606523.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not applicable | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

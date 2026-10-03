@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "model_id": "st-2000-c001",
+  "model_name": "ST-2000-C001",
+  "family": "STS",
+  "interface": "TTL",
+  "document_revision": "A/0",
+  "sources": [
+    {
+      "type": "official_product_page",
+      "url": "https://www.feetech.cn/525256",
+      "captured": "2026-10-02",
+      "note": "主要规格转录自飞特官网该型号产品页参数表 / Specifications transcribed from the model's official FEETECH product page."
+    },
+    {
+      "type": "official_website",
+      "url": "https://www.feetechrc.com/525256",
+      "checked": "2026-10-02",
+      "model_on_page": [
+        "ST-2000-C001"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "kind": "datasheet",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "pinout",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "memory_table",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "drawing",
+      "status": "available",
+      "path": "images/drawing.webp",
+      "revision": null,
+      "source": "https://www.feetechrc.com/Data/feetechrc/upload/image/20231219/6383860399092901079124141.png"
+    },
+    {
+      "kind": "cad",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "example",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_result",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    },
+    {
+      "kind": "test_conditions",
+      "status": "missing",
+      "path": null,
+      "revision": null,
+      "source": null
+    }
+  ]
+}

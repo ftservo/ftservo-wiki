@@ -1,5 +1,7 @@
 # SM-105B-C001
 
+![SM-105B-C001](images/main.webp){ .ft-model-main-image }
+
 Use this page to compare the main specifications of `SM-105B-C001` and plan power, control and mechanical integration.
 
 [Back to SM catalog](../../datasheets/sm.md){ .md-button }
@@ -35,17 +37,68 @@ Use this page to compare the main specifications of `SM-105B-C001` and plan powe
 
 For communication commands and software integration, continue with the [SDK guide](../../../sdk/index.md) and the protocol documentation for this product family.
 
+<!-- official-specs:start -->
+## Official model specifications
+
+[FEETECH official product page](https://www.feetechrc.com/861651) · Checked 2026-10-02. The complete model on the page is SM-105B-C001.
+
+| Parameter | Manufacturer specification |
+| --- | --- |
+| Model | SM-105B-C001 |
+| Storage Temperature Range | -30℃～80℃ |
+| Operating Temperature Range | -15℃～60℃ |
+| Size | A：58.5mm B：33.5mm C：44mm |
+| Weight | 200± 3g |
+| Gear type | 钢 Steel |
+| Limit angle | No limit |
+| Bearing | 滚珠轴承 Ball bearings |
+| Horn gear spline | 15T/OD7.6mm |
+| Back Lash | ≦0.5° |
+| Case | Aluminium |
+| Connector wire | 40CM |
+| Motor | Brushless Motor |
+| Operating Voltage Range | 9V-16V |
+| No load speed | 0.167sec/60°(60RPM) |
+| Runnig current(at no load) | ≦240mA |
+| Peak stall torque | 150kg.cm |
+| Rated torque | 50kg.cm |
+| Idle Current (at stopped) | 24mA |
+| Stall current | 6.3A |
+| Command signal | Digital Packet |
+| Protocol Type | Half Duplex Asynchronous Serial Communication |
+| ID | 0-253 |
+| Communication Speed | 38400bps ~ 1Mbps |
+| Running degree | 360° (when 0~ 4096) |
+| Feedback | Load（负载）, Position（位 置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作 电流）,Temperature（工作温度） |
+
+### Additional facts from the attached datasheet
+
+[Official datasheet](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773486236271034827287.pdf)
+
+| Parameter | Specification | PDF page |
+| --- | --- | --- |
+| 角度传感器 Angle Sansor | 类型Type / 12Bits Magnetic Coding | 4 |
+| 齿轮虚位Back Lash | ≦0.5° | 4 |
+| 出力轴螺丝 The rocker screw | M3X6 | 4 |
+| 信号高电平电压 Signal high Voltage | +13V | 8 |
+| 信号低电平电压 Signal Low Voltage | -8V | 8 |
+
+![SM-105B-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
+
+[Open full-size drawing](images/drawing.webp)
+<!-- official-specs:end -->
+
 <!-- product-resources:start -->
 ## Resources and document status {#resources}
 
-Only files included in this model package have download links. Missing resources are not yet supplied; family guides do not verify model-specific settings.
+Local attachments are included in the model package; PDF specifications link to the manufacturer and are not bundled offline. Missing resources are not yet supplied; family guides do not verify model-specific settings.
 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
-| Model datasheet | Not supplied | — |
+| Model datasheet | [View on manufacturer website (online)](https://www.feetechrc.com/Data/feetechrc/upload/file/20260622/6391773486236271034827287.pdf) | A/0 |
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
-| 2D mounting drawing | Not supplied | — |
+| 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | Not supplied | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |

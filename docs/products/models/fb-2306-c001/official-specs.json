@@ -1,0 +1,146 @@
+{
+  "model": "FB-2306-C001",
+  "checked": "2026-10-02",
+  "source": "https://www.feetechrc.com/12v-6kg-digital-brushless-steering-gear-fb2306bl",
+  "table": [
+    [
+      "型 号 Model：",
+      "FB-2306-C001"
+    ],
+    [
+      "产品名称 Product Name:",
+      "12V 6公斤数码舵机/12V 6kg- -cm Digital Servo"
+    ],
+    [
+      "存储温度 Storage Temperature Range",
+      "-40℃～80℃"
+    ],
+    [
+      "运行温度 Operating Temperature Range:",
+      "-40℃～60℃"
+    ],
+    [
+      "尺寸 Size:",
+      "A：30.2mm B：14.6mm C：31.5mm ."
+    ],
+    [
+      "重量 Weight:",
+      "42.5g± 1g"
+    ],
+    [
+      "齿轮类型 Gear type:",
+      "钢 Steel"
+    ],
+    [
+      "机构极限角度 Limit angle:",
+      "No limit"
+    ],
+    [
+      "轴承 Bearing:",
+      "滚珠轴承 Ball bearings"
+    ],
+    [
+      "出力轴 Horn gear spline:",
+      "25T/4.95mm"
+    ],
+    [
+      "摆臂 Horn type:",
+      "0°"
+    ],
+    [
+      "外壳 Case:",
+      "Aluminium"
+    ],
+    [
+      "舵机线 Connector wire:",
+      "26±1CM"
+    ],
+    [
+      "马达 Motor:",
+      "Brushless Motor"
+    ],
+    [
+      "工作电压Operating Voltage Range:",
+      "6-14V"
+    ],
+    [
+      "静态电流Idle current (at stopped) .",
+      "35mA@12V"
+    ],
+    [
+      "空载速度 No load speed:",
+      "0.072sec/60°(140RPM)@12V"
+    ],
+    [
+      "空载电流 Runnig current(at no load) :",
+      "110mA@12V"
+    ],
+    [
+      "堵转扭矩 Peak stall torque:",
+      "6kg.cm@12V"
+    ],
+    [
+      "额定扭矩 Rated torque:",
+      "2kg.cm@12V"
+    ],
+    [
+      "堵转电流 Stall current:",
+      "1.25A@12V"
+    ],
+    [
+      "控制信号Command si gnal",
+      "Pulse width modification"
+    ],
+    [
+      "控制系统类型 Control System Type",
+      "Digital comparator"
+    ],
+    [
+      "脉冲宽度范围Pulse width range",
+      "1000~2000usec"
+    ],
+    [
+      "中立位置 Neutral Position",
+      "1500 μsec"
+    ],
+    [
+      "旋转角度Running degree",
+      "90° (at 1000→2000μsec)"
+    ],
+    [
+      "死区宽度Dead band width",
+      "≤4 μsec"
+    ],
+    [
+      "反馈电压 Feedback Voltage",
+      "1000us→0.31V 1500us→1.64V 2000us→3.05V"
+    ],
+    [
+      "旋转方向Rotating direction",
+      "顺时针 Clockwise(在1000→2000 μsec)"
+    ],
+    [
+      "详细规格书下载Download detailed specifications:",
+      "FB-2306-C001.pdf"
+    ],
+    [
+      "外形图 The Drawings:",
+      ""
+    ]
+  ],
+  "notes": [],
+  "filled_fields": [
+    "speed",
+    "speedLabel",
+    "speedVoltage",
+    "dimensions",
+    "weight",
+    "weightTolerance",
+    "positionRange",
+    "gear",
+    "case",
+    "motorNote",
+    "motorNoteEn",
+    "torqueVoltage"
+  ]
+}
