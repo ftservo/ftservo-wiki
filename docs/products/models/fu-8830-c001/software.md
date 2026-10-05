@@ -32,7 +32,7 @@
 | --- | --- |
 | PC / 树莓派 / Jetson | [Python](../../../sdk/python.md) |
 | Arduino / ESP32 / PlatformIO | [Arduino / ESP32](../../../sdk/arduino.md) |
-| Linux C++ / STM32 HAL | [Linux / STM32](../../../sdk/linux-stm32.md) |
+| Linux C++ / STM32 HAL | [Linux](../../../sdk/linux.md) / [STM32](../../../sdk/stm32.md) |
 
 以上为共享 SDK 教程，示例以 TTL / RS485 总线产品为主；本资料包尚未提供经本型号实物验证的 CAN 专用示例。
 

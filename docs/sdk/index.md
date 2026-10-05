@@ -6,7 +6,8 @@
 | --- | --- | --- |
 | PC / 树莓派 / Jetson + Python | [Python SDK](python.md) | 打开端口并收到目标设备的 Ping 响应 |
 | Arduino / ESP32 | [Arduino / ESP32 SDK](arduino.md) | 用匹配应用层的只读示例确认通信 |
-| Linux C++ / STM32 HAL | [Linux / STM32 SDK](linux-stm32.md) | 确认串口收发方向与设备响应 |
+| Linux | [Linux SDK](linux.md) | 确认串口收发方向与设备响应 |
+| C++ / STM32 HAL | [STM32 SDK](stm32.md) | 确认串口收发方向与设备响应 |
 | 暂不写程序，先验证硬件 | [FD 调试工具](../tools/fd.md) | 确认接口、ID、波特率及读取结果 |
 
 ## 获取官方 SDK
@@ -20,8 +21,8 @@ git clone --recurse-submodules https://github.com/ftservo/ftservo-wiki.git
 | 平台 | 目录 | 官方仓库 | 适合场景 |
 | --- | --- | --- | --- |
 | Python | `sdk/FTServo_Python` | [FTServo_Python](https://github.com/ftservo/FTServo_Python) | PC、树莓派、Jetson、快速验证 |
-| Arduino / ESP32 | `sdk/FTServo_Arduino` | [FTServo_Arduino](https://github.com/ftservo/FTServo_Arduino) | Arduino IDE、PlatformIO、ESP32 |
 | Linux C++ | `sdk/FTServo_Linux` | [FTServo_Linux](https://github.com/ftservo/FTServo_Linux) | Linux 原生 C/C++ 项目 |
+| Arduino / ESP32 | `sdk/FTServo_Arduino` | [FTServo_Arduino](https://github.com/ftservo/FTServo_Arduino) | Arduino IDE、PlatformIO、ESP32 |
 | STM32 HAL | `sdk/FTServo_stm32HAL` | [FTServo_stm32HAL](https://github.com/ftservo/FTServo_stm32HAL) | STM32CubeMX / HAL 固件 |
 
 ## 选择正确的类和示例 {#application-layer}

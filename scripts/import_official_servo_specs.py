@@ -4,6 +4,7 @@ import json,re,shutil,io
 from PIL import Image
 from crawl_official_servos import ROOT,CACHE
 from product_package import resource_section
+import spec_overrides
 
 DATA=ROOT/'docs/javascripts/servo-selector-data.js'
 def numbers(s):return [float(x) for x in re.findall(r'\d+(?:\.\d+)?',s)]
@@ -63,8 +64,15 @@ def facts(rows,record,item):
     intro=' '.join(row[0] for row in rows if len(row)==1)
     if re.search(r'多圈连续|连续旋转|multi.turn continuous',intro,re.I):f['continuous']=True
     name=get(rows,r'Product Name')
-    if re.search(r'双轴|double shaft|dual.?axis|dual.?shaft',name+' '+intro,re.I):f['shaft']='dual'
-    elif re.search(r'单轴|single.?shaft|single.?axis',name+' '+intro,re.I):f['shaft']='single'
+    # 轴型以「产品名称」为准：官网简介正文存在跨型号复制的轴型笔误
+    # （例：ST-3036-C001 中文简介写「双轴」，而产品名称与英文简介写单轴 / Single-axis）。
+    # 名称未提及时才回退到简介；同一段文本内单轴表述优先，先判双轴会把这类型号误判成双轴。
+    def shaft_of(text):
+        if re.search(r'单轴|single.?shaft|single.?axis',text,re.I):return 'single'
+        if re.search(r'双轴|double.?shaft|dual.?axis|dual.?shaft',text,re.I):return 'dual'
+        return None
+    shaft=shaft_of(name) or shaft_of(intro)
+    if shaft:f['shaft']=shaft
     motor=get(rows,r'\bMotor\b');gear=get(rows,r'Gear type|Gear material');case=get(rows,r'\bCase\b')
     mixed=sum(bool(re.search(p,gear,re.I)) for p in (r'钢|\bsteel\b',r'铜|\bcopper\b|\bbrass\b',r'钛|titanium',r'塑|plastic'))>1
     if mixed:f.update(gearNote=gear,gearNoteEn=gear)
@@ -107,6 +115,7 @@ def table_section(rows,en):
 
 def main():
     items=json.loads(DATA.read_text(encoding='utf8').split('=',1)[1].strip().rstrip(';'));report=[]
+    overrides=spec_overrides.load()
     for item in items:
         model=item['model'];rp=CACHE/(model.lower()+'.json');ap=CACHE/(model.lower()+'.assets.json')
         if not rp.exists() or not ap.exists():continue
@@ -139,16 +148,28 @@ def main():
                     # the claimed allowable input endpoints differ.
                     new['voltageLabel']=f'{compare:g} V'
                 else:new.pop('voltage',None);new.pop('voltageLabel',None)
+        # 人工确认值优先（scripts/official_spec_overrides.json）：命中登记表则强制写回，
+        # 抑制由此产生的自动冲突警告，并改用登记表里的说明文案。官方逐字规格表行不改写。
+        override=overrides.get(model.upper())
+        pending=spec_overrides.suppress_notes(notes,override)
+        if override:
+            for key,value in spec_overrides.fields(override).items():
+                if value is None:new.pop(key,None)
+                else:new[key]=value
+            spec_overrides.force(item,override)
+        notes=spec_overrides.confirmed_notes(override)+pending
         previous=ROOT/f'docs/products/models/{model.lower()}/official-specs.json'
         if previous.exists():filled=json.loads(previous.read_text(encoding='utf8')).get('filled_fields',[])
-        if 'gearNote' in new and 'gear' not in new and 'gear' in filled:item.pop('gear',None);filled.remove('gear')
+        if 'gearNote' in new and 'gear' not in new and 'gear' in filled and 'gear' not in spec_overrides.fields(override):item.pop('gear',None);filled.remove('gear')
         existing_voltage=re.search(r'@\s*(\d+(?:\.\d+)?)\s*V',item.get('torqueLabel',''),re.I)
         if item.get('torque') is not None and 'torqueVoltage' in new and (item['torque']!=new.get('torque') or (existing_voltage and float(existing_voltage[1])!=new['torqueVoltage'])):
             new.pop('torqueVoltage',None)
             if 'torqueVoltage' in filled:item.pop('torqueVoltage',None);filled.remove('torqueVoltage')
         for key,value in new.items():
             if item.get(key) is None or item.get(key) in ('','请咨询','待补充','Contact us','Not provided','Contact FEETECH'):item[key]=value;filled.append(key)
-        if notes:item['specificationNote']='官网资料存在待确认项';item['specificationNoteEn']='Some official claims need confirmation'
+        if notes:
+            if pending:item['specificationNote']='官网资料存在待确认项';item['specificationNoteEn']='Some official claims need confirmation'
+            else:item['specificationNote']='官网资料差异说明';item['specificationNoteEn']='Source discrepancy note'
         item['source']=record['url'];item['parameterSource']=record['url'];item['parameterChecked']='2026-10-02'
         for locale in ('','en/'):
             en=bool(locale);folder=ROOT/f'docs/{locale}products/models/{model.lower()}'
@@ -172,7 +193,7 @@ def main():
             content=('## Official model specifications' if en else '## 官网型号详细参数')+'\n\n'
             content+=(f'[FEETECH official product page]({record["url"]}) · Checked 2026-10-02. The complete model on the page is '+', '.join(assets['pageModel'])+'.\n\n' if en else f'[飞特官网型号页]({record["url"]}) · 核对日期：2026-10-02；页面型号：'+', '.join(assets['pageModel'])+'。\n\n')
             if notes:
-                content+=('!!! warning "Claims requiring confirmation"' if en else '!!! warning "官网资料待确认项"')+'\n'
+                content+=(('!!! warning "Claims requiring confirmation"' if en else '!!! warning "官网资料待确认项"') if pending else ('!!! note "Source discrepancy note"' if en else '!!! note "官网资料差异说明"'))+'\n'
                 content+='\n'.join('    '+n[int(en)] for n in notes)+'\n\n'
             content+=table_section(rows,en)+'\n\n'
             if supplementary:

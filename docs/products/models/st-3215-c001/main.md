@@ -43,8 +43,8 @@
 [飞特官网型号页](https://www.feetechrc.com/74v-19-kgcm-plastic-case-metal-tooth-magnetic-code-double-axis-ttl-series-steering-gear) · 核对日期：2026-10-02；页面型号：ST-3215-C001。
 
 !!! warning "官网资料待确认项"
-    外壳：官网简介与规格表不一致，待厂家确认。
-    电机：官网简介与规格表不一致，待厂家确认。
+    外壳：官网规格表列为 aluminium alloy，官网简介与型号描述为塑胶外壳；经厂家确认为全塑胶外壳，选型器已按全塑胶归类。
+    电机：官网规格表列为 Coreless motor，官网简介为铁芯电机；经厂家确认为铁芯有刷电机，选型器已按有刷铁心归类。
     输入电压下限：官网表为 6.0，所挂载 PDF 为 4.0；新增筛选值暂缓录入，请核对版本。
 
 | 参数 | 官网规格原文（含测试条件） |

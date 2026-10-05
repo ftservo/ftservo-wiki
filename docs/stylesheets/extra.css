@@ -434,3 +434,9 @@
 @media (max-width: 480px) {
   .md-header__title { visibility: hidden; margin: 0; }
 }
+
+/* 侧边栏顶级导航项加粗（首页/产品选型/开始使用/程序开发/结构装配/协议参数/故障排查/资料下载），
+   直接子代选择器只作用于第一层，不影响展开后的二级、三级条目 */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  font-weight: 700;
+}

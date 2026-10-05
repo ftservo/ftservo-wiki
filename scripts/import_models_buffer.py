@@ -14,11 +14,24 @@ import io
 from html import escape
 from PIL import Image, ImageChops, ImageDraw, ImageFilter
 import product_package as package
+import spec_overrides
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'models_buffer'
 DATA = ROOT / 'docs/javascripts/servo-selector-data.js'
 OUT = ROOT / 'imports/models-buffer-2026-10-02'
+
+
+def may_write(item, key, is_new):
+    """人工确认值优先：既有型号已带分类值时不再被缓冲区数据覆盖。
+
+    新增型号照常写入；需要强制改写的取值以 scripts/official_spec_overrides.json 为准。
+    """
+    if is_new:
+        return True
+    return item.get(key) in (None, '', '待补充', '请咨询')
+
+
 KEYS = dict(zip(
     ['输入电压','堵转扭矩','额定扭矩','空载速度','行程 / 旋转','控制接口','产品系列','产品型号','资料版本','外形尺寸','重量','齿轮','电机','外壳','操作角度','中位脉宽','死区','旋转方向','机内限位','输出轴','静态电流','空载电流','防护等级','工作温度','存储温度','通信协议','位置反馈','结构'],
     ['Input voltage','Stall torque','Rated torque','No-load speed','Travel / rotation','Control interface','Family','Label model','Document revision','Dimensions','Weight','Gears','Motor','Case','Position control range','Neutral pulse width','Deadband','Rotation direction','Mechanical stop','Output shaft','Idle current','No-load current','Ingress protection','Operating temperature','Storage temperature','Communication','Position feedback','Shaft structure']))
@@ -132,6 +145,7 @@ def main():
     folders = sorted(p for p in SOURCE.iterdir() if p.is_dir())
     items = json.loads(DATA.read_text(encoding='utf-8').split('=',1)[1].strip().rstrip(';'))
     by_id = {item['model'].lower():item for item in items}
+    overrides = spec_overrides.load()
     OUT.parent.mkdir(exist_ok=True)
     archive = OUT.with_suffix('.zip')
     if archive.exists():
@@ -184,11 +198,14 @@ def main():
                     item['speedSourceLabel']=speed
                     item['speedLabel']=f'{item["speed"]:g} rpm'+(f'@{item["speedVoltage"]:g} V' if item.get('speedVoltage') else '')
         angle = values.get('行程 / 旋转',values.get('操作角度',''))
-        if '连续旋转' in angle: item['continuous']=True
+        if '连续旋转' in angle:
+            if may_write(item,'continuous',new): item['continuous']=True
         elif number(angle) is not None: item['positionRange']=number(angle)
         structure=values.get('结构','')
-        if '双轴' in structure: item['shaft']='dual'
-        elif '单轴' in structure: item['shaft']='single'
+        if '双轴' in structure:
+            if may_write(item,'shaft',new): item['shaft']='dual'
+        elif '单轴' in structure:
+            if may_write(item,'shaft',new): item['shaft']='single'
         dimensions = re.findall(r'\d+(?:\.\d+)?',values.get('外形尺寸',''))
         if len(dimensions)==3: item['dimensions']=list(map(float,dimensions))
         weight = values.get('重量','')
@@ -197,17 +214,21 @@ def main():
             tolerance=re.search(r'±\s*(\d+(?:\.\d+)?)',weight)
             if tolerance: item['weightTolerance']=float(tolerance[1])
         gear=values.get('齿轮','')
-        for word, enum in [('钢','steel'),('铜','copper'),('钛','titanium'),('塑','plastic'),('POM','plastic')]:
-            if word in gear: item['gear']=enum; break
+        if may_write(item,'gear',new):
+            for word, enum in [('钢','steel'),('铜','copper'),('钛','titanium'),('塑','plastic'),('POM','plastic')]:
+                if word in gear: item['gear']=enum; break
         case=values.get('外壳','')
-        if '铝合金' in case or '铝壳' in gear or '金属壳' in gear: item['case']='metal'
-        elif '塑胶壳' in gear: item['case']='plastic'
+        if may_write(item,'case',new):
+            if '铝合金' in case or '铝壳' in gear or '金属壳' in gear: item['case']='metal'
+            elif '塑胶壳' in gear: item['case']='plastic'
         motor=values.get('电机','')
         # "Brushless" alone does not establish a coreless rotor construction.
-        if motor:
+        if motor and may_write(item,'motor',new):
             item['motorNote']=motor; item['motorNoteEn']=translate(motor)
             if '有刷' in motor and '铁芯' in motor: item['motor']='brushed-iron'
             else: item['motor']=None
+        # 登记表命中的字段强制写回，作为最终参数版本。
+        spec_overrides.force(item,overrides.get(model.upper()))
         source = next((x for x in manifest['sources'] if x.get('url')),None)
         if source:
             item['source']=source['url'];item['sourceChecked']=source.get('captured','2026-10-02')
@@ -235,7 +256,7 @@ def main():
                     if not dest.exists(): dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(extra,dest)
         report['models'].append({'model':model,'crop':bbox,'sourceBytes':(folder/'product-image.jpg').stat().st_size,'webpBytes':(ROOT/f'docs/products/models/{model}/images/main.webp').stat().st_size,'sourceSha256':hashlib.sha256((folder/'product-image.jpg').read_bytes()).hexdigest()})
     items.sort(key=lambda item:item['model'])
-    DATA.write_text('window.FEETECH_SERVO_DATA='+json.dumps(items,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+    DATA.write_text('window.FEETECH_SERVO_DATA = '+json.dumps(items,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
     # Generate all catalogs from the same model data, including new CAN series.
     for locale in ['','en/']:
         for name in ['hd','hl','pwm','sc','sm','st','fu']:

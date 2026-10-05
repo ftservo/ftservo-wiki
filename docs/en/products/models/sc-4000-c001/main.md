@@ -48,6 +48,9 @@ Brushed coreless motor. [2024 FEETECH official brochure](https://www.feetechrc.c
 
 [FEETECH official product page](https://www.feetechrc.com/84v40kg-serial-bus-steering-gear) · Checked 2026-10-02. The complete model on the page is SC-4000-C001.
 
+!!! note "Source discrepancy note"
+    Case: the specification table lists ABS (plastic) while the product introduction states an aluminum alloy case for heat dissipation; confirmed by the manufacturer as an all-metal case and classified as All metal in the selector.
+
 | Parameter | Manufacturer specification |
 | --- | --- |
 | Model | SC-4000-C001 |

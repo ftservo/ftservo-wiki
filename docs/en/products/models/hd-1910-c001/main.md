@@ -86,9 +86,9 @@ Public project reference: [Pollen Robotics Microduck](https://github.com/pollen-
 | Rated Load | 2.2kg. cm@4.8V |
 | Rated current | 500mA@4.8V |
 | KT | 7.5kg.cm/A |
-| Operating Modes | 模式0：角度伺服模式 （默认此模式，0-360度[敏感词]位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
-| Multi-Loop Mode | [敏感词]精度下可以正负7圈[敏感词]位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
-| Constant force output | 设定输出扭矩值，舵机可保持该扭矩(44号地址输入相对应的目标扭矩值，舵机可保持该扭矩) Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
+| Operating Modes |  Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
+| Multi-Loop Mode | Control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
+| Constant force output | Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
 | Command signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication |
 | ID | 0-253 |
@@ -98,7 +98,7 @@ Public project reference: [Pollen Robotics Microduck](https://github.com/pollen-
 | Running degree | 360° (when 0~4095) |
 | Resolution [deg/pulse] | 0.088°(360°/4096) |
 | Rotating Direction | Clockwise(0→4095） |
-| Feedback | Load（负载）, Position（位置）,Speed（工作速度）, Input Voltage（输入电压），Current（工作电流）,Temperature（工作温度） |
+| Feedback | Load, Position,Speed, Input Voltage，Current,Temperature |
 
 ![HD-1910-C001 mechanical drawing](images/drawing.webp){ .ft-model-drawing }
 
@@ -116,7 +116,7 @@ Local attachments are included in the model package; PDF specifications link to 
 | Connector and pinout | Not supplied | — |
 | Model memory table / firmware notes | Not supplied | — |
 | 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
-| STEP / 3D model | Not supplied | — |
+| STEP / 3D model | [HD-1910-C001-20260902.stp](images/HD-1910-C001-20260902.stp) | — |
 | Model-tested example | Not supplied | — |
 | Raw test data | Not supplied | — |
 | Test record and conditions | Not supplied | — |

@@ -25,7 +25,6 @@ theme:
   language: zh
   font: false
   features:
-    - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.footer
@@ -61,13 +60,7 @@ plugins:
           build: true
           nav:
             - 首页: index.md
-            - 开始使用:
-                - getting-started/index.md
-                - 总线舵机入门: getting-started/bus.md
-                - PWM 舵机入门: getting-started/pwm.md
-                - 供电与接线: getting-started/wiring.md
-                - 第一次运动: getting-started/first-motion.md
-            - 产品与选型:
+            - 产品选型:
                 - products/index.md
                 - 系列与接口: products/series.md
                 - 型号目录:
@@ -79,17 +72,24 @@ plugins:
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
+            - 开始使用:
+                - getting-started/index.md
+                - 总线舵机入门: getting-started/bus.md
+                - PWM 舵机入门: getting-started/pwm.md
+                - 供电与接线: getting-started/wiring.md
+                - 第一次运动: getting-started/first-motion.md
             - 程序开发:
                 - sdk/index.md
                 - Python: sdk/python.md
+                - Linux: sdk/linux.md
                 - Arduino / ESP32: sdk/arduino.md
-                - Linux / STM32 HAL: sdk/linux-stm32.md
+                - STM32 HAL: sdk/stm32.md
                 - FD 搜索与配置: tools/fd.md
                 - 调试板与适配器: tools/adapters.md
                 - 用 AI 开发: ai-development.md
-            - 结构与装配:
+            - 结构装配:
                 - mechanical/index.md
-            - 协议与参数:
+            - 协议参数:
                 - reference/index.md
                 - 数据包协议:
                     - reference/protocol/index.md
@@ -114,12 +114,6 @@ plugins:
           build: true
           nav:
             - Home: index.md
-            - Get Started:
-                - getting-started/index.md
-                - Bus servo setup: getting-started/bus.md
-                - PWM servo setup: getting-started/pwm.md
-                - Power and wiring: getting-started/wiring.md
-                - First motion: getting-started/first-motion.md
             - Products and Selection:
                 - products/index.md
                 - Families and interfaces: products/series.md
@@ -132,11 +126,18 @@ plugins:
                     - SC: products/datasheets/sc.md
                     - SM: products/datasheets/sm.md
                     - ST: products/datasheets/st.md
+            - Get Started:
+                - getting-started/index.md
+                - Bus servo setup: getting-started/bus.md
+                - PWM servo setup: getting-started/pwm.md
+                - Power and wiring: getting-started/wiring.md
+                - First motion: getting-started/first-motion.md
             - Software Development:
                 - sdk/index.md
                 - Python: sdk/python.md
+                - Linux: sdk/linux.md
                 - Arduino / ESP32: sdk/arduino.md
-                - Linux / STM32 HAL: sdk/linux-stm32.md
+                - STM32 HAL: sdk/stm32.md
                 - FD discovery and setup: tools/fd.md
                 - Debug boards and adapters: tools/adapters.md
                 - Develop with AI: ai-development.md
@@ -189,10 +190,10 @@ validation:
   anchors: warn
 
 extra_css:
-  - stylesheets/extra.css?v=285ab3f89d
+  - stylesheets/extra.css?v=ec9838ea56
 extra_javascript:
   - javascripts/language-redirect.js?v=31c7d2eb41
-  - javascripts/servo-selector-data.js?v=46e8260e88
+  - javascripts/servo-selector-data.js?v=1152259ae5
   - javascripts/servo-selector.js?v=545dfc5219
   - javascripts/developer-context.js?v=6a26876af4
   - javascripts/servo-characteristic-chart.js?v=b1088300e5

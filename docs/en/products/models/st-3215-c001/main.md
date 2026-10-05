@@ -43,8 +43,8 @@ For communication commands and software integration, continue with the [SDK guid
 [FEETECH official product page](https://www.feetechrc.com/74v-19-kgcm-plastic-case-metal-tooth-magnetic-code-double-axis-ttl-series-steering-gear) · Checked 2026-10-02. The complete model on the page is ST-3215-C001.
 
 !!! warning "Claims requiring confirmation"
-    Case: product introduction and specification table disagree; confirmation required.
-    Motor: product introduction and specification table disagree; confirmation required.
+    Case: the specification table lists aluminium alloy while the product introduction and model description state a plastic case; confirmed by the manufacturer as an all-plastic case and classified as All plastic in the selector.
+    Motor: the specification table lists Coreless motor while the product introduction states a core motor; confirmed by the manufacturer as a brushed iron-core motor and classified as Brushed iron-core in the selector.
     voltageMin: website table gives 6.0, attached PDF gives 4.0; a new filter value is withheld pending revision confirmation.
 
 | Parameter | Manufacturer specification |

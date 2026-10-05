@@ -30,7 +30,7 @@
 | --- | --- |
 | PC / 树莓派 / Jetson | [Python](../../../sdk/python.md) |
 | Arduino / ESP32 / PlatformIO | [Arduino / ESP32](../../../sdk/arduino.md) |
-| Linux C++ / STM32 HAL | [Linux / STM32](../../../sdk/linux-stm32.md) |
+| Linux C++ / STM32 HAL | [Linux](../../../sdk/linux.md) / [STM32](../../../sdk/stm32.md) |
 
 以上是共享 SDK 教程；本资料包目前尚未提供经本型号实物验证的专用示例。
 

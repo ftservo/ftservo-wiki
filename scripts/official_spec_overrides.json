@@ -1,0 +1,65 @@
+{
+  "_doc": [
+    "人工确认参数的权威登记表（override 机制）。详见 scripts/spec_overrides.py 的模块说明。",
+    "",
+    "何时需要在这里加条目：当某个取值由工程师或厂家确认、且与官网/缓冲区数据不一致时。",
+    "命中后导入脚本会强制写回 fields、抑制 suppress 列出的自动冲突警告，并用 notes 作为说明文案。",
+    "只有值已被人工确认的字段才写进来，不要把脚本自动推导的值冒充人工确认。",
+    "",
+    "models.<型号> 结构：",
+    "  fields   必填。强制写入 servo-selector-data.js 的字段（值为 null 表示删除该键）。",
+    "  suppress 可选。要抑制的自动冲突警告主题，可取 case / motor / gear / positionRange / voltageMin / voltageMax。",
+    "  notes    可选。替代说明文案，[中文, 英文] 或 {zh, en}。仅在官方原文与确认结论不一致时需要。",
+    "",
+    "导入脚本每次运行都会读取本文件；官方逐字规格表行不会被改写，差异由 notes 说明，追溯性保留。"
+  ],
+  "models": {
+    "ST-3215-C001": {
+      "fields": {
+        "motor": "brushed-iron",
+        "motorNote": "有刷铁心",
+        "motorNoteEn": "Brushed iron-core",
+        "case": "plastic"
+      },
+      "suppress": [
+        "case",
+        "motor"
+      ],
+      "notes": [
+        {
+          "zh": "外壳：官网规格表列为 aluminium alloy，官网简介与型号描述为塑胶外壳；经厂家确认为全塑胶外壳，选型器已按全塑胶归类。",
+          "en": "Case: the specification table lists aluminium alloy while the product introduction and model description state a plastic case; confirmed by the manufacturer as an all-plastic case and classified as All plastic in the selector."
+        },
+        {
+          "zh": "电机：官网规格表列为 Coreless motor，官网简介为铁芯电机；经厂家确认为铁芯有刷电机，选型器已按有刷铁心归类。",
+          "en": "Motor: the specification table lists Coreless motor while the product introduction states a core motor; confirmed by the manufacturer as a brushed iron-core motor and classified as Brushed iron-core in the selector."
+        }
+      ]
+    },
+    "ST-3036-C001": {
+      "fields": {
+        "shaft": "single"
+      },
+      "notes": [
+        {
+          "zh": "输出轴型：官网中文简介写「双轴」（与同平台 ST-3036-C002 的文字重复），但同页产品名称「6V 4.5公斤 磁编码360度单轴串行总线舵机」与英文简介 Single-axis 均为单轴；经复核确认为单轴，选型器已按单轴归类。",
+          "en": "Shaft: the Chinese introduction on the official page says dual shaft (text duplicated from the sibling model ST-3036-C002), while the product name on the same page reads 单轴 serial bus servo and the English introduction reads Single-axis; review confirmed a single shaft and the selector lists Single shaft."
+        }
+      ]
+    },
+    "SC-4000-C001": {
+      "fields": {
+        "case": "metal"
+      },
+      "suppress": [
+        "case"
+      ],
+      "notes": [
+        {
+          "zh": "外壳：官网规格表列为 ABS（塑胶），官网简介为铝合金外壳、利于散热；经厂家确认为全金属外壳，选型器已按全金属归类。",
+          "en": "Case: the specification table lists ABS (plastic) while the product introduction states an aluminum alloy case for heat dissipation; confirmed by the manufacturer as an all-metal case and classified as All metal in the selector."
+        }
+      ]
+    }
+  }
+}

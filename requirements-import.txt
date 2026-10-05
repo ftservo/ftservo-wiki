@@ -1,0 +1,16 @@
+# Dependencies for the offline ingest toolchain in scripts/.
+#
+# Needed only when crawling, downloading or importing official material:
+#   crawl_official_servos.py            -> lxml
+#   download_official_servo_assets.py   -> Pillow, pypdf
+#   extract_official_pdf_specs.py       -> Pillow, pdfplumber
+#   import_official_servo_specs.py      -> Pillow
+#   import_models_buffer.py             -> Pillow
+#   supplement_official_brochure.py     -> pypdf
+#
+# requirements.txt stays limited to the MkDocs build and product_package
+# validation that CI runs, so the Pages workflow does not install these.
+lxml
+Pillow
+pypdf
+pdfplumber

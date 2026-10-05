@@ -5,8 +5,9 @@ Confirm the interface and application layer on the [model page](../products/inde
 | Platform | Tutorial | First verification goal |
 | --- | --- | --- |
 | PC / Raspberry Pi / Jetson with Python | [Python SDK](python.md) | Open the port and receive the intended device's Ping response |
+| Linux  | [Linux SDK  ](linux.md) | Confirm serial direction control and device response |
 | Arduino / ESP32 | [Arduino / ESP32 SDK](arduino.md) | Confirm communication using a matching read-only example |
-| Linux C++ / STM32 HAL | [Linux / STM32 SDK](linux-stm32.md) | Confirm serial direction control and device response |
+| C++ / STM32 HAL | [STM32 SDK](stm32.md) | Confirm serial direction control and device response |
 | Hardware verification before coding | [FD Tool](../tools/fd.md) | Confirm interface, ID, baud rate and read results |
 
 ## Get the official SDKs

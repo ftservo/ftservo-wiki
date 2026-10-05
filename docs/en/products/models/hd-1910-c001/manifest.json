@@ -51,10 +51,10 @@
     },
     {
       "kind": "cad",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/HD-1910-C001-20260902.stp",
       "revision": null,
-      "source": null
+      "source": "内部提供 (provided internally)"
     },
     {
       "kind": "example",

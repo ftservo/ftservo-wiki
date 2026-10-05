@@ -60,7 +60,7 @@ HD-1910-C001 适合用于 Microduck/Open Duck 类轻量双足机器人，但更�
 
 [飞特官网型号页](https://www.feetechrc.com/510257) · 核对日期：2026-10-02；页面型号：HD-1910-C001。
 
-| 参数 | 官网规格原文（含测试条件） |
+| 参数 | 规格（含测试条件） |
 | --- | --- |
 | 型 号 Model： | HD-1910-C001 |
 | 存储温度 Storage Temperature Range | -30℃～80℃ |
@@ -86,8 +86,8 @@ HD-1910-C001 适合用于 Microduck/Open Duck 类轻量双足机器人，但更�
 | 额定负载Rated Load： | 2.2kg. cm@4.8V |
 | 额定电流Rated current： | 500mA@4.8V |
 | KT常数 | 7.5kg.cm/A |
-| 运行模式 Operating Modes： | 模式0：角度伺服模式 （默认此模式，0-360度[敏感词]位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
-| 多圈模式 Multi-Loop Mode： | [敏感词]精度下可以正负7圈[敏感词]位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
+| 运行模式 Operating Modes： | 模式0：角度伺服模式 （默认此模式，0-360度位置可控） Mode 0: Angle servo mode (default mode, absolute position controllable from 0-360 degrees) |
+| 多圈模式 Multi-Loop Mode： | 精度下可以正负7圈位置控制，但掉电圈数不保存（扩大分辨率，圈数可翻倍） control of positive and negative 7 turns at the highest accuracy, but the umber of power failure turns is not saved (the resolution can be expanded, and the number of turns can be doubled) |
 | 恒力输出 Constant force output： | 设定输出扭矩值，舵机可保持该扭矩(44号地址输入相对应的目标扭矩值，舵机可保持该扭矩) Set the output torque value, the servo can maintain this torque (input the target torque value corresponding to address 44, the servo can maintain this torque) |
 | 控制信号 Command signal: | Digital Packet |
 | 协议类型 Protocol Type: | Half Duplex Asynchronous Serial Communication |
@@ -116,7 +116,7 @@ HD-1910-C001 适合用于 Microduck/Open Duck 类轻量双足机器人，但更�
 | 接口与针序图 | 待补充 | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
 | 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
-| STEP / 3D 模型 | 待补充 | — |
+| STEP / 3D 模型 | [HD-1910-C001-20260902.stp](images/HD-1910-C001-20260902.stp) | — |
 | 型号验证示例 | 待补充 | — |
 | 原始测试数据 | 待补充 | — |
 | 测试记录与条件说明 | 待补充 | — |

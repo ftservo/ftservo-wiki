@@ -32,7 +32,7 @@ Family reference: **SCS** → Python `scscl`; Arduino / C++ `SCSCL`. Read the [f
 | --- | --- |
 | PC / Raspberry Pi / Jetson | [Python](../../../sdk/python.md) |
 | Arduino / ESP32 / PlatformIO | [Arduino / ESP32](../../../sdk/arduino.md) |
-| Linux C++ / STM32 HAL | [Linux / STM32](../../../sdk/linux-stm32.md) |
+| Linux C++ / STM32 HAL | [Linux](../../../sdk/linux.md) / [STM32](../../../sdk/stm32.md) |
 
 These are shared SDK guides; no model-specific hardware-tested example is supplied in this package yet.
 
