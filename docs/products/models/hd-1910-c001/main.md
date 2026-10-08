@@ -113,7 +113,7 @@ HD-1910-C001 适合用于 Microduck/Open Duck 类轻量双足机器人，但更�
 | 资料 | 状态 / 文件 | 版本 |
 | --- | --- | --- |
 | 型号规格书 | 待补充 | — |
-| 接口与针序图 | 待补充 | — |
+| 接口与针序图 | [interface.webp](images/interface.webp) | — |
 | 型号内存表 / 固件说明 | 待补充 | — |
 | 2D 安装图 | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D 模型 | [HD-1910-C001-20260902.stp](images/HD-1910-C001-20260902.stp) | — |

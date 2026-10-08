@@ -30,10 +30,10 @@
     },
     {
       "kind": "pinout",
-      "status": "missing",
-      "path": null,
+      "status": "available",
+      "path": "images/interface.webp",
       "revision": null,
-      "source": null
+      "source": "内部提供 (provided internally)"
     },
     {
       "kind": "memory_table",

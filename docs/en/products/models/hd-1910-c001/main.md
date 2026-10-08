@@ -113,7 +113,7 @@ Local attachments are included in the model package; PDF specifications link to 
 | Resource | Status / file | Revision |
 | --- | --- | --- |
 | Model datasheet | Not supplied | — |
-| Connector and pinout | Not supplied | — |
+| Connector and pinout | [interface.webp](images/interface.webp) | — |
 | Model memory table / firmware notes | Not supplied | — |
 | 2D mounting drawing | [drawing.webp](images/drawing.webp) | — |
 | STEP / 3D model | [HD-1910-C001-20260902.stp](images/HD-1910-C001-20260902.stp) | — |
